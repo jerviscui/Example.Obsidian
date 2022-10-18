@@ -1,1 +1,5 @@
+# ignors
 文件夹/*
+
+# only upload
+!.obsidian/
