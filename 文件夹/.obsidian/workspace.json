@@ -1,0 +1,174 @@
+{
+  "main": {
+    "id": "8ccd0ea24150a1aa",
+    "type": "split",
+    "children": [
+      {
+        "id": "ce00d6f451f4a5b8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eb9f147e1c618bf4",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "graph",
+              "state": {},
+              "pinned": true
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7469148c691a5804",
+    "type": "split",
+    "children": [
+      {
+        "id": "296663bd429ca207",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "da64c4f0398f750f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2e2972cb9fda5a37",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "d1fa71da8d1b7214",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "07fe8a91883cb303",
+            "type": "leaf",
+            "state": {
+              "type": "file-tree-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "5c3cf0429c3160ab",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "alphabetical",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "bb6f0cf05014e13d",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 291.5
+  },
+  "right": {
+    "id": "b13a7484ffacd073",
+    "type": "split",
+    "children": [
+      {
+        "id": "5d135db765797905",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a58b7af2c608a054",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "410fddaa602f0c3d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "edcd5cfabb53a29a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "f2a201f63fbb1cdf",
+            "type": "leaf",
+            "state": {
+              "type": "side-panel-control-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 318.5
+  },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "eb9f147e1c618bf4",
+  "lastOpenFiles": [
+    "字体.md",
+    "知识树/0 - 计算机科学、资讯与总类/test2.md",
+    "assets/decorator-comic-1 2.png",
+    "知识树/test.md",
+    "Decorator.md",
+    "Tasks.md",
+    "chocolatey 包管理工具.md.pdf",
+    "home.md",
+    "Markdown 数学公式.md",
+    "Markdown语法演示.md"
+  ]
+}

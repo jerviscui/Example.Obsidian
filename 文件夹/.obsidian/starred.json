@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "type": "search",
+      "title": "tag: doing",
+      "query": "tag: doing"
+    },
+    {
+      "type": "search",
+      "title": "tag: todo",
+      "query": "tag: todo"
+    },
+    {
+      "type": "search",
+      "title": "tag: future",
+      "query": "tag: future"
+    }
+  ]
+}

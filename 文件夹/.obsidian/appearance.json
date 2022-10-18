@@ -1,0 +1,13 @@
+{
+  "accentColor": "",
+  "theme": "moonstone",
+  "translucency": false,
+  "nativeMenus": false,
+  "baseFontSizeAction": true,
+  "textFontFamily": "微软雅黑",
+  "interfaceFontFamily": "微软雅黑",
+  "monospaceFontFamily": "Inconsolata",
+  "baseFontSize": 17,
+  "cssTheme": "",
+  "showViewHeader": true
+}

@@ -1,0 +1,564 @@
+{
+  "workspaces": {
+    "my": {
+      "main": {
+        "id": "8ccd0ea24150a1aa",
+        "type": "split",
+        "children": [
+          {
+            "id": "ce00d6f451f4a5b8",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "eb2e7c48cd32e087",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "graph",
+                  "state": {},
+                  "pinned": true
+                }
+              },
+              {
+                "id": "286fde811e0e5cd5",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "知识树/0 - 计算机科学、资讯与总类/test2.md",
+                    "mode": "source",
+                    "source": true
+                  }
+                },
+                "group": "91361e73bfcf99a3"
+              }
+            ],
+            "currentTab": 1
+          },
+          {
+            "id": "ad11c33d359ff746",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "4c88f581433c695a",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "知识树/0 - 计算机科学、资讯与总类/test2.md",
+                    "mode": "preview",
+                    "source": true
+                  }
+                },
+                "group": "91361e73bfcf99a3"
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "7469148c691a5804",
+        "type": "split",
+        "children": [
+          {
+            "id": "296663bd429ca207",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "9f7e99ea06ffec17",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "da64c4f0398f750f",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "2e2972cb9fda5a37",
+                "type": "leaf",
+                "state": {
+                  "type": "starred",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 288.5
+      },
+      "right": {
+        "id": "b13a7484ffacd073",
+        "type": "split",
+        "children": [
+          {
+            "id": "5d135db765797905",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "410fddaa602f0c3d",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "知识树/0 - 计算机科学、资讯与总类/test2.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "edcd5cfabb53a29a",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "知识树/0 - 计算机科学、资讯与总类/test2.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "5c3cf0429c3160ab",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              },
+              {
+                "id": "a58b7af2c608a054",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "知识树/0 - 计算机科学、资讯与总类/test2.md"
+                  }
+                }
+              }
+            ],
+            "currentTab": 2
+          }
+        ],
+        "direction": "horizontal",
+        "width": 282.5
+      },
+      "ribbon": {
+        "mostRecentAction": ""
+      },
+      "active": "286fde811e0e5cd5"
+    },
+    "Home": {
+      "main": {
+        "id": "8ccd0ea24150a1aa",
+        "type": "split",
+        "children": [
+          {
+            "id": "ce00d6f451f4a5b8",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "eb9f147e1c618bf4",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "graph",
+                  "state": {},
+                  "pinned": true
+                }
+              },
+              {
+                "id": "98c1df1dba5653bf",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "知识树/test.md",
+                    "mode": "source",
+                    "source": true
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "7469148c691a5804",
+        "type": "split",
+        "children": [
+          {
+            "id": "296663bd429ca207",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "da64c4f0398f750f",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "2e2972cb9fda5a37",
+                "type": "leaf",
+                "state": {
+                  "type": "starred",
+                  "state": {}
+                }
+              },
+              {
+                "id": "d1fa71da8d1b7214",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "5578141dad68e2b2",
+                "type": "leaf",
+                "state": {
+                  "type": "file-tree-view",
+                  "state": {}
+                }
+              },
+              {
+                "id": "5c3cf0429c3160ab",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              },
+              {
+                "id": "bb6f0cf05014e13d",
+                "type": "leaf",
+                "state": {
+                  "type": "recent-files",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 5
+          }
+        ],
+        "direction": "horizontal",
+        "width": 291.5
+      },
+      "right": {
+        "id": "b13a7484ffacd073",
+        "type": "split",
+        "children": [
+          {
+            "id": "5d135db765797905",
+            "type": "tabs",
+            "dimension": 60,
+            "children": [
+              {
+                "id": "a58b7af2c608a054",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {}
+                }
+              },
+              {
+                "id": "410fddaa602f0c3d",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "collapseAll": false,
+                    "extraContext": true,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": false
+                  }
+                }
+              },
+              {
+                "id": "edcd5cfabb53a29a",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "c3c451e2a1d78621",
+            "type": "tabs",
+            "dimension": 40,
+            "children": [
+              {
+                "id": "098adeddd8ae6718",
+                "type": "leaf",
+                "state": {
+                  "type": "advanced-tables-toolbar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "c9584073a7baf833",
+                "type": "leaf",
+                "state": {
+                  "type": "side-panel-control-view",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 318.5
+      },
+      "ribbon": {
+        "mostRecentAction": ""
+      },
+      "active": "bb6f0cf05014e13d"
+    },
+    "test": {
+      "main": {
+        "id": "8ccd0ea24150a1aa",
+        "type": "split",
+        "children": [
+          {
+            "id": "ce00d6f451f4a5b8",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "eb9f147e1c618bf4",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "graph",
+                  "state": {},
+                  "pinned": true
+                }
+              },
+              {
+                "id": "0c9085aaf56294da",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "知识树/0 - 计算机科学、资讯与总类/test2.md",
+                    "mode": "preview",
+                    "source": true
+                  }
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "7469148c691a5804",
+        "type": "split",
+        "children": [
+          {
+            "id": "296663bd429ca207",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "da64c4f0398f750f",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "2e2972cb9fda5a37",
+                "type": "leaf",
+                "state": {
+                  "type": "starred",
+                  "state": {}
+                }
+              },
+              {
+                "id": "d1fa71da8d1b7214",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "5578141dad68e2b2",
+                "type": "leaf",
+                "state": {
+                  "type": "file-tree-view",
+                  "state": {}
+                }
+              },
+              {
+                "id": "5c3cf0429c3160ab",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              },
+              {
+                "id": "bb6f0cf05014e13d",
+                "type": "leaf",
+                "state": {
+                  "type": "recent-files",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 2
+          }
+        ],
+        "direction": "horizontal",
+        "width": 291.5
+      },
+      "right": {
+        "id": "b13a7484ffacd073",
+        "type": "split",
+        "children": [
+          {
+            "id": "5d135db765797905",
+            "type": "tabs",
+            "dimension": 60,
+            "children": [
+              {
+                "id": "a58b7af2c608a054",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "知识树/0 - 计算机科学、资讯与总类/test2.md"
+                  }
+                }
+              },
+              {
+                "id": "410fddaa602f0c3d",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "知识树/0 - 计算机科学、资讯与总类/test2.md",
+                    "collapseAll": false,
+                    "extraContext": true,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": false
+                  }
+                }
+              },
+              {
+                "id": "edcd5cfabb53a29a",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "知识树/0 - 计算机科学、资讯与总类/test2.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "c3c451e2a1d78621",
+            "type": "tabs",
+            "dimension": 40,
+            "children": [
+              {
+                "id": "098adeddd8ae6718",
+                "type": "leaf",
+                "state": {
+                  "type": "advanced-tables-toolbar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "c9584073a7baf833",
+                "type": "leaf",
+                "state": {
+                  "type": "side-panel-control-view",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 318.5
+      },
+      "ribbon": {
+        "mostRecentAction": ""
+      },
+      "active": "0c9085aaf56294da"
+    }
+  },
+  "active": "Home"
+}

@@ -1,0 +1,16 @@
+{
+  "livePreview": false,
+  "showLineNumber": true,
+  "useTab": false,
+  "attachmentFolderPath": "assets",
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current",
+  "useMarkdownLinks": true,
+  "showUnsupportedFiles": true,
+  "autoPairMarkdown": false,
+  "defaultViewMode": "preview",
+  "promptDelete": false,
+  "showInlineTitle": false,
+  "readableLineLength": true,
+  "newLinkFormat": "absolute"
+}
