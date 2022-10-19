@@ -4,7 +4,6 @@
   "recent-files-obsidian",
   "obsidian-dynamic-toc",
   "obsidian-enhancing-mindmap",
-  "file-tree-alternative",
   "oz-clear-unused-images",
   "tag-wrangler",
   "remotely-save",
@@ -19,5 +18,7 @@
   "editing-toolbar",
   "obsidian-table-generator",
   "obsidian-hover-editor",
-  "obsidian-projects"
+  "obsidian-projects",
+  "file-explorer-note-count",
+  "templater-obsidian"
 ]

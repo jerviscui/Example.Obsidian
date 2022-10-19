@@ -31,6 +31,16 @@
         "type": "tabs",
         "children": [
           {
+            "id": "d1fa71da8d1b7214",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTime"
+              }
+            }
+          },
+          {
             "id": "da64c4f0398f750f",
             "type": "leaf",
             "state": {
@@ -54,24 +64,6 @@
             }
           },
           {
-            "id": "d1fa71da8d1b7214",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical"
-              }
-            }
-          },
-          {
-            "id": "07fe8a91883cb303",
-            "type": "leaf",
-            "state": {
-              "type": "file-tree-view",
-              "state": {}
-            }
-          },
-          {
             "id": "5c3cf0429c3160ab",
             "type": "leaf",
             "state": {
@@ -90,12 +82,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 291.5
+    "width": 273.5
   },
   "right": {
     "id": "b13a7484ffacd073",
@@ -160,15 +151,15 @@
   },
   "active": "eb9f147e1c618bf4",
   "lastOpenFiles": [
-    "字体.md",
-    "知识树/0 - 计算机科学、资讯与总类/test2.md",
-    "assets/decorator-comic-1 2.png",
-    "知识树/test.md",
-    "Decorator.md",
-    "Tasks.md",
-    "chocolatey 包管理工具.md.pdf",
-    "home.md",
-    "Markdown 数学公式.md",
-    "Markdown语法演示.md"
+    "知识树/1 - 哲学与心理学/180 古代、中世纪、和东方哲学/181 东方哲学/论语/test2.md",
+    "_assets/5a593abc196fc093e4f72ee38d90ba9d.png",
+    "知识树/1 - 哲学与心理学/180 古代、中世纪、和东方哲学/181 东方哲学/论语/test.md",
+    "知识树/1 - 哲学与心理学/180 古代、中世纪、和东方哲学/181 东方哲学/论语/未命名.md",
+    "知识树/1 - 哲学与心理学/180 古代、中世纪、和东方哲学/181 东方哲学/181 东方哲学.md",
+    "Website/f1/test1.md",
+    "Website/f1/f2/test2.md",
+    "Website/f1/f2/test.md",
+    "知识树/0 - 计算机科学、资讯与总类/tag2.md",
+    "知识树/0 - 计算机科学、资讯与总类/SQL query performance tuning with IO statistics and execution plans.md"
   ]
 }

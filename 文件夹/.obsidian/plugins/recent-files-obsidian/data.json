@@ -1,73 +1,34 @@
 {
   "recentFiles": [
     {
-      "basename": "字体",
-      "path": "字体.md"
-    },
-    {
       "basename": "test2",
-      "path": "知识树/0 - 计算机科学、资讯与总类/test2.md"
+      "path": "知识树/1 - 哲学与心理学/180 古代、中世纪、和东方哲学/181 东方哲学/论语/test2.md"
     },
     {
       "basename": "test",
-      "path": "知识树/test.md"
+      "path": "知识树/1 - 哲学与心理学/180 古代、中世纪、和东方哲学/181 东方哲学/论语/test.md"
     },
     {
-      "basename": "Decorator",
-      "path": "Decorator.md"
+      "basename": "未命名",
+      "path": "知识树/1 - 哲学与心理学/180 古代、中世纪、和东方哲学/181 东方哲学/论语/未命名.md"
     },
     {
-      "basename": "Tasks",
-      "path": "Tasks.md"
-    },
-    {
-      "basename": "chocolatey 包管理工具.md",
-      "path": "chocolatey 包管理工具.md.pdf"
-    },
-    {
-      "basename": "home",
-      "path": "home.md"
-    },
-    {
-      "basename": "Markdown 数学公式",
-      "path": "Markdown 数学公式.md"
-    },
-    {
-      "basename": "Markdown语法演示",
-      "path": "Markdown语法演示.md"
-    },
-    {
-      "basename": "Untitled",
-      "path": "Untitled.md"
-    },
-    {
-      "basename": "mindmap",
-      "path": "知识树/mindmap.md"
+      "basename": "181 东方哲学",
+      "path": "知识树/1 - 哲学与心理学/180 古代、中世纪、和东方哲学/181 东方哲学/181 东方哲学.md"
     },
     {
       "basename": "Decorator",
       "path": "//Decorator.md"
     },
     {
-      "basename": "SQL query performance tuning with IO statistics and execution plans",
-      "path": "知识树/0 - 计算机科学、资讯与总类/SQL query performance tuning with IO statistics and execution plans.md"
-    },
-    {
-      "basename": "tag2",
-      "path": "知识树/0 - 计算机科学、资讯与总类/tag2.md"
-    },
-    {
       "basename": "2022-10-15-21-57",
       "path": "Idea/2022-10-15-21-57.md"
-    },
-    {
-      "basename": "杜威十进图书分类法",
-      "path": "知识树/杜威十进图书分类法.md"
     }
   ],
   "omittedPaths": [
-    "^assets/",
-    ""
+    "^_assets/",
+    "^_scripts/",
+    "^_templates/"
   ],
   "maxLength": null
 }

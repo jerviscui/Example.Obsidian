@@ -9,5 +9,10 @@
   "monospaceFontFamily": "Inconsolata",
   "baseFontSize": 17,
   "cssTheme": "",
-  "showViewHeader": true
+  "showViewHeader": true,
+  "enabledCssSnippets": [
+    "file-explorer-scrolling1",
+    "file-explorer-scrolling",
+    "file-explorer-note-count"
+  ]
 }

@@ -176,7 +176,9 @@
   "lintOnSave": true,
   "displayChanged": true,
   "foldersToIgnore": [
-    "Template"
+    "_assets",
+    "_scripts",
+    "_templates"
   ],
   "linterLocale": "system-default",
   "logLevel": 4,

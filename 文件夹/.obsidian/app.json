@@ -2,7 +2,7 @@
   "livePreview": false,
   "showLineNumber": true,
   "useTab": false,
-  "attachmentFolderPath": "assets",
+  "attachmentFolderPath": "_assets",
   "alwaysUpdateLinks": true,
   "newFileLocation": "current",
   "useMarkdownLinks": true,
@@ -12,5 +12,10 @@
   "promptDelete": false,
   "showInlineTitle": false,
   "readableLineLength": true,
-  "newLinkFormat": "absolute"
+  "newLinkFormat": "absolute",
+  "userIgnoreFilters": [
+    "_assets/",
+    "_templates/",
+    "_scripts/"
+  ]
 }
