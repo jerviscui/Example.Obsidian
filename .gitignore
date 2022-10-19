@@ -3,3 +3,6 @@
 
 # only upload
 !.obsidian/
+
+# tmp ignor all folders
+*/*
