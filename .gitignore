@@ -1,11 +1,7 @@
-# ignors
-文件夹/*
+# exclude everything except directory 文件夹/.obsidian
+/*
+!/文件夹
+/文件夹/*
+!/文件夹/.obsidian
 
-# only upload
-!.obsidian/
-!.gitignore
 !README.md
-
-# tmp ignor all folders
-*/*
-*.*
