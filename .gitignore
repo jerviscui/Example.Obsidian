@@ -3,6 +3,9 @@
 
 # only upload
 !.obsidian/
+!.gitignore
+!README.md
 
 # tmp ignor all folders
 */*
+*.*
