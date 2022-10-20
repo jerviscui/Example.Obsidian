@@ -112,14 +112,7 @@
       "key": "C"
     }
   ],
-  "obsidian-copy-block-link:copy-link-to-block": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "C"
-    }
-  ],
+  "obsidian-copy-block-link:copy-link-to-block": [],
   "obsidian-markdown-formatting-assistant-plugin:open-command-selector": [],
   "obsidian-footnotes:insert-footnote": [
     {

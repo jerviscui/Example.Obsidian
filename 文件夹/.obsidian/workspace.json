@@ -16,6 +16,41 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "6b51dca5d73df5dd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "知识树/1 - 哲学与心理学/180 古代、中世纪、和东方哲学/181 东方哲学/论语/test2.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            },
+            "group": "85aa17d6e7874f99"
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "6c7893eac372e45f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f534323e8249ff16",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "知识树/1 - 哲学与心理学/180 古代、中世纪、和东方哲学/181 东方哲学/论语/test2.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            },
+            "group": "85aa17d6e7874f99"
           }
         ]
       }
@@ -101,7 +136,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "知识树/1 - 哲学与心理学/180 古代、中世纪、和东方哲学/181 东方哲学/论语/test2.md"
+              }
             }
           },
           {
@@ -110,6 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "知识树/1 - 哲学与心理学/180 古代、中世纪、和东方哲学/181 东方哲学/论语/test2.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -126,13 +164,22 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "知识树/1 - 哲学与心理学/180 古代、中世纪、和东方哲学/181 东方哲学/论语/test2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
             }
+          },
+          {
+            "id": "f2a201f63fbb1cdf",
+            "type": "leaf",
+            "state": {
+              "type": "side-panel-control-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -141,7 +188,7 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "eb9f147e1c618bf4",
+  "active": "f534323e8249ff16",
   "lastOpenFiles": [
     "知识树/1 - 哲学与心理学/180 古代、中世纪、和东方哲学/181 东方哲学/论语/test2.md",
     "_assets/5a593abc196fc093e4f72ee38d90ba9d.png",
