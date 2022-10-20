@@ -16,41 +16,6 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "6b51dca5d73df5dd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "知识树/1 - 哲学与心理学/180 古代、中世纪、和东方哲学/181 东方哲学/论语/test2.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": true
-              }
-            },
-            "group": "85aa17d6e7874f99"
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "6c7893eac372e45f",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "f534323e8249ff16",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "知识树/1 - 哲学与心理学/180 古代、中世纪、和东方哲学/181 东方哲学/论语/test2.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": true
-              }
-            },
-            "group": "85aa17d6e7874f99"
           }
         ]
       }
@@ -136,9 +101,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "知识树/1 - 哲学与心理学/180 古代、中世纪、和东方哲学/181 东方哲学/论语/test2.md"
-              }
+              "state": {}
             }
           },
           {
@@ -147,7 +110,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "知识树/1 - 哲学与心理学/180 古代、中世纪、和东方哲学/181 东方哲学/论语/test2.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -164,7 +126,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "知识树/1 - 哲学与心理学/180 古代、中世纪、和东方哲学/181 东方哲学/论语/test2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -188,17 +149,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "f534323e8249ff16",
+  "active": "eb9f147e1c618bf4",
   "lastOpenFiles": [
-    "知识树/1 - 哲学与心理学/180 古代、中世纪、和东方哲学/181 东方哲学/论语/test2.md",
-    "_assets/5a593abc196fc093e4f72ee38d90ba9d.png",
-    "知识树/1 - 哲学与心理学/180 古代、中世纪、和东方哲学/181 东方哲学/论语/test.md",
-    "知识树/1 - 哲学与心理学/180 古代、中世纪、和东方哲学/181 东方哲学/论语/未命名.md",
-    "知识树/1 - 哲学与心理学/180 古代、中世纪、和东方哲学/181 东方哲学/181 东方哲学.md",
-    "Website/f1/test1.md",
-    "Website/f1/f2/test2.md",
-    "Website/f1/f2/test.md",
-    "知识树/0 - 计算机科学、资讯与总类/tag2.md",
-    "知识树/0 - 计算机科学、资讯与总类/SQL query performance tuning with IO statistics and execution plans.md"
+    "Website/Divi/使用 Divi.md",
+    "Website/Divi/Divi Theme Builder.md",
+    "Website/Divi/Divi 子主题.md",
+    "Website/Divi/Divi 推荐插件.md",
+    "HuiYing/竞品.md",
+    "Website/Divi/Divi SEO 设置.md",
+    "Website/Divi/Divi Builder 使用技巧.md",
+    "Website/Genesis/Genesis.md",
+    "NerveBinary/ERP/Design.md",
+    "NerveBinary/ERP/竞品.md"
   ]
 }
