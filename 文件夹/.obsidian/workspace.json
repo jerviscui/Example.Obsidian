@@ -139,27 +139,27 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 318.5
+    "width": 318.5,
+    "collapsed": true
   },
   "ribbon": {
     "mostRecentAction": ""
   },
   "active": "eb9f147e1c618bf4",
   "lastOpenFiles": [
+    "Website/WordPress/WordPress 安装.md",
     "Website/Divi/使用 Divi.md",
-    "Website/Divi/Divi Theme Builder.md",
-    "Website/Divi/Divi 子主题.md",
     "Website/Divi/Divi 推荐插件.md",
-    "HuiYing/竞品.md",
-    "Website/Divi/Divi SEO 设置.md",
-    "Website/Divi/Divi Builder 使用技巧.md",
-    "Website/Genesis/Genesis.md",
-    "NerveBinary/ERP/Design.md",
-    "NerveBinary/ERP/竞品.md"
+    "Website/Divi/Divi Sitemap Page.md",
+    "Website/Divi/Divi 子主题.md",
+    "Website/WordPress/WordPress Nginx 配置优化.md",
+    "Website/WordPress/浏览器市场占有量.md",
+    "Website/WordPress/WordPress 对象缓存.md",
+    "Website/WordPress/WordPress 优化.md",
+    "Website/WordPress/WordPress 函数.md"
   ]
 }

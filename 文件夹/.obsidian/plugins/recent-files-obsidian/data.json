@@ -1,80 +1,92 @@
 {
   "recentFiles": [
     {
+      "basename": "WordPress 安装",
+      "path": "Website/WordPress/WordPress 安装.md"
+    },
+    {
       "basename": "使用 Divi",
       "path": "Website/Divi/使用 Divi.md"
-    },
-    {
-      "basename": "Divi Theme Builder",
-      "path": "Website/Divi/Divi Theme Builder.md"
-    },
-    {
-      "basename": "Divi 子主题",
-      "path": "Website/Divi/Divi 子主题.md"
     },
     {
       "basename": "Divi 推荐插件",
       "path": "Website/Divi/Divi 推荐插件.md"
     },
     {
-      "basename": "竞品",
-      "path": "HuiYing/竞品.md"
+      "basename": "Divi Sitemap Page",
+      "path": "Website/Divi/Divi Sitemap Page.md"
     },
     {
-      "basename": "Divi SEO 设置",
-      "path": "Website/Divi/Divi SEO 设置.md"
+      "basename": "Divi 子主题",
+      "path": "Website/Divi/Divi 子主题.md"
+    },
+    {
+      "basename": "WordPress Nginx 配置优化",
+      "path": "Website/WordPress/WordPress Nginx 配置优化.md"
+    },
+    {
+      "basename": "浏览器市场占有量",
+      "path": "Website/WordPress/浏览器市场占有量.md"
+    },
+    {
+      "basename": "WordPress 对象缓存",
+      "path": "Website/WordPress/WordPress 对象缓存.md"
+    },
+    {
+      "basename": "WordPress 优化",
+      "path": "Website/WordPress/WordPress 优化.md"
+    },
+    {
+      "basename": "WordPress 函数",
+      "path": "Website/WordPress/WordPress 函数.md"
+    },
+    {
+      "basename": "WordPress 图片 SEO",
+      "path": "Website/WordPress/WordPress 图片 SEO.md"
+    },
+    {
+      "basename": "WordPress 学习",
+      "path": "Website/WordPress/WordPress 学习.md"
+    },
+    {
+      "basename": "WordPress 子主题",
+      "path": "Website/WordPress/WordPress 子主题.md"
+    },
+    {
+      "basename": "WordPress 插件",
+      "path": "Website/WordPress/WordPress 插件.md"
+    },
+    {
+      "basename": "WordPress 缓存优化进阶",
+      "path": "Website/WordPress/WordPress 缓存优化进阶.md"
+    },
+    {
+      "basename": "WordPress 自定义文章类型",
+      "path": "Website/WordPress/WordPress 自定义文章类型.md"
+    },
+    {
+      "basename": "WordPress 调试",
+      "path": "Website/WordPress/WordPress 调试.md"
+    },
+    {
+      "basename": "搭建 WordPress 源镜像",
+      "path": "Website/WordPress/搭建 WordPress 源镜像.md"
     },
     {
       "basename": "Divi Builder 使用技巧",
       "path": "Website/Divi/Divi Builder 使用技巧.md"
     },
     {
+      "basename": "Divi SEO 设置",
+      "path": "Website/Divi/Divi SEO 设置.md"
+    },
+    {
+      "basename": "Divi Theme Builder",
+      "path": "Website/Divi/Divi Theme Builder.md"
+    },
+    {
       "basename": "Genesis",
       "path": "Website/Genesis/Genesis.md"
-    },
-    {
-      "basename": "Design",
-      "path": "NerveBinary/ERP/Design.md"
-    },
-    {
-      "basename": "竞品",
-      "path": "NerveBinary/ERP/竞品.md"
-    },
-    {
-      "basename": "行业名词",
-      "path": "HuiYing/行业名词.md"
-    },
-    {
-      "basename": "资产",
-      "path": "HuiYing/资产.md"
-    },
-    {
-      "basename": "实事求是",
-      "path": "HuiYing/管理/实事求是.md"
-    },
-    {
-      "basename": "需求整理",
-      "path": "NerveBinary/ERP/需求整理.md"
-    },
-    {
-      "basename": "设计尺寸",
-      "path": "NerveBinary/ERP/设计尺寸.md"
-    },
-    {
-      "basename": "日历参考",
-      "path": "NerveBinary/ERP/日历参考.md"
-    },
-    {
-      "basename": "技术选型",
-      "path": "NerveBinary/ERP/技术选型.md"
-    },
-    {
-      "basename": "引用项目",
-      "path": "NerveBinary/ERP/引用项目.md"
-    },
-    {
-      "basename": "MES",
-      "path": "NerveBinary/MES/MES.md"
     },
     {
       "basename": "提供有价值的服务",
@@ -85,8 +97,52 @@
       "path": "HuiYing/生产/安全生产、精益求精.md"
     },
     {
-      "basename": "未命名",
-      "path": "知识树/1 - 哲学与心理学/180 古代、中世纪、和东方哲学/181 东方哲学/论语/未命名.md"
+      "basename": "实事求是",
+      "path": "HuiYing/管理/实事求是.md"
+    },
+    {
+      "basename": "行业名词",
+      "path": "HuiYing/行业名词.md"
+    },
+    {
+      "basename": "资产",
+      "path": "HuiYing/资产.md"
+    },
+    {
+      "basename": "竞品",
+      "path": "HuiYing/竞品.md"
+    },
+    {
+      "basename": "竞品",
+      "path": "NerveBinary/ERP/竞品.md"
+    },
+    {
+      "basename": "Design",
+      "path": "NerveBinary/ERP/Design.md"
+    },
+    {
+      "basename": "MES",
+      "path": "NerveBinary/MES/MES.md"
+    },
+    {
+      "basename": "引用项目",
+      "path": "NerveBinary/ERP/引用项目.md"
+    },
+    {
+      "basename": "技术选型",
+      "path": "NerveBinary/ERP/技术选型.md"
+    },
+    {
+      "basename": "日历参考",
+      "path": "NerveBinary/ERP/日历参考.md"
+    },
+    {
+      "basename": "需求整理",
+      "path": "NerveBinary/ERP/需求整理.md"
+    },
+    {
+      "basename": "设计尺寸",
+      "path": "NerveBinary/ERP/设计尺寸.md"
     },
     {
       "basename": "Decorator",
