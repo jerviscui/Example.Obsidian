@@ -131,5 +131,14 @@
     }
   ],
   "obsidian-linter:lint-file": [],
-  "obsidian-auto-link-title:enhance-url-with-title": []
+  "obsidian-auto-link-title:enhance-url-with-title": [],
+  "editing-toolbar:codeblock": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "C"
+    }
+  ]
 }
