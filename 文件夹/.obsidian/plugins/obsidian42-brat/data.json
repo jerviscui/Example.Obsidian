@@ -1,5 +1,6 @@
 {
   "pluginList": [
+    "cumany/obsidian-floating-toc-plugin",
     "marcusolsson/obsidian-projects",
     "cumany/obsidian-editing-toolbar"
   ],

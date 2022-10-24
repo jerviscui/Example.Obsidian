@@ -20,5 +20,8 @@
   "obsidian-hover-editor",
   "obsidian-projects",
   "file-explorer-note-count",
-  "templater-obsidian"
+  "templater-obsidian",
+  "floating-toc",
+  "obsidian-style-settings",
+  "obsidian-paste-image-rename"
 ]
