@@ -1,0 +1,108 @@
+/* override rainbow_file_explorer */
+/* https://github.com/Evelf/obsidian-recipes/blob/main/rainbow-file_explorer/evelf-rainbow_file_explorer-colors.css */
+
+.collapse-icon svg.svg-icon {
+  color: inherit;
+}
+
+.nav-folder-children .nav-folder-children {
+  border-width: 0 0 0 1px; /* top | right | bottom | left */
+  border-style: solid;
+}
+
+:root {
+  --rainbow-color-1: #7f6df2;
+  --rainbow-color-2: #3AB1C4;
+  --rainbow-color-3: #6DC43A;
+  --rainbow-color-4: #C4913A;
+  --rainbow-color-5: #C43A6D;
+  --rainbow-color-6: #913AC4;
+  --rainbow-color-7: #7f6df2;
+  --rainbow-color-8: #3AB1C4;
+  --rainbow-color-9: #6DC43A;
+}
+
+.nav-folder.mod-root > .nav-folder-children .nav-folder-title,
+.nav-folder.mod-root > .nav-folder-children .nav-folder-collapse-indicator {
+  color: var(--rainbow-color-1);
+}
+.nav-folder.mod-root > .nav-folder-children .nav-folder-children {
+  border-color: var(--rainbow-color-1);
+}
+
+.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-title,
+.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-collapse-indicator {
+  color: var(--rainbow-color-2);
+}
+.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children {
+  border-color: var(--rainbow-color-2);
+}
+
+.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-title,
+.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-collapse-indicator {
+  color: var(--rainbow-color-3);
+}
+.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children {
+  border-color: var(--rainbow-color-3);
+}
+
+.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-title,
+.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-collapse-indicator {
+  color: var(--rainbow-color-4);
+}
+.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children {
+  border-color: var(--rainbow-color-4);
+}
+
+.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-title,
+.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-collapse-indicator {
+  color: var(--rainbow-color-5);
+}
+.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children {
+  border-color: var(--rainbow-color-5);
+}
+
+.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-title,
+.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-collapse-indicator {
+  color: var(--rainbow-color-6);
+}
+.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children {
+  border-color: var(--rainbow-color-6);
+}
+
+.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-title .nav-folder-children,
+.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-collapse-indicator {
+  color: var(--rainbow-color-7);
+}
+.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children {
+  border-color: var(--rainbow-color-7);
+}
+
+.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-title,
+.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-collapse-indicator {
+  color: var(--rainbow-color-8);
+}
+.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children {
+  border-color: var(--rainbow-color-8);
+}
+
+.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-title,
+.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-collapse-indicator {
+  color: var(--rainbow-color-9);
+}
+.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children {
+  border-color: var(--rainbow-color-9);
+}
+
+/**
+ * Any folder deeper than that will use the first color
+ * It's possible to define deeper levels:
+ * copy-past the following definitions and add ".nav-folder-children" in front of them
+ */
+.nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-title,
+.nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-collapse-indicator {
+  color: var(--rainbow-color-1);
+}
+.nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children {
+  border-color: var(--rainbow-color-1);
+}

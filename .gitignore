@@ -3,5 +3,7 @@
 !/文件夹
 /文件夹/*
 !/文件夹/.obsidian
+!/文件夹/_scripts
+!/文件夹/_templates
 
 !README.md

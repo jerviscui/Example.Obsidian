@@ -1,0 +1,53 @@
+/* list Indent */
+.mod-cm6 .HyperMD-list-line.cm-line {
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
+    text-indent: 0 !important;
+    padding-inline-start: 0 !important;
+}
+
+/* quote Indent */
+.mod-cm6 .HyperMD-quote.cm-line {
+    text-indent: 0 !important;
+    padding-inline-start: 0 !important;
+}
+
+/* codeblock Indent */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+    padding-left: 0;
+    color: var(--code-normal);
+}
+
+/* all source mode font */
+/* .markdown-source-view {
+    font-family: var(--font-text);
+    font-size: var(--font-text-size);
+} */
+
+/* codeblock font */
+.cm-s-obsidian .HyperMD-codeblock {
+    font-family: var(--font-monospace);
+    font-size: var(--font-text-size);
+}
+
+/* inline-code font */
+.cm-s-obsidian span.cm-inline-code {
+    color: var(--code-normal);
+    font-size: var(--font-text-size);
+    background-color: var(--code-background);
+    vertical-align: baseline;
+}
+
+/* ident line position */
+.markdown-source-view.mod-cm6 .cm-indent::before {
+    content: "\200B";
+    display: block;
+    width: 0;
+    border-right: var(--indentation-guide-width) solid
+        var(--indentation-guide-color);
+    color: transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transform: none;
+}
