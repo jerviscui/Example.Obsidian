@@ -12,10 +12,11 @@
   "promptDelete": false,
   "showInlineTitle": false,
   "readableLineLength": true,
-  "newLinkFormat": "absolute",
+  "newLinkFormat": "relative",
   "userIgnoreFilters": [
     "_assets/",
     "_templates/",
     "_scripts/"
-  ]
+  ],
+  "foldIndent": false
 }

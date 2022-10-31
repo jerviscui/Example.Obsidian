@@ -6,7 +6,7 @@
   "autoFocus": true,
   "rollDown": false,
   "snapToEdges": true,
-  "initialHeight": "340px",
+  "initialHeight": "600px",
   "initialWidth": "400px",
   "showViewHeader": false,
   "imageZoom": true,

@@ -192,18 +192,6 @@
                   "state": {},
                   "pinned": true
                 }
-              },
-              {
-                "id": "98c1df1dba5653bf",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "知识树/test.md",
-                    "mode": "source",
-                    "source": true
-                  }
-                }
               }
             ]
           }
@@ -218,6 +206,16 @@
             "id": "296663bd429ca207",
             "type": "tabs",
             "children": [
+              {
+                "id": "d1fa71da8d1b7214",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
               {
                 "id": "da64c4f0398f750f",
                 "type": "leaf",
@@ -242,24 +240,6 @@
                 }
               },
               {
-                "id": "d1fa71da8d1b7214",
-                "type": "leaf",
-                "state": {
-                  "type": "file-explorer",
-                  "state": {
-                    "sortOrder": "alphabetical"
-                  }
-                }
-              },
-              {
-                "id": "5578141dad68e2b2",
-                "type": "leaf",
-                "state": {
-                  "type": "file-tree-view",
-                  "state": {}
-                }
-              },
-              {
                 "id": "5c3cf0429c3160ab",
                 "type": "leaf",
                 "state": {
@@ -278,8 +258,7 @@
                   "state": {}
                 }
               }
-            ],
-            "currentTab": 5
+            ]
           }
         ],
         "direction": "horizontal",
@@ -292,7 +271,6 @@
           {
             "id": "5d135db765797905",
             "type": "tabs",
-            "dimension": 60,
             "children": [
               {
                 "id": "a58b7af2c608a054",
@@ -328,21 +306,6 @@
                     "unlinkedCollapsed": false
                   }
                 }
-              }
-            ]
-          },
-          {
-            "id": "c3c451e2a1d78621",
-            "type": "tabs",
-            "dimension": 40,
-            "children": [
-              {
-                "id": "098adeddd8ae6718",
-                "type": "leaf",
-                "state": {
-                  "type": "advanced-tables-toolbar",
-                  "state": {}
-                }
               },
               {
                 "id": "c9584073a7baf833",
@@ -352,17 +315,13 @@
                   "state": {}
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "horizontal",
         "width": 318.5
       },
-      "ribbon": {
-        "mostRecentAction": ""
-      },
-      "active": "bb6f0cf05014e13d"
+      "active": "eb9f147e1c618bf4"
     },
     "test": {
       "main": {
@@ -384,19 +343,62 @@
                 }
               },
               {
-                "id": "0c9085aaf56294da",
+                "id": "0ff1065df7796089",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "知识树/0 - 计算机科学、资讯与总类/test2.md",
-                    "mode": "preview",
+                    "file": "test 1.md",
+                    "mode": "source",
+                    "backlinks": true,
                     "source": true
                   }
+                },
+                "group": "195fa84f65aee74f"
+              },
+              {
+                "id": "cf392e0655e24939",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Obsidian/Obsidian.md",
+                    "mode": "preview",
+                    "backlinks": true,
+                    "source": true
+                  }
+                }
+              },
+              {
+                "id": "06a4a816a35962a1",
+                "type": "leaf",
+                "state": {
+                  "type": "style-settings",
+                  "state": {}
                 }
               }
             ],
             "currentTab": 1
+          },
+          {
+            "id": "1d72462b6abec1c9",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "78035f5875510c15",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "test 1.md",
+                    "mode": "preview",
+                    "backlinks": true,
+                    "source": true
+                  }
+                },
+                "group": "195fa84f65aee74f"
+              }
+            ]
           }
         ],
         "direction": "vertical"
@@ -409,6 +411,16 @@
             "id": "296663bd429ca207",
             "type": "tabs",
             "children": [
+              {
+                "id": "d1fa71da8d1b7214",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
               {
                 "id": "da64c4f0398f750f",
                 "type": "leaf",
@@ -433,24 +445,6 @@
                 }
               },
               {
-                "id": "d1fa71da8d1b7214",
-                "type": "leaf",
-                "state": {
-                  "type": "file-explorer",
-                  "state": {
-                    "sortOrder": "alphabetical"
-                  }
-                }
-              },
-              {
-                "id": "5578141dad68e2b2",
-                "type": "leaf",
-                "state": {
-                  "type": "file-tree-view",
-                  "state": {}
-                }
-              },
-              {
                 "id": "5c3cf0429c3160ab",
                 "type": "leaf",
                 "state": {
@@ -469,8 +463,7 @@
                   "state": {}
                 }
               }
-            ],
-            "currentTab": 2
+            ]
           }
         ],
         "direction": "horizontal",
@@ -483,7 +476,6 @@
           {
             "id": "5d135db765797905",
             "type": "tabs",
-            "dimension": 60,
             "children": [
               {
                 "id": "a58b7af2c608a054",
@@ -491,7 +483,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "知识树/0 - 计算机科学、资讯与总类/test2.md"
+                    "file": "test 1.md"
                   }
                 }
               },
@@ -501,7 +493,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "知识树/0 - 计算机科学、资讯与总类/test2.md",
+                    "file": "test 1.md",
                     "collapseAll": false,
                     "extraContext": true,
                     "sortOrder": "alphabetical",
@@ -518,25 +510,10 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "知识树/0 - 计算机科学、资讯与总类/test2.md",
+                    "file": "test 1.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": false
                   }
-                }
-              }
-            ]
-          },
-          {
-            "id": "c3c451e2a1d78621",
-            "type": "tabs",
-            "dimension": 40,
-            "children": [
-              {
-                "id": "098adeddd8ae6718",
-                "type": "leaf",
-                "state": {
-                  "type": "advanced-tables-toolbar",
-                  "state": {}
                 }
               },
               {
@@ -547,18 +524,15 @@
                   "state": {}
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "horizontal",
-        "width": 318.5
+        "width": 318.5,
+        "collapsed": true
       },
-      "ribbon": {
-        "mostRecentAction": ""
-      },
-      "active": "0c9085aaf56294da"
+      "active": "0ff1065df7796089"
     }
   },
-  "active": "Home"
+  "active": "test"
 }

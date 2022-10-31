@@ -1,3 +1,4 @@
+/* override File Explorer Note Count */
 .nav-folder-title[data-count]::after {
     content: attr(data-count);
     display: inline-block;

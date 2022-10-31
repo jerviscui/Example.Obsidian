@@ -4,15 +4,28 @@
   "translucency": false,
   "nativeMenus": false,
   "baseFontSizeAction": true,
-  "textFontFamily": "微软雅黑",
+  "textFontFamily": "Inconsolata",
   "interfaceFontFamily": "微软雅黑",
   "monospaceFontFamily": "Inconsolata",
-  "baseFontSize": 17,
+  "baseFontSize": 18,
   "cssTheme": "",
   "showViewHeader": true,
   "enabledCssSnippets": [
     "file-explorer-scrolling1",
+    "file-explorer-note-count",
+    "smaller-scrollbar",
+    "evelf-rainbow_file_explorer-colors",
+    "test",
     "file-explorer-scrolling",
-    "file-explorer-note-count"
+    "editor-reading-mode",
+    "editor-source-mode",
+    "editor-reading-mode-color",
+    "editor-reading-mode-link",
+    "file-explorer-file-icon",
+    "file-explorer-color",
+    "editor-reading-mode-table",
+    "realistic-highlight",
+    "media-grid-snippet",
+    "image-cards"
   ]
 }

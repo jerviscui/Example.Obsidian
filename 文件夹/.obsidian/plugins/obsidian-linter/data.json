@@ -2,18 +2,14 @@
   "ruleConfigs": {
     "Escape YAML Special Characters": {
       "Escapes colons with a space after them (: ), single quotes ('), and double quotes (\") in YAML.": true,
-      "Default Escape Character": "\"",
-      "Try to Escape Single Line Arrays": true,
-      "Force Yaml Escape on Keys": ""
+      "Try to Escape Single Line Arrays": true
     },
     "Format Tags in YAML": {
       "Remove Hashtags from tags in the YAML frontmatter, as they make the tags there invalid.": true
     },
     "Format Yaml Array": {
       "Allows for the formatting of regular yaml arrays as either multi-line or single-line and `tags` and `aliases` are allowed to have some Obsidian specific yaml formats. Note that single string to single-line goes from a single string entry to a single-line array if more than 1 entry is present. The same is true for single string to multi-line except it becomes a multi-line array.": true,
-      "Yaml aliases section style": "single-line",
       "Format yaml aliases section": true,
-      "Yaml tags section style": "single-line",
       "Format yaml tags section": true,
       "Default yaml array section style": "single-line",
       "Format yaml array sections": true,
@@ -25,10 +21,9 @@
       "Text to insert": "aliases: \ntags: "
     },
     "Move Tags to Yaml": {
-      "Move all tags to Yaml frontmatter of the document.": false,
-      "Yaml tags section style": "single-line",
-      "Remove the hashtag from tags in content body": true,
-      "Tags to ignore": ""
+      "Move all tags to Yaml frontmatter of the document.": true,
+      "Tags to ignore": "",
+      "Body tag operation": "Nothing"
     },
     "Remove YAML Keys": {
       "Removes the YAML keys specified": false,
@@ -36,7 +31,7 @@
     },
     "YAML Key Sort": {
       "Sorts the YAML keys based on the order and priority specified. Note: may remove blank lines as well.": true,
-      "YAML Key Priority Sort Order": "aliases\ntags\nlinter-yaml-title-alias",
+      "YAML Key Priority Sort Order": "aliases\ntags\nlinter-yaml-title-alias\ndate created\ndate modified",
       "Priority Keys at Start of YAML": true,
       "YAML Sort Order for Other Keys": "Ascending Alphabetical"
     },
@@ -54,7 +49,6 @@
     },
     "YAML Title Alias": {
       "Inserts the title of the file into the YAML frontmatter's aliases section. Gets the title from the first H1 or filename.": false,
-      "YAML aliases section style": "Single-line array",
       "Preserve existing aliases section style": true,
       "Keep alias that matches the filename": false,
       "Use the YAML key `linter-yaml-title-alias` to help with filename and heading changes": true
@@ -116,7 +110,7 @@
       "Style": "asterisk"
     },
     "Two Spaces Between Lines with Content": {
-      "Makes sure that two spaces are added to the ends of lines with content continued on the next line for paragraphs, blockquotes, and list items": false
+      "Makes sure that two spaces are added to the ends of lines with content continued on the next line for paragraphs, blockquotes, and list items": true
     },
     "Unordered List Style": {
       "Makes sure that unordered lists follow the style specified.": true,
@@ -171,6 +165,40 @@
     "Trailing spaces": {
       "Removes extra spaces after every line.": true,
       "Two Space Linebreak": false
+    },
+    "Force YAML Escape": {
+      "Escapes the values for the specified YAML keys.": false,
+      "Force YAML Escape on Keys": ""
+    },
+    "Empty Line Around Math Blocks": {
+      "Ensures that there is an empty line around math blocks using `Number of Dollar Signs to Indicate a Math Block` to determine how many dollar signs indicates a math block for single-line math.": false
+    },
+    "Move Math Block Indicators to Their Own Line": {
+      "Move all starting and ending math block indicators to their own lines using `Number of Dollar Signs to Indicate a Math Block` to determine how many dollar signs indicates a math block for single-line math.": false
+    },
+    "Add Blockquote Indentation on Paste": {
+      "Adds blockquotes to all but the first line, when the cursor is in a blockquote/callout line during pasting": false
+    },
+    "Prevent Double Checklist Indicator on Paste": {
+      "Removes starting checklist indicator from the text to paste if the line the cursor is on in the file has a checklist indicator": false
+    },
+    "Prevent Double List Item Indicator on Paste": {
+      "Removes starting list indicator from the text to paste if the line the cursor is on in the file has a list indicator": false
+    },
+    "Proper Ellipsis on Paste": {
+      "Replaces three consecutive dots with an ellipsis even if they have a space between them in the text to paste": false
+    },
+    "Remove Hyphens on Paste": {
+      "Removes hyphens from the text to paste": false
+    },
+    "Remove Leading or Trailing Whitespace on Paste": {
+      "Removes any leading non-tab whitespace and all trailing whitespace for the text to paste": false
+    },
+    "Remove Leftover Footnotes from Quote on Paste": {
+      "Removes any leftover footnote references for the text to paste": false
+    },
+    "Remove Multiple Blank Lines on Paste": {
+      "Condenses multiple blank lines down into one blank line for the text to paste": false
     }
   },
   "lintOnSave": true,
@@ -182,5 +210,11 @@
   ],
   "linterLocale": "system-default",
   "logLevel": 4,
-  "lintCommands": []
+  "lintCommands": [],
+  "commonStyles": {
+    "aliasArrayStyle": "single-line",
+    "tagArrayStyle": "single-line",
+    "minimumNumberOfDollarSignsToBeAMathBlock": 2,
+    "escapeCharacter": "\""
+  }
 }
