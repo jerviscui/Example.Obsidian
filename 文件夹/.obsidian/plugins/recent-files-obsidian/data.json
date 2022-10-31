@@ -5,12 +5,36 @@
       "path": "test 1.md"
     },
     {
-      "basename": "未命名",
-      "path": "未命名.md"
+      "basename": "生产力工具",
+      "path": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/生产力工具.md"
+    },
+    {
+      "basename": "编程工具",
+      "path": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/编程工具.md"
+    },
+    {
+      "basename": "Overview",
+      "path": "Overview.md"
     },
     {
       "basename": "test",
       "path": "test.md"
+    },
+    {
+      "basename": "Dataview",
+      "path": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Obsidian/Dataview.md"
+    },
+    {
+      "basename": "Control Characters",
+      "path": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Obsidian/Control Characters.md"
+    },
+    {
+      "basename": "未命名",
+      "path": "未命名.md"
+    },
+    {
+      "basename": "Projects",
+      "path": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Obsidian/Projects.md"
     },
     {
       "basename": "Obsidian",
@@ -175,30 +199,6 @@
     {
       "basename": "Benchmark PostgreSQL on all three systems",
       "path": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.7 计算机系统中的数据/数据库/Relational/PostgreSQL/Benchmark PostgreSQL on all three systems.md"
-    },
-    {
-      "basename": "Microsoft SQL Server (MSSQL) vs. PostgreSQL Comparison in Details",
-      "path": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.7 计算机系统中的数据/数据库/Relational/PostgreSQL/Microsoft SQL Server (MSSQL) vs. PostgreSQL Comparison in Details.md"
-    },
-    {
-      "basename": "PgSQL  最佳实践  EXPLAIN 使用浅析",
-      "path": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.7 计算机系统中的数据/数据库/Relational/PostgreSQL/PgSQL  最佳实践  EXPLAIN 使用浅析.md"
-    },
-    {
-      "basename": "PostgreSQL 性能调优",
-      "path": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.7 计算机系统中的数据/数据库/Relational/PostgreSQL/PostgreSQL 性能调优.md"
-    },
-    {
-      "basename": "值得推荐的60种不同功能的PostgreSQL工具",
-      "path": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.7 计算机系统中的数据/数据库/Relational/PostgreSQL/值得推荐的60种不同功能的PostgreSQL工具.md"
-    },
-    {
-      "basename": "SQL JOIN Cheat Sheet",
-      "path": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.7 计算机系统中的数据/数据库/Relational/SQL JOIN Cheat Sheet.md"
-    },
-    {
-      "basename": "Redis6 客户端缓存",
-      "path": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.7 计算机系统中的数据/数据库/KyeValue/Redis/Redis6 客户端缓存.md"
     }
   ],
   "omittedPaths": [

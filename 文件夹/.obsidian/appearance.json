@@ -7,7 +7,7 @@
   "textFontFamily": "Inconsolata",
   "interfaceFontFamily": "微软雅黑",
   "monospaceFontFamily": "Inconsolata",
-  "baseFontSize": 18,
+  "baseFontSize": 16,
   "cssTheme": "",
   "showViewHeader": true,
   "enabledCssSnippets": [

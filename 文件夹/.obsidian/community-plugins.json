@@ -20,7 +20,6 @@
   "templater-obsidian",
   "floating-toc",
   "obsidian-style-settings",
-  "lapel",
   "copy-url-in-preview",
   "markdown-table-editor",
   "obsidian-contextual-typography",
@@ -28,5 +27,6 @@
   "update-relative-links",
   "obsidian-plugin-update-tracker",
   "keyboard-analyzer",
-  "obsidian-outliner"
+  "obsidian-outliner",
+  "heatmap-calendar"
 ]
