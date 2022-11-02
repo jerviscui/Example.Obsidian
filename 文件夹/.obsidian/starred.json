@@ -14,6 +14,11 @@
       "type": "search",
       "title": "tag: future",
       "query": "tag: future"
+    },
+    {
+      "type": "search",
+      "title": "file:未命名",
+      "query": "file:未命名"
     }
   ]
 }

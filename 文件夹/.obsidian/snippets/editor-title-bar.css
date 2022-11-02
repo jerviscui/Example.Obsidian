@@ -1,0 +1,37 @@
+/* view-header */
+.view-header {
+    flex-shrink: 0;
+}
+
+/* title drag */
+.view-header .view-header-icon {
+    margin-right: 0;
+}
+
+/* title path */
+.view-header-title-parent:hover {
+    overflow: overlay;
+}
+
+/* title */
+.view-header-title {
+    overflow: visible;
+}
+
+.is-focused .workspace-leaf.mod-active .view-header-title {
+    color: var(--text-accent);
+    font-size: var(--font-ui-medium);
+}
+
+.view-header-title-container:not(.mod-at-end):after {
+    background: none;
+}
+
+/* title bar button */
+.view-action:not(:last-child) {
+    margin-right: 0;
+}
+
+.view-action.mod-pin-leaf {
+    display: flex !important;
+}

@@ -26,6 +26,9 @@
     "editor-reading-mode-table",
     "realistic-highlight",
     "media-grid-snippet",
-    "image-cards"
+    "image-cards",
+    "editor-title-bar",
+    "editor-title-bar-hover-editor",
+    "editor-source-mode-cMenu"
   ]
 }

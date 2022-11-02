@@ -1,0 +1,71 @@
+{
+  "confirmDeletion": true,
+  "showAddCommand": false,
+  "debug": false,
+  "editorMenu": [],
+  "fileMenu": [],
+  "leftRibbon": [
+    {
+      "id": "pane-relief:toggle-sliding",
+      "icon": "align-horizontal-space-between",
+      "name": "Pane Relief: Toggle sliding panes (for current window)",
+      "mode": "any"
+    },
+    {
+      "id": "keyboard-analyzer:show-shortcuts-analyzer-view",
+      "icon": "building",
+      "name": "Keyboard Analyzer: Open keyboard shortcuts view",
+      "mode": "any"
+    }
+  ],
+  "rightRibbon": [],
+  "titleBar": [],
+  "statusBar": [
+    {
+      "id": "obsidian42-brat:BRAT-allCommands",
+      "icon": "BratIcon",
+      "name": "Obsidian42 - BRAT: All Commands list",
+      "mode": "any"
+    }
+  ],
+  "pageHeader": [
+    {
+      "id": "file-explorer:reveal-active-file",
+      "icon": "lucide-navigation",
+      "name": "文件列表: 在文件列表中显示当前文件",
+      "mode": "any"
+    },
+    {
+      "id": "starred:star-current-file",
+      "icon": "lucide-star",
+      "name": "星标: 为当前文件增加/取消星标",
+      "mode": "any"
+    }
+  ],
+  "macros": [],
+  "explorer": [],
+  "hide": {
+    "statusbar": [
+      "keyboard-analyzer"
+    ],
+    "leftRibbon": [
+      "Open Markdown Formatting Assistant",
+      "Open Markdown Table Editor",
+      "BRAT",
+      "管理工作区布局",
+      "打开命令面板",
+      "创建时间戳笔记"
+    ]
+  },
+  "spacing": "8",
+  "advancedToolbar": {
+    "rowHeight": 48,
+    "rowCount": 2,
+    "spacing": 0,
+    "buttonWidth": 48,
+    "columnLayout": false,
+    "mappedIcons": [],
+    "tooltips": false,
+    "heightOffset": 0
+  }
+}

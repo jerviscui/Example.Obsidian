@@ -1,7 +1,6 @@
 [
   "file-explorer",
   "global-search",
-  "switcher",
   "graph",
   "backlink",
   "outgoing-link",
@@ -12,7 +11,6 @@
   "command-palette",
   "starred",
   "zk-prefixer",
-  "outline",
   "word-count",
   "workspaces",
   "file-recovery"

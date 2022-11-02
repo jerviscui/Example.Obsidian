@@ -32,22 +32,8 @@
     }
   ],
   "editor:insert-link": [],
-  "workspace:next-tab": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "PageDown"
-    }
-  ],
-  "workspace:previous-tab": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "PageUp"
-    }
-  ],
+  "workspace:next-tab": [],
+  "workspace:previous-tab": [],
   "file-explorer:reveal-active-file": [
     {
       "modifiers": [
@@ -124,12 +110,6 @@
     }
   ],
   "editing-toolbar:header0-text": [],
-  "editing-toolbar:fullscreen-focus": [
-    {
-      "modifiers": [],
-      "key": "F11"
-    }
-  ],
   "obsidian-linter:lint-file": [],
   "obsidian-auto-link-title:enhance-url-with-title": [],
   "editing-toolbar:codeblock": [
@@ -146,8 +126,8 @@
   "obsidian-outliner:move-list-item-up": [
     {
       "modifiers": [
-        "Alt",
-        "Mod"
+        "Mod",
+        "Alt"
       ],
       "key": "ArrowUp"
     }
@@ -155,10 +135,76 @@
   "obsidian-outliner:move-list-item-down": [
     {
       "modifiers": [
-        "Alt",
-        "Mod"
+        "Mod",
+        "Alt"
       ],
       "key": "ArrowDown"
     }
-  ]
+  ],
+  "command-palette:open": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "P"
+    }
+  ],
+  "switcher:open": [],
+  "obsidian-another-quick-switcher:search-command_recent-search": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "G"
+    }
+  ],
+  "obsidian-another-quick-switcher:search-command_file-name-search": [],
+  "obsidian-another-quick-switcher:header-floating-search-in-file": [],
+  "graph:open": [],
+  "obsidian-another-quick-switcher:search-command_landmark-search": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "P"
+    }
+  ],
+  "obsidian-another-quick-switcher:grep": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "O"
+    }
+  ],
+  "app:toggle-left-sidebar": [
+    {
+      "modifiers": [],
+      "key": "F3"
+    }
+  ],
+  "app:toggle-right-sidebar": [
+    {
+      "modifiers": [],
+      "key": "F4"
+    }
+  ],
+  "pane-relief:maximize": [
+    {
+      "modifiers": [],
+      "key": "F11"
+    }
+  ],
+  "editing-toolbar:fullscreen-focus": [],
+  "editing-toolbar:workplace-fullscreen-focus": [],
+  "pane-relief:put-1st": [],
+  "pane-relief:put-2nd": [],
+  "pane-relief:put-3rd": [],
+  "pane-relief:put-4th": [],
+  "pane-relief:put-5th": [],
+  "pane-relief:put-6th": [],
+  "pane-relief:put-7th": [],
+  "pane-relief:put-8th": [],
+  "pane-relief:put-last": []
 }

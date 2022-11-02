@@ -13,12 +13,10 @@
   "obsidian-copy-block-link",
   "obsidian-footnotes",
   "obsidian42-brat",
-  "editing-toolbar",
   "obsidian-hover-editor",
   "obsidian-projects",
   "file-explorer-note-count",
   "templater-obsidian",
-  "floating-toc",
   "obsidian-style-settings",
   "copy-url-in-preview",
   "markdown-table-editor",
@@ -28,5 +26,11 @@
   "obsidian-plugin-update-tracker",
   "keyboard-analyzer",
   "obsidian-outliner",
-  "heatmap-calendar"
+  "heatmap-calendar",
+  "obsidian-another-quick-switcher",
+  "cmdr",
+  "editing-toolbar",
+  "obsidian-quiet-outline",
+  "pane-relief",
+  "obsidian-bartender"
 ]

@@ -1,0 +1,4 @@
+.popover.hover-editor.show-navbar .view-header {
+    height: var(--header-height);
+    overflow: unset;
+}

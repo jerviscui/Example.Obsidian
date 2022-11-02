@@ -5,8 +5,30 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
-  "colorGroups": [],
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#doing",
+      "color": {
+        "a": 1,
+        "rgb": 32768
+      }
+    },
+    {
+      "query": "tag:#todo",
+      "color": {
+        "a": 1,
+        "rgb": 255
+      }
+    },
+    {
+      "query": "tag:#future",
+      "color": {
+        "a": 1,
+        "rgb": 16753920
+      }
+    }
+  ],
   "collapse-display": true,
   "showArrow": true,
   "textFadeMultiplier": 0,
@@ -17,6 +39,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.07643695230614361,
+  "scale": 0.11660891579457268,
   "close": true
 }

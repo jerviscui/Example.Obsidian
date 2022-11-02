@@ -1,0 +1,15 @@
+#cMenuToolbarModalBar.top {
+    position: absolute !important;
+    top: 40px !important;
+    backdrop-filter: none;
+    background: white;
+}
+
+#cMenuToolbarModalBar.top
+    :is(.cMenuToolbarCommandItem, button[class^="cMenuToolbarCommandsubItem"]):not(.cMenuToolbar-Divider-Line) {
+    margin-left: 4px;
+}
+
+/* #cMenuToolbarPopoverBar {
+    display: table;
+} */

@@ -1,5 +1,5 @@
 {
-  "defaultDirection": "popover",
+  "defaultDirection": "horizontal",
   "defaultRows": 3,
   "defaultColumns": 3
 }

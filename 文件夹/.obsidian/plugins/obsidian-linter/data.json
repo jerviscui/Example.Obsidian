@@ -131,7 +131,7 @@
       "Ensures that there is an empty line around blockquotes unless they start or end a document. **Note that an empty line is either one less level of nesting for blockquotes or a newline character.**": true
     },
     "Empty Line Around Code Fences": {
-      "Ensures that there is an empty line around code fences unless they start or end a document.": false
+      "Ensures that there is an empty line around code fences unless they start or end a document.": true
     },
     "Empty Line Around Tables": {
       "Ensures that there is an empty line around github flavored tables unless they start or end a document.": true
@@ -145,10 +145,10 @@
       "Ensures that there is exactly one line break at the end of a document.": true
     },
     "Paragraph blank lines": {
-      "All paragraphs should have exactly one blank line both before and after.": false
+      "All paragraphs should have exactly one blank line both before and after.": true
     },
     "Remove Empty Lines Between List Markers and Checklists": {
-      "There should not be any empty lines between list markers and checklists.": false
+      "There should not be any empty lines between list markers and checklists.": true
     },
     "Remove link spacing": {
       "Removes spacing around link text.": true
@@ -171,10 +171,10 @@
       "Force YAML Escape on Keys": ""
     },
     "Empty Line Around Math Blocks": {
-      "Ensures that there is an empty line around math blocks using `Number of Dollar Signs to Indicate a Math Block` to determine how many dollar signs indicates a math block for single-line math.": false
+      "Ensures that there is an empty line around math blocks using `Number of Dollar Signs to Indicate a Math Block` to determine how many dollar signs indicates a math block for single-line math.": true
     },
     "Move Math Block Indicators to Their Own Line": {
-      "Move all starting and ending math block indicators to their own lines using `Number of Dollar Signs to Indicate a Math Block` to determine how many dollar signs indicates a math block for single-line math.": false
+      "Move all starting and ending math block indicators to their own lines using `Number of Dollar Signs to Indicate a Math Block` to determine how many dollar signs indicates a math block for single-line math.": true
     },
     "Add Blockquote Indentation on Paste": {
       "Adds blockquotes to all but the first line, when the cursor is in a blockquote/callout line during pasting": false

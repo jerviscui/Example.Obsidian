@@ -2,6 +2,11 @@
   "main": {
     "id": "8ccd0ea24150a1aa",
     "type": "split",
+    "ophidian:layout-settings": {
+      "pane-relief:sliding-panes": {
+        "active": false
+      }
+    },
     "children": [
       {
         "id": "ce00d6f451f4a5b8",
@@ -10,6 +15,15 @@
           {
             "id": "eb9f147e1c618bf4",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "pinned": true,
             "state": {
               "type": "graph",
@@ -33,6 +47,15 @@
           {
             "id": "d1fa71da8d1b7214",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "file-explorer",
               "state": {
@@ -43,10 +66,19 @@
           {
             "id": "da64c4f0398f750f",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "consistent",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -58,6 +90,15 @@
           {
             "id": "2e2972cb9fda5a37",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "starred",
               "state": {}
@@ -66,6 +107,15 @@
           {
             "id": "5c3cf0429c3160ab",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "tag",
               "state": {
@@ -77,6 +127,15 @@
           {
             "id": "bb6f0cf05014e13d",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "recent-files",
               "state": {}
@@ -86,7 +145,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 291.5
+    "width": 242
   },
   "right": {
     "id": "b13a7484ffacd073",
@@ -97,16 +156,34 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a58b7af2c608a054",
+            "id": "709b333665cb62db",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
-              "type": "outline",
+              "type": "quiet-outline",
               "state": {}
             }
           },
           {
             "id": "410fddaa602f0c3d",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "backlink",
               "state": {
@@ -123,6 +200,15 @@
           {
             "id": "edcd5cfabb53a29a",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "outgoing-link",
               "state": {
@@ -134,6 +220,15 @@
           {
             "id": "c9584073a7baf833",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "side-panel-control-view",
               "state": {}
@@ -143,20 +238,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5,
-    "collapsed": true
+    "width": 290.5
   },
   "active": "eb9f147e1c618bf4",
+  "ophidian:layout-settings": {
+    "pane-relief:focus-lock": true
+  },
   "lastOpenFiles": [
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Obsidian/Obsidian.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Obsidian/Bartender.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Obsidian/Pane Relief.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Obsidian/Dynamic Highlights.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Obsidian/Callouts.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Obsidian/BRAT.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Obsidian/Auto Link Title.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Obsidian/Another Quick Switcher Plugin.md",
     "test 1.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/生产力工具.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/编程工具.md",
-    "Overview.md",
-    "test.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Obsidian/Dataview.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Obsidian/Control Characters.md",
-    "未命名.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Obsidian/Projects.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Obsidian/Obsidian.md"
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Obsidian/Attachment Name Formatting.md"
   ]
 }

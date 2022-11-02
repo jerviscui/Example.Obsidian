@@ -89,5 +89,7 @@
   "sanctum@@even-marker": "alternate-marker-even-5",
   "sanctum@@step-list": "#",
   "sanctum@@tag-decoration": "none",
-  "sanctum@@tag-decoration-hover": "none"
+  "sanctum@@tag-decoration-hover": "none",
+  "pane-relief@@pane-relief-pane-numbering": false,
+  "pane-relief@@pane-relief-disable-counts": true
 }
