@@ -27,6 +27,20 @@
         "a": 1,
         "rgb": 16753920
       }
+    },
+    {
+      "query": "tag:#moc",
+      "color": {
+        "a": 1,
+        "rgb": 16711680
+      }
+    },
+    {
+      "query": "tag:#missing",
+      "color": {
+        "a": 1,
+        "rgb": 16771584
+      }
     }
   ],
   "collapse-display": true,
@@ -39,6 +53,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.11660891579457268,
+  "scale": 0.19357346817856547,
   "close": true
 }

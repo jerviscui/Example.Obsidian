@@ -1,7 +1,6 @@
 [
   "obsidian-linter",
   "obsidian-auto-link-title",
-  "recent-files-obsidian",
   "obsidian-dynamic-toc",
   "obsidian-enhancing-mindmap",
   "oz-clear-unused-images",
@@ -9,7 +8,6 @@
   "dataview",
   "obsidian-editor-shortcuts",
   "obsidian-markdown-formatting-assistant-plugin",
-  "obsidian-latex-suite",
   "obsidian-copy-block-link",
   "obsidian-footnotes",
   "obsidian42-brat",
@@ -32,5 +30,7 @@
   "editing-toolbar",
   "obsidian-quiet-outline",
   "pane-relief",
-  "obsidian-bartender"
+  "obsidian-bartender",
+  "chronology",
+  "obsidian-latex-suite"
 ]

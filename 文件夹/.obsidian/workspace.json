@@ -9,11 +9,11 @@
     },
     "children": [
       {
-        "id": "ce00d6f451f4a5b8",
+        "id": "a56302873d96eacc",
         "type": "tabs",
         "children": [
           {
-            "id": "eb9f147e1c618bf4",
+            "id": "de5c1ded03df7d9d",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -30,8 +30,65 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "e312009166045095",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 1,
+              "stack": [
+                {
+                  "title": "2022-11-03",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Journals/2022-11-03.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":8,\"ch\":0},\"to\":{\"line\":8,\"ch\":0}}}"
+                },
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "backdrop-filter",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.2 客户端/Web/CSS3/backdrop-filter.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":6,\"ch\":0},\"to\":{\"line\":6,\"ch\":0}},\"scroll\":0}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/Parallel Computing/线程池.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "6b17f6d2f2450c83",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/Threading/dotNet 线程池内幕.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -78,7 +135,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "consistent",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -125,7 +182,7 @@
             }
           },
           {
-            "id": "bb6f0cf05014e13d",
+            "id": "3a1bd3103f964ed4",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -137,7 +194,7 @@
               ]
             },
             "state": {
-              "type": "recent-files",
+              "type": "chronology-calendar-view",
               "state": {}
             }
           }
@@ -145,7 +202,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 242
+    "width": 270.5
   },
   "right": {
     "id": "b13a7484ffacd073",
@@ -156,7 +213,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "709b333665cb62db",
+            "id": "c0622cd4ac22fb74",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -187,6 +244,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/Threading/dotNet 线程池内幕.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -212,6 +270,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/Threading/dotNet 线程池内幕.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -234,26 +293,27 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 290.5
+    "width": 310.5
   },
-  "active": "eb9f147e1c618bf4",
+  "active": "6b17f6d2f2450c83",
   "ophidian:layout-settings": {
     "pane-relief:focus-lock": true
   },
   "lastOpenFiles": [
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Obsidian/Obsidian.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Obsidian/Bartender.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Obsidian/Pane Relief.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Obsidian/Dynamic Highlights.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Obsidian/Callouts.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Obsidian/BRAT.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Obsidian/Auto Link Title.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Obsidian/Another Quick Switcher Plugin.md",
-    "test 1.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Obsidian/Attachment Name Formatting.md"
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/Parallel Computing/线程池.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/Threading/dotNet 线程池内幕.md",
+    "Journals/2022-11-03.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Visual Studio/IntelliTrace.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Visual Studio/IntelliSense 本地化.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/3 Algorithm/爬山算法.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/Threading/线程池.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/Threading/dotNET 线程池饥饿以及排队 - Criteo Engineering.md",
+    "test中文一二三四五六七/level2/tmpx1234中文一二三四五六七八九十1111111.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.2 客户端/Web/CSS3/CSS 特效.md"
   ]
 }

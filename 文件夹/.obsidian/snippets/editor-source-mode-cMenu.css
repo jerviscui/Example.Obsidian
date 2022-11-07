@@ -3,6 +3,7 @@
     top: 40px !important;
     backdrop-filter: none;
     background: white;
+    width: 100%;
 }
 
 #cMenuToolbarModalBar.top

@@ -48,7 +48,7 @@
       "Title Key": "title"
     },
     "YAML Title Alias": {
-      "Inserts the title of the file into the YAML frontmatter's aliases section. Gets the title from the first H1 or filename.": false,
+      "Inserts the title of the file into the YAML frontmatter's aliases section. Gets the title from the first H1 or filename.": true,
       "Preserve existing aliases section style": true,
       "Keep alias that matches the filename": false,
       "Use the YAML key `linter-yaml-title-alias` to help with filename and heading changes": true
@@ -154,7 +154,7 @@
       "Removes spacing around link text.": true
     },
     "Remove Space around Fullwidth Characters": {
-      "Ensures that fullwidth characters are not followed by whitespace (either single spaces or a tab). Note that this may causes issues with markdown format in some cases.": true
+      "Ensures that fullwidth characters are not followed by whitespace (either single spaces or a tab). Note that this may causes issues with markdown format in some cases.": false
     },
     "Space after list markers": {
       "There should be a single space after list markers and checkboxes.": true

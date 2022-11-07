@@ -15,7 +15,6 @@
     "file-explorer-note-count",
     "smaller-scrollbar",
     "evelf-rainbow_file_explorer-colors",
-    "test",
     "file-explorer-scrolling",
     "editor-reading-mode",
     "editor-source-mode",
@@ -27,8 +26,9 @@
     "realistic-highlight",
     "media-grid-snippet",
     "image-cards",
-    "editor-title-bar",
     "editor-title-bar-hover-editor",
-    "editor-source-mode-cMenu"
+    "editor-source-mode-cMenu",
+    "editor-title-bar",
+    "test"
   ]
 }

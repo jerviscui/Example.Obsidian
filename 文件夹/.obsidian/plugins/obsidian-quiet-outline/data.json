@@ -5,5 +5,6 @@
   "expand_level": "4",
   "hide_unsearched": false,
   "auto_expand": false,
-  "regex_search": false
+  "regex_search": false,
+  "ellipsis": true
 }

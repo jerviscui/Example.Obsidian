@@ -15,7 +15,7 @@
       "up": [
         {
           "modifiers": [
-            "Mod"
+            "Alt"
           ],
           "key": "i"
         }
@@ -23,7 +23,7 @@
       "down": [
         {
           "modifiers": [
-            "Mod"
+            "Alt"
           ],
           "key": "k"
         }
@@ -133,7 +133,7 @@
       "up": [
         {
           "modifiers": [
-            "Mod"
+            "Alt"
           ],
           "key": "i"
         }
@@ -141,7 +141,7 @@
       "down": [
         {
           "modifiers": [
-            "Mod"
+            "Alt"
           ],
           "key": "k"
         }
@@ -151,7 +151,7 @@
       "up": [
         {
           "modifiers": [
-            "Mod"
+            "Alt"
           ],
           "key": "i"
         }
@@ -159,7 +159,7 @@
       "down": [
         {
           "modifiers": [
-            "Mod"
+            "Alt"
           ],
           "key": "k"
         }
@@ -197,7 +197,7 @@
       "up": [
         {
           "modifiers": [
-            "Mod"
+            "Alt"
           ],
           "key": "i"
         }
@@ -205,7 +205,7 @@
       "down": [
         {
           "modifiers": [
-            "Mod"
+            "Alt"
           ],
           "key": "k"
         }

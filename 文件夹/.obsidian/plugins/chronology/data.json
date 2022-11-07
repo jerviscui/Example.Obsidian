@@ -1,6 +1,6 @@
 {
-  "addRibbonIcon": true,
+  "addRibbonIcon": false,
   "launchOnStartup": false,
   "use24Hours": true,
-  "avgDailyNotes": 3
+  "avgDailyNotes": 5
 }

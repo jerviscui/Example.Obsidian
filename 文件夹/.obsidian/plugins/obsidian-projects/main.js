@@ -25096,12 +25096,10 @@ function create_fragment43(ctx) {
       if (!mounted) {
         dispose = action_destroyer(useView_action = ctx[7].call(null, div, {
           view: ctx[0],
-          dataProps: {
-            data: ctx[4],
-            viewApi: ctx[1],
-            project: ctx[5],
-            readonly: ctx[6]
-          },
+          dataProps: { data: ctx[4] },
+          viewApi: ctx[1],
+          project: ctx[5],
+          readonly: ctx[6],
           config: ctx[2],
           onConfigChange: ctx[3]
         }));
@@ -25112,12 +25110,10 @@ function create_fragment43(ctx) {
       if (useView_action && is_function(useView_action.update) && dirty & 127)
         useView_action.update.call(null, {
           view: ctx2[0],
-          dataProps: {
-            data: ctx2[4],
-            viewApi: ctx2[1],
-            project: ctx2[5],
-            readonly: ctx2[6]
-          },
+          dataProps: { data: ctx2[4] },
+          viewApi: ctx2[1],
+          project: ctx2[5],
+          readonly: ctx2[6],
           config: ctx2[2],
           onConfigChange: ctx2[3]
         });
@@ -25144,18 +25140,23 @@ function instance43($$self, $$props, $$invalidate) {
   let { readonly } = $$props;
   function useView(node, props) {
     let viewId = props.view.id;
+    let projectId = props.project.id;
     let projectView = $customViews[props.view.type];
     if (projectView) {
       projectView.onOpen({
+        viewId: props.view.id,
+        project: props.project,
         contentEl: node,
         config: props.config,
-        saveConfig: props.onConfigChange
+        saveConfig: props.onConfigChange,
+        viewApi: props.viewApi,
+        readonly: props.readonly
       });
       projectView.onData(props.dataProps);
     }
     return {
       update(newprops) {
-        const dirty = newprops.view.id !== viewId;
+        const dirty = newprops.view.id !== viewId || newprops.project.id !== projectId;
         if (dirty) {
           projectView === null || projectView === void 0 ? void 0 : projectView.onClose();
           node.empty();
@@ -25163,6 +25164,10 @@ function instance43($$self, $$props, $$invalidate) {
           if (projectView) {
             projectView.onOpen({
               contentEl: node,
+              viewId: newprops.view.id,
+              project: newprops.project,
+              viewApi: newprops.viewApi,
+              readonly: newprops.readonly,
               config: newprops.config,
               saveConfig: newprops.onConfigChange
             });
@@ -25774,7 +25779,7 @@ var import_path = __toModule(require("path"));
 
 // src/components/Field/Field.svelte
 function add_css23(target) {
-  append_styles(target, "svelte-uhe0sw", "div.svelte-uhe0sw{display:flex;align-items:center;justify-content:flex-end;gap:var(--spacing-md)}");
+  append_styles(target, "svelte-gtpy0j", "div.svelte-gtpy0j{display:flex;align-items:center;justify-content:flex-end;gap:8px}");
 }
 function create_default_slot14(ctx) {
   let t3;
@@ -25817,7 +25822,7 @@ function create_fragment46(ctx) {
       t3 = space();
       if (default_slot)
         default_slot.c();
-      attr(div, "class", "svelte-uhe0sw");
+      attr(div, "class", "svelte-gtpy0j");
     },
     m(target, anchor) {
       insert(target, div, anchor);
@@ -25968,7 +25973,7 @@ var HorizontalGroup_default = HorizontalGroup;
 
 // src/components/ToolBar/ToolBar.svelte
 function add_css25(target) {
-  append_styles(target, "svelte-s13j7l", "div.svelte-s13j7l{display:flex;align-items:center;padding:var(--spacing-md);background-color:var(--background-secondary);border-bottom:1px solid var(--background-modifier-border);justify-content:space-between}");
+  append_styles(target, "svelte-xm9s5o", "div.svelte-xm9s5o{display:flex;align-items:center;padding:8px;background-color:var(--background-secondary);border-bottom:1px solid var(--background-modifier-border);justify-content:space-between}");
 }
 function create_fragment48(ctx) {
   let div;
@@ -25980,7 +25985,7 @@ function create_fragment48(ctx) {
       div = element("div");
       if (default_slot)
         default_slot.c();
-      attr(div, "class", "svelte-s13j7l");
+      attr(div, "class", "svelte-xm9s5o");
     },
     m(target, anchor) {
       insert(target, div, anchor);
@@ -28966,34 +28971,25 @@ var GalleryView2 = class extends ProjectView {
   getIcon() {
     return "layout-grid";
   }
-  onData(result) {
-    return __async(this, null, function* () {
-      var _a, _b;
-      if (!this.view && this.props) {
-        this.view = new GalleryView_default({
-          target: this.props.contentEl,
-          props: {
-            frame: (_a = result.data) != null ? _a : { fields: [], records: [] },
-            api: result.viewApi,
-            project: result.project,
-            readonly: result.readonly,
-            config: this.props.config,
-            onConfigChange: this.props.saveConfig
-          }
-        });
-      } else {
-        (_b = this.view) == null ? void 0 : _b.$set({
-          frame: result.data,
-          api: result.viewApi,
-          project: result.project,
-          readonly: result.readonly
-        });
-      }
+  onData(_0) {
+    return __async(this, arguments, function* ({ data }) {
+      var _a;
+      (_a = this.view) == null ? void 0 : _a.$set({ frame: data });
     });
   }
   onOpen(props) {
     return __async(this, null, function* () {
-      this.props = props;
+      this.view = new GalleryView_default({
+        target: props.contentEl,
+        props: {
+          frame: { fields: [], records: [] },
+          api: props.viewApi,
+          project: props.project,
+          readonly: props.readonly,
+          config: props.config,
+          onConfigChange: props.saveConfig
+        }
+      });
     });
   }
   onClose() {
@@ -31499,34 +31495,25 @@ var CalendarView2 = class extends ProjectView {
   getIcon() {
     return "calendar";
   }
-  onData(result) {
-    return __async(this, null, function* () {
-      var _a, _b;
-      if (!this.view && this.props) {
-        this.view = new CalendarView_default({
-          target: this.props.contentEl,
-          props: {
-            frame: (_a = result.data) != null ? _a : { fields: [], records: [] },
-            api: result.viewApi,
-            project: result.project,
-            readonly: result.readonly,
-            config: this.props.config,
-            onConfigChange: this.props.saveConfig
-          }
-        });
-      } else {
-        (_b = this.view) == null ? void 0 : _b.$set({
-          frame: result.data,
-          api: result.viewApi,
-          project: result.project,
-          readonly: result.readonly
-        });
-      }
+  onData(_0) {
+    return __async(this, arguments, function* ({ data }) {
+      var _a;
+      (_a = this.view) == null ? void 0 : _a.$set({ frame: data });
     });
   }
   onOpen(props) {
     return __async(this, null, function* () {
-      this.props = props;
+      this.view = new CalendarView_default({
+        target: props.contentEl,
+        props: {
+          frame: { fields: [], records: [] },
+          api: props.viewApi,
+          project: props.project,
+          readonly: props.readonly,
+          config: props.config,
+          onConfigChange: props.saveConfig
+        }
+      });
     });
   }
   onClose() {
@@ -32885,6 +32872,7 @@ function create_fragment74(ctx) {
       if (if_block1)
         if_block1.c();
       attr(div0, "class", "column-section svelte-epk499");
+      attr(div1, "data-id", ctx[0]);
       attr(div1, "class", "column svelte-epk499");
     },
     m(target, anchor) {
@@ -32942,6 +32930,9 @@ function create_fragment74(ctx) {
           if_block1 = null;
         });
         check_outros();
+      }
+      if (!current || dirty & 1) {
+        attr(div1, "data-id", ctx2[0]);
       }
     },
     i(local) {
@@ -33088,7 +33079,7 @@ function add_css46(target) {
 }
 function get_each_context12(ctx, list, i2) {
   const child_ctx = ctx.slice();
-  child_ctx[7] = list[i2];
+  child_ctx[11] = list[i2];
   return child_ctx;
 }
 function create_each_block12(key_1, ctx) {
@@ -33096,13 +33087,13 @@ function create_each_block12(key_1, ctx) {
   let boardcolumn;
   let current;
   function func7() {
-    return ctx[6](ctx[7]);
+    return ctx[8](ctx[11]);
   }
   boardcolumn = new BoardColumn_default({
     props: {
       readonly: ctx[2],
-      name: ctx[7].name,
-      records: ctx[7].records,
+      name: ctx[11].name,
+      records: ctx[11].records,
       groupByPriority: ctx[1],
       onRecordClick: ctx[3],
       onRecordAdd: func7
@@ -33127,9 +33118,9 @@ function create_each_block12(key_1, ctx) {
       if (dirty & 4)
         boardcolumn_changes.readonly = ctx[2];
       if (dirty & 1)
-        boardcolumn_changes.name = ctx[7].name;
+        boardcolumn_changes.name = ctx[11].name;
       if (dirty & 1)
-        boardcolumn_changes.records = ctx[7].records;
+        boardcolumn_changes.records = ctx[11].records;
       if (dirty & 2)
         boardcolumn_changes.groupByPriority = ctx[1];
       if (dirty & 8)
@@ -33162,7 +33153,7 @@ function create_fragment75(ctx) {
   let div_style_value;
   let current;
   let each_value = ctx[0];
-  const get_key = (ctx2) => ctx2[7].name;
+  const get_key = (ctx2) => ctx2[11].name;
   for (let i2 = 0; i2 < each_value.length; i2 += 1) {
     let child_ctx = get_each_context12(ctx, each_value, i2);
     let key = get_key(child_ctx);
@@ -33182,6 +33173,7 @@ function create_fragment75(ctx) {
       for (let i2 = 0; i2 < each_blocks.length; i2 += 1) {
         each_blocks[i2].m(div, null);
       }
+      ctx[9](div);
       current = true;
     },
     p(ctx2, [dirty]) {
@@ -33215,6 +33207,7 @@ function create_fragment75(ctx) {
       for (let i2 = 0; i2 < each_blocks.length; i2 += 1) {
         each_blocks[i2].d();
       }
+      ctx[9](null);
     }
   };
 }
@@ -33225,7 +33218,34 @@ function instance75($$self, $$props, $$invalidate) {
   let { onRecordClick } = $$props;
   let { onRecordAdd } = $$props;
   let { columnWidth } = $$props;
+  let { onSortColumns } = $$props;
+  let ref;
+  let sortable;
+  onMount(() => {
+    sortable = sortable_esm_default.create(ref, {
+      animation: 150,
+      direction: "horizontal",
+      dataIdAttr: "data-id",
+      store: {
+        get() {
+          return columns.map((column) => column.id);
+        },
+        set(sortable2) {
+          onSortColumns(sortable2.toArray());
+        }
+      }
+    });
+  });
+  onDestroy(() => {
+    sortable.destroy();
+  });
   const func7 = (column) => onRecordAdd(column.name);
+  function div_binding($$value) {
+    binding_callbacks[$$value ? "unshift" : "push"](() => {
+      ref = $$value;
+      $$invalidate(6, ref);
+    });
+  }
   $$self.$$set = ($$props2) => {
     if ("columns" in $$props2)
       $$invalidate(0, columns = $$props2.columns);
@@ -33239,6 +33259,8 @@ function instance75($$self, $$props, $$invalidate) {
       $$invalidate(4, onRecordAdd = $$props2.onRecordAdd);
     if ("columnWidth" in $$props2)
       $$invalidate(5, columnWidth = $$props2.columnWidth);
+    if ("onSortColumns" in $$props2)
+      $$invalidate(7, onSortColumns = $$props2.onSortColumns);
   };
   return [
     columns,
@@ -33247,7 +33269,10 @@ function instance75($$self, $$props, $$invalidate) {
     onRecordClick,
     onRecordAdd,
     columnWidth,
-    func7
+    ref,
+    onSortColumns,
+    func7,
+    div_binding
   ];
 }
 var Board = class extends SvelteComponent {
@@ -33259,7 +33284,8 @@ var Board = class extends SvelteComponent {
       readonly: 2,
       onRecordClick: 3,
       onRecordAdd: 4,
-      columnWidth: 5
+      columnWidth: 5,
+      onSortColumns: 7
     }, add_css46);
   }
 };
@@ -33406,14 +33432,14 @@ function create_default_slot_115(ctx) {
       const field0_changes = {};
       if (dirty & 512)
         field0_changes.name = ctx2[9].t("views.board.fields.status");
-      if (dirty & 8389389) {
+      if (dirty & 16777997) {
         field0_changes.$$scope = { dirty, ctx: ctx2 };
       }
       field0.$set(field0_changes);
       const field1_changes = {};
       if (dirty & 512)
         field1_changes.name = ctx2[9].t("views.board.fields.priority");
-      if (dirty & 8389317) {
+      if (dirty & 16777925) {
         field1_changes.$$scope = { dirty, ctx: ctx2 };
       }
       field1.$set(field1_changes);
@@ -33468,7 +33494,7 @@ function create_default_slot24(ctx) {
     },
     p(ctx2, dirty) {
       const horizontalgroup_changes = {};
-      if (dirty & 8390605) {
+      if (dirty & 16779213) {
         horizontalgroup_changes.$$scope = { dirty, ctx: ctx2 };
       }
       horizontalgroup.$set(horizontalgroup_changes);
@@ -33507,8 +33533,9 @@ function create_fragment76(ctx) {
   });
   board = new Board_default({
     props: {
+      onSortColumns: ctx[21],
       readonly: ctx[1],
-      columns: ctx[5].sort(ctx[21]).map(ctx[22]),
+      columns: ctx[5].sort(ctx[22]).map(ctx[23]),
       groupByPriority: (_a = ctx[6]) == null ? void 0 : _a.name,
       onRecordClick: ctx[11],
       onRecordAdd: ctx[12],
@@ -33533,15 +33560,17 @@ function create_fragment76(ctx) {
     p(ctx2, [dirty]) {
       var _a2, _b2, _c2;
       const toolbar_changes = {};
-      if (dirty & 8390605) {
+      if (dirty & 16779213) {
         toolbar_changes.$$scope = { dirty, ctx: ctx2 };
       }
       toolbar.$set(toolbar_changes);
       const board_changes = {};
+      if (dirty & 5)
+        board_changes.onSortColumns = ctx2[21];
       if (dirty & 2)
         board_changes.readonly = ctx2[1];
-      if (dirty & 560)
-        board_changes.columns = ctx2[5].sort(ctx2[21]).map(ctx2[22]);
+      if (dirty & 49)
+        board_changes.columns = ctx2[5].sort(ctx2[22]).map(ctx2[23]);
       if (dirty & 64)
         board_changes.groupByPriority = (_a2 = ctx2[6]) == null ? void 0 : _a2.name;
       if (dirty & 1)
@@ -33611,16 +33640,26 @@ function instance76($$self, $$props, $$invalidate) {
       onConfigChange(value);
     }).open();
   };
-  const func7 = (a2, b2) => {
-    if (a2 === $i18n.t("views.board.no-status"))
-      return -1;
-    if (b2 === $i18n.t("views.board.no-status"))
-      return 1;
-    if (a2 === $i18n.t("views.board.no-status") && a2 === b2)
-      return 0;
-    return a2.localeCompare(b2);
+  const func7 = (names) => {
+    onConfigChange(__spreadProps(__spreadValues({}, config), {
+      columns: Object.fromEntries(names.map((name, i2) => {
+        return [name, { weight: i2 }];
+      }))
+    }));
   };
-  const func_13 = (column) => {
+  const func_13 = (a2, b2) => {
+    var _a, _b, _c, _d, _e, _f;
+    const aweight = (_c = (_b = (_a = config == null ? void 0 : config.columns) == null ? void 0 : _a[a2]) == null ? void 0 : _b.weight) != null ? _c : 0;
+    const bweight = (_f = (_e = (_d = config == null ? void 0 : config.columns) == null ? void 0 : _d[b2]) == null ? void 0 : _e.weight) != null ? _f : 0;
+    if (aweight < bweight) {
+      return -1;
+    } else if (aweight > bweight) {
+      return 1;
+    } else {
+      return 0;
+    }
+  };
+  const func_2 = (column) => {
     var _a;
     return {
       id: column,
@@ -33695,7 +33734,8 @@ function instance76($$self, $$props, $$invalidate) {
     change_handler_1,
     click_handler,
     func7,
-    func_13
+    func_13,
+    func_2
   ];
 }
 var BoardView = class extends SvelteComponent {
@@ -33724,34 +33764,25 @@ var BoardView2 = class extends ProjectView {
   getIcon() {
     return "columns";
   }
-  onData(result) {
-    return __async(this, null, function* () {
-      var _a, _b;
-      if (!this.view && this.props) {
-        this.view = new BoardView_default({
-          target: this.props.contentEl,
-          props: {
-            frame: (_a = result.data) != null ? _a : { fields: [], records: [] },
-            api: result.viewApi,
-            project: result.project,
-            readonly: result.readonly,
-            config: this.props.config,
-            onConfigChange: this.props.saveConfig
-          }
-        });
-      } else {
-        (_b = this.view) == null ? void 0 : _b.$set({
-          frame: result.data,
-          api: result.viewApi,
-          project: result.project,
-          readonly: result.readonly
-        });
-      }
+  onData(_0) {
+    return __async(this, arguments, function* ({ data }) {
+      var _a;
+      (_a = this.view) == null ? void 0 : _a.$set({ frame: data });
     });
   }
   onOpen(props) {
     return __async(this, null, function* () {
-      this.props = props;
+      this.view = new BoardView_default({
+        target: props.contentEl,
+        props: {
+          frame: { fields: [], records: [] },
+          api: props.viewApi,
+          project: props.project,
+          readonly: props.readonly,
+          config: props.config,
+          onConfigChange: props.saveConfig
+        }
+      });
     });
   }
   onClose() {
@@ -39255,34 +39286,25 @@ var TableView2 = class extends ProjectView {
   getIcon() {
     return "table";
   }
-  onData(result) {
-    return __async(this, null, function* () {
-      var _a, _b;
-      if (!this.view && this.props) {
-        this.view = new TableView_default({
-          target: this.props.contentEl,
-          props: {
-            frame: (_a = result.data) != null ? _a : { fields: [], records: [] },
-            api: result.viewApi,
-            project: result.project,
-            readonly: result.readonly,
-            config: this.props.config,
-            onConfigChange: this.props.saveConfig
-          }
-        });
-      } else {
-        (_b = this.view) == null ? void 0 : _b.$set({
-          frame: result.data,
-          api: result.viewApi,
-          project: result.project,
-          readonly: result.readonly
-        });
-      }
+  onData(_0) {
+    return __async(this, arguments, function* ({ data }) {
+      var _a;
+      (_a = this.view) == null ? void 0 : _a.$set({ frame: data });
     });
   }
   onOpen(props) {
     return __async(this, null, function* () {
-      this.props = props;
+      this.view = new TableView_default({
+        target: props.contentEl,
+        props: {
+          frame: { fields: [], records: [] },
+          api: props.viewApi,
+          project: props.project,
+          readonly: props.readonly,
+          config: props.config,
+          onConfigChange: props.saveConfig
+        }
+      });
     });
   }
   onClose() {
