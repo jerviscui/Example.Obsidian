@@ -3,7 +3,20 @@
   "showAddCommand": false,
   "debug": false,
   "editorMenu": [],
-  "fileMenu": [],
+  "fileMenu": [
+    {
+      "id": "window:toggle-always-on-top",
+      "icon": "lucide-pin",
+      "name": "将当前窗口置顶",
+      "mode": "any"
+    },
+    {
+      "id": "workspace:open-in-new-window",
+      "icon": "lucide-maximize",
+      "name": "在新窗口中打开当前面板",
+      "mode": "any"
+    }
+  ],
   "leftRibbon": [
     {
       "id": "pane-relief:toggle-sliding",

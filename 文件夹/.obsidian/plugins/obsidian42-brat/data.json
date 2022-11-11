@@ -1,7 +1,7 @@
 {
   "pluginList": [
+    "benmatselby/obsidian-multi-cursor",
     "nothingislost/obsidian-bartender",
-    "cumany/obsidian-floating-toc-plugin",
     "marcusolsson/obsidian-projects",
     "cumany/obsidian-editing-toolbar"
   ],

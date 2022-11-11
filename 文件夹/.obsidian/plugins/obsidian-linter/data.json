@@ -54,11 +54,11 @@
       "Use the YAML key `linter-yaml-title-alias` to help with filename and heading changes": true
     },
     "Capitalize Headings": {
-      "Headings should be formatted with capitalization": true,
+      "Headings should be formatted with capitalization": false,
       "Style": "Title Case",
       "Ignore Cased Words": true,
-      "Ignore Words": "macOS, iOS, iPhone, iPad, JavaScript, TypeScript, AppleScript",
-      "Lowercase Words": "via, a, an, the, and, or, but, for, nor, so, yet, at, by, in, of, on, to, up, as, is, if, it, for, to, with, without, into, onto, per"
+      "Ignore Words": "macOS, iOS, iPhone, iPad, JavaScript, TypeScript, AppleScript, dotNet",
+      "Lowercase Words": "via, a, an, the, and, or, but, for, nor, so, yet, at, by, in, of, on, to, up, as, is, if, it, for, to, with, without, into, onto, per, dot"
     },
     "File Name Heading": {
       "Inserts the file name as a H1 heading if no H1 heading exists.": true

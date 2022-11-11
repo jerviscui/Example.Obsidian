@@ -53,36 +53,4 @@ https://github.com/joethei/obsidian-non-printing-chars
     
 } */
 
-.view-header-title-container {
-    /* flex-direction: row-reverse; */
-}
 
-.view-header-title-parent {
-    /* flex-direction: row-reverse; */
-    /* min-width: 5em;  */
-
-    /* scroll-padding-right: 100%;*/
-    /* max-width: 5em; */
-}
-
-.view-header-title-container:not(.mod-at-start):before {
-    /* background: none; */
-}
-
-.view-header-title {
-    /* overflow: overlay; */
-    /* flex: none; */
-    /* color: #fff; */
-    /* text-shadow: 0 0 5px #fff;
-    text-decoration: none; */
-}
-/* 
-.view-header-title-container:not(.mod-at-start) .view-header-title:before {
-    content: ' ';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30px;
-    height: 100%;
-    background: linear-gradient(to right, var(--background-primary), transparent);
-} */

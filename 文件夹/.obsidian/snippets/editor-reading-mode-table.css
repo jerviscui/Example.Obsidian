@@ -1,5 +1,6 @@
 body {
-    --table-sticky-height: 600px;
+    --table-sticky-height: auto;
+    --table-white-space: pre-wrap;
     --border-subtle-1: rgb(var(--gray-20));
     --border-strong-1: rgb(var(--gray-50));
     --gray-20: 226, 224, 220;

@@ -51,3 +51,24 @@
     bottom: 0;
     transform: none;
 }
+
+/* table */
+.cm-s-obsidian .HyperMD-table-row {
+    width: auto;
+    white-space: pre-wrap;
+    word-break: break-all;/* 英文换行 */
+    word-wrap: break-word;
+}
+
+/* text div */
+/* .markdown-source-view.mod-cm6 .cm-line {
+    width: auto;
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+} */
+
+/* selected line */
+.cm-line.cm-active {
+    background-color: var(--text-selection);
+}

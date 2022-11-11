@@ -29,6 +29,7 @@
     "editor-title-bar-hover-editor",
     "editor-source-mode-cMenu",
     "editor-title-bar",
-    "test"
+    "test",
+    "quiet-outline"
   ]
 }
