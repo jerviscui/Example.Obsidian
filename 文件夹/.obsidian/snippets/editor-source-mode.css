@@ -27,7 +27,7 @@
 /* codeblock font */
 .cm-s-obsidian .HyperMD-codeblock {
     font-family: var(--font-monospace);
-    font-size: var(--font-text-size);
+    /* font-size: var(--font-text-size); */
 }
 
 /* inline-code font */
@@ -58,6 +58,9 @@
     white-space: pre-wrap;
     word-break: break-all;/* 英文换行 */
     word-wrap: break-word;
+}
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-table-row {
+    min-width: auto;
 }
 
 /* text div */

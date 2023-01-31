@@ -1711,8 +1711,10 @@ var DEFAULT = {
   workspaceEnabled: false,
   hasRibbonIcon: true,
   openMode: Mode.ReplaceAll,
+  manualOpenMode: Mode.Retain,
   view: View.Default,
-  refreshDataview: false
+  refreshDataview: false,
+  autoCreate: true
 };
 var HomepageSettingTab = class extends import_obsidian2.PluginSettingTab {
   constructor(app, plugin) {
@@ -1734,13 +1736,13 @@ var HomepageSettingTab = class extends import_obsidian2.PluginSettingTab {
       this.containerEl.insertAdjacentHTML("afterbegin", "<div class='mod-warning' style='margin-bottom: 20px'>Daily Notes' 'Open daily note on startup' setting is not compatible with this plugin, so functionality has been disabled.</div>");
     }
     const suggestor = workspacesMode ? WorkspaceSuggest : FileSuggest;
-    const homepageDesc = workspacesMode ? "The name of the workspace to open on startup." : "The name of the note to open on startup. If it doesn't exist, a new note will be created.";
+    const homepageDesc = `The name of the ${workspacesMode ? "workspace" : "note"} to open on startup.`;
     const homepage = workspacesMode ? "workspace" : "defaultNote";
-    if (this.plugin.settings.useMoment && !this.plugin.settings.workspaceEnabled) {
-      let dateSetting = new import_obsidian2.Setting(this.containerEl).setName("Homepage format").setDesc("A valid Moment format specification determining the note to be opened on startup. If the resulting note doesn't exist, a new one will be created.").addMomentFormat((text) => text.setDefaultFormat("YYYY-MM-DD").setValue(this.plugin.settings.momentFormat).onChange((value) => {
+    if (this.plugin.settings.useMoment && !workspacesMode) {
+      let dateSetting = new import_obsidian2.Setting(this.containerEl).setName("Homepage format").setDesc("A valid Moment format specification determining the note to be opened on startup.").addMomentFormat((text) => text.setDefaultFormat("YYYY-MM-DD").setValue(this.plugin.settings.momentFormat).onChange((value) => __async(this, null, function* () {
         this.plugin.settings.momentFormat = value;
-        this.plugin.saveSettings();
-      }));
+        yield this.plugin.saveSettings();
+      })));
       dateSetting.descEl.createEl("br");
       dateSetting.descEl.createEl("a", {
         text: "Moment formatting info",
@@ -1755,7 +1757,7 @@ var HomepageSettingTab = class extends import_obsidian2.PluginSettingTab {
         }));
       });
     }
-    new import_obsidian2.Setting(this.containerEl).setName("Use date formatting").setDesc("Open the homepage using Moment date syntax. This allows opening different homepages at different times or dates.").addToggle((toggle) => toggle.setValue(this.plugin.settings.useMoment).onChange((value) => {
+    let momentSetting = new import_obsidian2.Setting(this.containerEl).setName("Use date formatting").setDesc("Open the homepage using Moment date syntax. This allows opening different homepages at different times or dates.").addToggle((toggle) => toggle.setValue(this.plugin.settings.useMoment).onChange((value) => {
       this.plugin.settings.useMoment = value;
       this.plugin.saveSettings();
       this.display();
@@ -1793,8 +1795,22 @@ var HomepageSettingTab = class extends import_obsidian2.PluginSettingTab {
         yield this.plugin.saveSettings();
       }));
     }));
+    let manualModeSetting = new import_obsidian2.Setting(this.containerEl).setName("Manual opening method").setDesc("Determine how existing notes are affected when opening with commands or the ribbon button.").addDropdown((dropdown) => __async(this, null, function* () {
+      for (let key of Object.values(Mode)) {
+        dropdown.addOption(key, key);
+      }
+      dropdown.setValue(this.settings.manualOpenMode);
+      dropdown.onChange((option) => __async(this, null, function* () {
+        this.settings.manualOpenMode = option;
+        yield this.plugin.saveSettings();
+      }));
+    }));
+    let autoCreateSetting = new import_obsidian2.Setting(this.containerEl).setName("Auto-create").setDesc("If the homepage doesn't exist, create a note with the specified name.").addToggle((toggle) => toggle.setValue(this.settings.autoCreate).onChange((value) => __async(this, null, function* () {
+      this.settings.autoCreate = value;
+      yield this.plugin.saveSettings();
+    })));
     if (workspacesMode) {
-      [viewSetting, modeSetting].forEach(disableSetting);
+      [viewSetting, modeSetting, manualModeSetting, autoCreateSetting, momentSetting].forEach(disableSetting);
     }
     if (getDataviewPlugin(this.plugin.app)) {
       let refreshSetting = new import_obsidian2.Setting(this.containerEl).setName("Refresh Dataview").setDesc("Always attempt to reload Dataview views when opening the homepage.").addToggle((toggle) => toggle.setValue(this.settings.refreshDataview).onChange((value) => __async(this, null, function* () {
@@ -1853,11 +1869,17 @@ var Homepage = class extends import_obsidian3.Plugin {
     super(...arguments);
     this.loaded = false;
     this.executing = false;
+    this.homepage = "";
     this.openHomepage = () => __async(this, null, function* () {
       var _a;
       this.executing = true;
+      this.homepage = this.getHomepageName();
+      var mode = this.loaded ? this.settings.manualOpenMode : this.settings.openMode;
       if (getDailynotesAutorun(this.app)) {
         new import_obsidian3.Notice("Daily Notes' 'Open daily note on startup' setting is not compatible  with Homepage. Disable one of the conflicting plugins.");
+        return;
+      } else if (!this.settings.autoCreate && (yield this.getHomepageNonextancy())) {
+        new import_obsidian3.Notice(`Homepage "${this.homepage}" does not exist.`);
         return;
       }
       if (this.workspacesMode()) {
@@ -1867,7 +1889,7 @@ var Homepage = class extends import_obsidian3.Plugin {
         }
         this.workspacePlugin.instance.loadWorkspace(this.settings.workspace);
         return;
-      } else if (this.settings.openMode != Mode.ReplaceAll) {
+      } else if (mode != Mode.ReplaceAll) {
         const alreadyOpened = this.getOpenedHomepage();
         if (alreadyOpened !== void 0) {
           this.app.workspace.setActiveLeaf(alreadyOpened);
@@ -1876,19 +1898,20 @@ var Homepage = class extends import_obsidian3.Plugin {
         }
       } else {
         this.app.workspace.detachLeavesOfType("markdown");
+        this.app.workspace.detachLeavesOfType("kanban");
       }
-      yield this.openHomepageLink();
-      if (this.app.workspace.activeLeaf.view.getViewType() === "empty") {
-        yield this.openHomepageLink();
+      yield this.openHomepageLink(mode);
+      if (this.app.workspace.getActiveFile() == null) {
+        yield this.openHomepageLink(mode);
       }
       yield this.configureHomepage();
     });
   }
   onload() {
     return __async(this, null, function* () {
+      let activeInitially = document.body.querySelector(".progress-bar") !== null;
       this.settings = Object.assign({}, DEFAULT, yield this.loadData());
       this.workspacePlugin = getWorkspacePlugin(this.app);
-      this.addSettingTab(new HomepageSettingTab(this.app, this));
       if (this.settings.version < 2) {
         yield upgradeSettings(this);
       }
@@ -1903,11 +1926,13 @@ var Homepage = class extends import_obsidian3.Plugin {
             return yield ntp._checkForNewTab(e);
           });
         }
-        yield this.openHomepage();
+        if (activeInitially)
+          yield this.openHomepage();
         this.loaded = true;
       }));
       (0, import_obsidian3.addIcon)("homepage", ICON);
       this.setIcon(this.settings.hasRibbonIcon);
+      this.addSettingTab(new HomepageSettingTab(this.app, this));
       this.addCommand({
         id: "open-homepage",
         name: "Open homepage",
@@ -1937,9 +1962,14 @@ var Homepage = class extends import_obsidian3.Plugin {
       (_a = document.getElementById("nv-homepage-icon")) == null ? void 0 : _a.remove();
     }
   }
-  openHomepageLink() {
+  openHomepageLink(mode) {
     return __async(this, null, function* () {
-      yield this.app.workspace.openLinkText(this.getHomepageName(), "", this.settings.openMode == Mode.Retain, { active: true });
+      yield this.app.workspace.openLinkText(this.homepage, "", mode == Mode.Retain, { active: true });
+    });
+  }
+  getHomepageNonextancy() {
+    return __async(this, null, function* () {
+      return !(yield this.app.vault.adapter.exists(`${this.homepage}.md`)) && !this.workspacesMode();
     });
   }
   getHomepageName() {
@@ -1950,16 +1980,17 @@ var Homepage = class extends import_obsidian3.Plugin {
     return homepage;
   }
   getOpenedHomepage() {
-    return this.app.workspace.getLeavesOfType("markdown").find((leaf) => trimFile(leaf.view.file) == this.getHomepageName());
+    let leaves = this.app.workspace.getLeavesOfType("markdown").concat(this.app.workspace.getLeavesOfType("kanban"));
+    return leaves.find((leaf) => trimFile(leaf.view.file) == this.homepage);
   }
   configureHomepage() {
     return __async(this, null, function* () {
       var _a;
       this.executing = false;
-      const leaf = this.app.workspace.activeLeaf;
-      if (this.settings.openMode == View.Default || !(leaf.view instanceof import_obsidian3.MarkdownView))
+      const view = this.app.workspace.getActiveViewOfType(import_obsidian3.MarkdownView);
+      if (this.settings.view == View.Default || !view)
         return;
-      const state = leaf.view.getState();
+      const state = view.getState();
       switch (this.settings.view) {
         case View.LivePreview:
         case View.Source:
@@ -1970,7 +2001,7 @@ var Homepage = class extends import_obsidian3.Plugin {
           state.mode = "preview";
           break;
       }
-      yield leaf.setViewState({ type: "markdown", state });
+      yield view.leaf.setViewState({ type: "markdown", state });
       if (this.loaded && this.settings.refreshDataview) {
         (_a = getDataviewPlugin(this.app)) == null ? void 0 : _a.index.touch();
       }

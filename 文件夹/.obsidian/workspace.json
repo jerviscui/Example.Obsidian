@@ -32,11 +32,17 @@
             }
           },
           {
-            "id": "38c4e0d3ef11aad7",
+            "id": "b4c54228b90119c5",
             "type": "leaf",
             "pane-relief:history-v1": {
-              "pos": 0,
+              "pos": 1,
               "stack": [
+                {
+                  "title": "Keyboard Shortcuts",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"keyboard-shortcuts-visualization\",\"state\":{}}",
+                  "eState": "{}"
+                },
                 {
                   "state": "{}",
                   "eState": "{}"
@@ -46,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/Threading/线程池.md",
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/架构设计/分布式系统关注点/1.2 数据一致性-分布式事务.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -54,55 +60,181 @@
             }
           },
           {
-            "id": "e503e19f97d4f14c",
+            "id": "ab989e24398e0deb",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 1,
               "stack": [
                 {
-                  "title": "CSharp 指针",
+                  "title": "EA 活动图",
                   "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/CLR/CSharp 指针.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 活动图.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{}"
+                },
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/架构设计/数据一致性解决方案.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "99d2a47c84f77242",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 2,
+              "stack": [
+                {
+                  "title": "EA 使用 - 常用功能",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 使用 - 常用功能.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":142.4755821406007}"
+                },
+                {
+                  "title": "EA 活动图",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 活动图.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{}"
+                },
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "EA 使用 - UI 功能介绍",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 使用 - UI 功能介绍.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "EA 使用 - 导航单元",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 使用 - 导航单元.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":25.018759194906657}"
+                },
+                {
+                  "title": "使用图例",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/使用图例.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":22.788326848249028}"
+                },
+                {
+                  "title": "EA 使用 - UI 功能介绍",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 使用 - UI 功能介绍.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "EA 活动图",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 活动图.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":197.01098552975802}"
+                },
+                {
+                  "title": "EA 使用 - UI 功能介绍",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 使用 - UI 功能介绍.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":97.09507876536885}"
+                },
+                {
+                  "title": "EA 使用 - 常用功能",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 使用 - 常用功能.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
                   "eState": "{\"scroll\":0}"
                 },
                 {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/Threading/dotNet 线程池内幕.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "245b6dbcebef64ab",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 1,
-              "stack": [
-                {
-                  "title": "CSharp 7",
+                  "title": "EA UML 使用",
                   "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/7/CSharp 7.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":28,\"ch\":18},\"to\":{\"line\":28,\"ch\":18}},\"scroll\":8}"
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA UML 使用.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":0}"
                 },
                 {
-                  "state": "{}",
+                  "title": "EA 活动图",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 活动图.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":207.92307692307693}"
+                },
+                {
+                  "title": "EA 使用 - UI 功能介绍",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 使用 - UI 功能介绍.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":77.76842176156987}"
+                },
+                {
+                  "title": "EA 使用 - 导航单元",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 使用 - 导航单元.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":0}"
+                },
+                {
+                  "title": "EA 使用 - UI 功能介绍",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 使用 - UI 功能介绍.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":0}"
+                },
+                {
+                  "title": "EA 使用 - 导航单元",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 使用 - 导航单元.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":15.075}"
+                },
+                {
+                  "title": "EA 使用 - 常用功能",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 使用 - 常用功能.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
                   "eState": "{}"
+                },
+                {
+                  "title": "EA 对象图",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 对象图.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "EA 插件",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 插件.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":0}"
+                },
+                {
+                  "title": "EA 活动图",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 活动图.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "EA 状态机图",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 状态机图.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "EA 使用 - 常用功能",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 使用 - 常用功能.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":15.826086956521738}"
+                },
+                {
+                  "title": "EA 活动图",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 活动图.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":189.70111183780247}"
                 }
               ]
             },
             "state": {
               "type": "markdown",
               "state": {
-                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/CLR/CSharp 指针.md",
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/使用图例.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -110,7 +242,41 @@
             }
           },
           {
-            "id": "f9e9797df3fa0b6b",
+            "id": "35ae2d69b8dd9d24",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "EA 使用 - 常用功能",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 使用 - 常用功能.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":18.19238476953908}"
+                },
+                {
+                  "title": "Element",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/Element.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":27.714893617021275}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 活动图.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "c0d95aacc2387dab",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -122,39 +288,12 @@
               ]
             },
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/IL/MSIL.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "0efdd85f62f96c38",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/7/CSharp 7.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": true
-              }
+              "type": "swar8080/AVAILABLE_PLUGIN_UPDATES",
+              "state": {}
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -201,7 +340,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "\"Workspaces \"",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -279,7 +418,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "dd96af800c6c9320",
+            "id": "bdbe0506a717f71b",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -310,7 +449,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/IL/MSIL.md",
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 活动图.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -336,7 +475,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/IL/MSIL.md",
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 活动图.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -365,20 +504,39 @@
     "direction": "horizontal",
     "width": 310.5
   },
-  "active": "f9e9797df3fa0b6b",
+  "left-ribbon": {
+    "hiddenItems": {
+      "oz-clear-unused-images:Clear Unused Images": false,
+      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
+      "obsidian42-brat:BRAT": false,
+      "templater-obsidian:Templater": false,
+      "markdown-table-editor:Open Markdown Table Editor": false,
+      "obsidian-attachment-name-formatting:Export Unused Attachments": false,
+      "graph:查看关系图谱": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "command-palette:打开命令面板": false,
+      "zk-prefixer:创建时间戳笔记": false,
+      "workspaces:管理工作区布局": false,
+      "cmdr:Pane Relief: Toggle sliding panes (for current window)": false,
+      "cmdr:Keyboard Analyzer: Open keyboard shortcuts view": false,
+      "obsidian-projects:Open projects": false
+    }
+  },
+  "active": "c0d95aacc2387dab",
   "ophidian:layout-settings": {
     "pane-relief:focus-lock": true
   },
   "lastOpenFiles": [
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/CLR/CSharp 指针.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/IL/MSIL.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/Threading/dotNet 线程池内幕.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/CLR/传值和传引用.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/架构设计/分布式 Id/CSharp 实现.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/7/CSharp 7.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/Memory/Span.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/正则表达式.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/脚本语言/JavaScript/JS中使用正则表达式.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/Memory/Memory.md"
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 使用 - 常用功能.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/Element.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/使用图例.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 活动图.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 使用 - UI 功能介绍.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 使用 - 导航单元.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/just.md",
+    "Overview.md",
+    "我的笔记/同步/Enterprise Architect.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA Workspace Layouts.md"
   ]
 }

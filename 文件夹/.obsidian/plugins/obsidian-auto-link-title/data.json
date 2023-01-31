@@ -5,5 +5,5 @@
   "linkLineRegex": {},
   "imageRegex": {},
   "shouldReplaceSelection": false,
-  "enhanceDefaultPaste": true
+  "enhanceDefaultPaste": false
 }

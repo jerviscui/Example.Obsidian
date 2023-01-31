@@ -1,4 +1,13 @@
 {
+  "patch_color": false,
+  "primary_color_light": "#18a058",
+  "primary_color_dark": "#63e2b7",
+  "rainbow_line": true,
+  "rainbow_color_1": "#FD8B1F",
+  "rainbow_color_2": "#FFDF00",
+  "rainbow_color_3": "#07EB23",
+  "rainbow_color_4": "#2D8FF0",
+  "rainbow_color_5": "#BC01E2",
   "search_support": false,
   "level_switch": true,
   "markdown": true,
@@ -6,5 +15,7 @@
   "hide_unsearched": false,
   "auto_expand": false,
   "regex_search": false,
-  "ellipsis": true
+  "ellipsis": false,
+  "label_direction": "left",
+  "drag_modify": false
 }

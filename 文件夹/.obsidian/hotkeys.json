@@ -40,7 +40,7 @@
         "Alt",
         "Shift"
       ],
-      "key": "L"
+      "key": "O"
     }
   ],
   "insert-template": [
@@ -271,6 +271,32 @@
         "Mod"
       ],
       "key": "6"
+    }
+  ],
+  "templater-obsidian:create-new-note-from-template": [],
+  "obsidian-scroll-to-top-plugin:scroll-to-bottom": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "End"
+    }
+  ],
+  "obsidian-scroll-to-top-plugin:scroll-to-top": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Home"
+    }
+  ],
+  "obsidian-auto-link-title:auto-link-title-paste": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "V"
     }
   ]
 }

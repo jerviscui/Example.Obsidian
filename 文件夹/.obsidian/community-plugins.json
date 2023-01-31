@@ -33,5 +33,7 @@
   "obsidian-bartender",
   "chronology",
   "obsidian-latex-suite",
-  "obsidian-multi-cursor"
+  "obsidian-multi-cursor",
+  "obsidian-scroll-to-top-plugin",
+  "obsidian-attachment-name-formatting"
 ]

@@ -78,6 +78,14 @@
       ],
       "open in new tab in background": [],
       "open all in new tabs": [],
+      "preview": [
+        {
+          "modifiers": [
+            "Mod"
+          ],
+          "key": ","
+        }
+      ],
       "create": [],
       "create in new tab": [
         {
@@ -127,7 +135,15 @@
           "key": "Enter"
         }
       ],
-      "insert all to editor": []
+      "insert all to editor": [],
+      "show backlinks": [
+        {
+          "modifiers": [
+            "Mod"
+          ],
+          "key": "h"
+        }
+      ]
     },
     "move": {
       "up": [
@@ -184,6 +200,14 @@
             "Shift"
           ],
           "key": "Tab"
+        }
+      ],
+      "toggle auto preview": [
+        {
+          "modifiers": [
+            "Mod"
+          ],
+          "key": ","
         }
       ]
     },
@@ -268,6 +292,24 @@
           "key": "p"
         }
       ],
+      "open in new tab in background": [
+        {
+          "modifiers": [
+            "Alt"
+          ],
+          "key": "o"
+        }
+      ],
+      "open all in new tabs": [
+        {
+          "modifiers": [
+            "Mod",
+            "Shift",
+            "Alt"
+          ],
+          "key": "o"
+        }
+      ],
       "preview": [
         {
           "modifiers": [
@@ -286,7 +328,20 @@
         "link": false,
         "header": false
       },
-      "searchTarget": "markdown",
+      "searchTarget": "file",
+      "targetExtensions": [
+        "md"
+      ],
+      "floating": false,
+      "showFrontMatter": false,
+      "excludeFrontMatterKeys": [
+        "aliases",
+        "alias",
+        "tag",
+        "tags",
+        "cssclass",
+        "publish"
+      ],
       "defaultInput": "",
       "commandPrefix": ":r ",
       "sortPriorities": [
@@ -296,7 +351,7 @@
       ],
       "includePrefixPathPatterns": [],
       "excludePrefixPathPatterns": [],
-      "expand": false
+      "expand": true
     },
     {
       "name": "File name search",
@@ -305,7 +360,20 @@
         "link": false,
         "header": false
       },
-      "searchTarget": "markdown",
+      "searchTarget": "file",
+      "targetExtensions": [
+        "md"
+      ],
+      "floating": false,
+      "showFrontMatter": false,
+      "excludeFrontMatterKeys": [
+        "aliases",
+        "alias",
+        "tag",
+        "tags",
+        "cssclass",
+        "publish"
+      ],
       "defaultInput": "",
       "commandPrefix": ":f ",
       "sortPriorities": [
@@ -316,7 +384,7 @@
       ],
       "includePrefixPathPatterns": [],
       "excludePrefixPathPatterns": [],
-      "expand": false
+      "expand": true
     },
     {
       "name": "Landmark search",
@@ -325,7 +393,20 @@
         "link": true,
         "header": true
       },
-      "searchTarget": "markdown",
+      "searchTarget": "file",
+      "targetExtensions": [
+        "md"
+      ],
+      "floating": false,
+      "showFrontMatter": false,
+      "excludeFrontMatterKeys": [
+        "aliases",
+        "alias",
+        "tag",
+        "tags",
+        "cssclass",
+        "publish"
+      ],
       "defaultInput": "",
       "commandPrefix": ":l ",
       "sortPriorities": [
@@ -339,7 +420,7 @@
       ],
       "includePrefixPathPatterns": [],
       "excludePrefixPathPatterns": [],
-      "expand": false
+      "expand": true
     },
     {
       "name": "Star search",
@@ -348,7 +429,20 @@
         "link": false,
         "header": false
       },
-      "searchTarget": "markdown",
+      "searchTarget": "file",
+      "targetExtensions": [
+        "md"
+      ],
+      "floating": false,
+      "showFrontMatter": false,
+      "excludeFrontMatterKeys": [
+        "aliases",
+        "alias",
+        "tag",
+        "tags",
+        "cssclass",
+        "publish"
+      ],
       "defaultInput": "",
       "commandPrefix": ":s ",
       "sortPriorities": [
@@ -358,7 +452,7 @@
       ],
       "includePrefixPathPatterns": [],
       "excludePrefixPathPatterns": [],
-      "expand": false
+      "expand": true
     },
     {
       "name": "Backlink search",
@@ -368,6 +462,19 @@
         "header": false
       },
       "searchTarget": "backlink",
+      "targetExtensions": [
+        "md"
+      ],
+      "floating": false,
+      "showFrontMatter": false,
+      "excludeFrontMatterKeys": [
+        "aliases",
+        "alias",
+        "tag",
+        "tags",
+        "cssclass",
+        "publish"
+      ],
       "defaultInput": "",
       "commandPrefix": ":b ",
       "sortPriorities": [
@@ -376,9 +483,10 @@
       ],
       "includePrefixPathPatterns": [],
       "excludePrefixPathPatterns": [],
-      "expand": false
+      "expand": true
     }
   ],
+  "autoPreviewInFloatingHeaderSearch": true,
   "ripgrepCommand": "rg",
   "moveFileExcludePrefixPathPatterns": [],
   "showLogAboutPerformanceInConsole": false

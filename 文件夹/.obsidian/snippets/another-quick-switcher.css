@@ -1,0 +1,4 @@
+/* override Another Quick Switcher */
+.another-quick-switcher__item__meta__front_matter[title^="date modified: "] {
+  color: seagreen;
+}

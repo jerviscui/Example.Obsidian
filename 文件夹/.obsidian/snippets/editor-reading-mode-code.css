@@ -1,0 +1,13 @@
+/* code block */
+.markdown-rendered pre code {
+    word-wrap: break-word;
+	white-space: pre;
+	overflow-x: auto;
+	font-size: var(--code-size);
+}
+
+/* code inline */
+.markdown-preview-view code {
+	-webkit-font-smoothing: auto;
+	font-size: var(--font-text-size);
+}
