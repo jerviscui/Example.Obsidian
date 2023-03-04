@@ -5,8 +5,21 @@
 !/文件夹/.obsidian
 !/文件夹/_scripts
 !/文件夹/_templates
+!/文件夹/_assets
+/文件夹/_assets/*
+
 !/文件夹/Obsidian
+!/文件夹/_assets/Pasted image 20221212005851.png
+!/文件夹/_assets/Pasted image 20221219150423.png
+!/文件夹/_assets/Pasted image 20221219151052.png
+!/文件夹/_assets/Pasted image 20221219151118.png
+!/文件夹/_assets/Pasted image 20221219151010.png
+!/文件夹/_assets/Pasted image 20230111051503.png
+!/文件夹/_assets/Pasted image 20230111052038.png
 
 !/文件夹/分体键盘
+!/文件夹/_assets/Pasted image 20230304120211.png
+!/文件夹/_assets/Pasted image 20230304120551.png
+!/文件夹/_assets/Pasted image 20230304121655.png
 
 !README.md

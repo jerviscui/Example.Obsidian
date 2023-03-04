@@ -212,6 +212,12 @@
                   "eState": "{}"
                 },
                 {
+                  "title": "QMK 烧录",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"分体键盘/QMK 烧录.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":0}"
+                },
+                {
                   "title": "键盘布局",
                   "icon": "lucide-file",
                   "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"分体键盘/键盘布局.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
@@ -222,7 +228,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "分体键盘/QMK 烧录.md",
+                "file": "分体键盘/键盘布局.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -386,7 +392,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "分体键盘/QMK 烧录.md",
+                "file": "分体键盘/键盘布局.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -412,7 +418,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "分体键盘/QMK 烧录.md",
+                "file": "分体键盘/键盘布局.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -465,9 +471,9 @@
     "pane-relief:focus-lock": true
   },
   "lastOpenFiles": [
+    "分体键盘/QMK 烧录.md",
     "分体键盘/键盘布局.md",
     "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/004 数据处理与计算机科学/004.3 外部设备/自定义键盘/QMK.md",
-    "分体键盘/QMK 烧录.md",
     "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/004 数据处理与计算机科学/004.3 外部设备/自定义键盘/Dactyl.md",
     "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/004 数据处理与计算机科学/004.3 外部设备/自定义键盘/固件.md",
     "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/004 数据处理与计算机科学/004.3 外部设备/自定义键盘/键盘布局.md",
