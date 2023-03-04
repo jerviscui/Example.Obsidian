@@ -19,5 +19,6 @@
     "_scripts/"
   ],
   "foldIndent": false,
-  "trashOption": "local"
+  "trashOption": "local",
+  "showFrontmatter": true
 }

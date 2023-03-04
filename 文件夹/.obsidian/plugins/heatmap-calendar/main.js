@@ -82,7 +82,7 @@ var HeatmapCalendar = class extends import_obsidian.Plugin {
   }
   removeHtmlElementsNotInYear(entries, year) {
     var _a;
-    const calEntriesNotInDisplayedYear = (_a = entries.filter((e) => new Date(e.date + "T00:00").getFullYear() !== year)) != null ? _a : this.settings.entries;
+    const calEntriesNotInDisplayedYear = (_a = entries.filter((e) => new Date(e.date).getFullYear() !== year)) != null ? _a : this.settings.entries;
     calEntriesNotInDisplayedYear.forEach((e) => e.content instanceof HTMLElement && e.content.remove());
   }
   clamp(input, min, max) {
@@ -133,7 +133,9 @@ var HeatmapCalendar = class extends import_obsidian.Plugin {
         const numberOfDaysInYear = this.getHowManyDaysIntoYear(lastDayOfYear);
         const todaysDayNumberLocal = this.getHowManyDaysIntoYearLocal(new Date());
         for (let day = 1; day <= numberOfDaysInYear; day++) {
-          const box = {};
+          const box = {
+            classNames: []
+          };
           if (day === todaysDayNumberLocal && showCurrentDayBorder)
             (_h = box.classNames) == null ? void 0 : _h.push("today");
           if (mappedEntries[day]) {

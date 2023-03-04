@@ -178,12 +178,6 @@
       "key": "O"
     }
   ],
-  "app:toggle-left-sidebar": [
-    {
-      "modifiers": [],
-      "key": "F3"
-    }
-  ],
   "app:toggle-right-sidebar": [
     {
       "modifiers": [],
@@ -297,6 +291,12 @@
         "Shift"
       ],
       "key": "V"
+    }
+  ],
+  "app:toggle-left-sidebar": [
+    {
+      "modifiers": [],
+      "key": "F3"
     }
   ]
 }

@@ -63,7 +63,7 @@ var __async = (__this, __arguments, generator) => {
 __export(exports, {
   default: () => CodeEditorShortcuts
 });
-var import_obsidian2 = __toModule(require("obsidian"));
+var import_obsidian3 = __toModule(require("obsidian"));
 
 // src/constants.ts
 var CASE;
@@ -74,11 +74,11 @@ var CASE;
   CASE2["NEXT"] = "next";
 })(CASE || (CASE = {}));
 var LOWERCASE_ARTICLES = ["the", "a", "an"];
-var DIRECTION;
-(function(DIRECTION2) {
-  DIRECTION2["FORWARD"] = "forward";
-  DIRECTION2["BACKWARD"] = "backward";
-})(DIRECTION || (DIRECTION = {}));
+var SEARCH_DIRECTION;
+(function(SEARCH_DIRECTION2) {
+  SEARCH_DIRECTION2["FORWARD"] = "forward";
+  SEARCH_DIRECTION2["BACKWARD"] = "backward";
+})(SEARCH_DIRECTION || (SEARCH_DIRECTION = {}));
 var MATCHING_BRACKETS = {
   "[": "]",
   "(": ")",
@@ -212,7 +212,7 @@ var findPosOfNextCharacter = ({
   let lineContent = editor.getLine(line);
   let matchFound = false;
   let matchedChar;
-  if (searchDirection === DIRECTION.BACKWARD) {
+  if (searchDirection === SEARCH_DIRECTION.BACKWARD) {
     while (line >= 0) {
       const char = lineContent.charAt(Math.max(ch - 1, 0));
       matchFound = checkCharacter(char);
@@ -448,14 +448,8 @@ var insertLineBelow = (editor, selection) => {
     anchor: { line: line + 1, ch: indentation.length + listPrefix.length }
   };
 };
-var deleteSelectedLines = (editor, selection) => {
-  const { from, to } = getSelectionBoundaries(selection);
-  if (to.line === editor.lastLine()) {
-    editor.replaceRange("", getLineEndPos(from.line - 1, editor), getLineEndPos(to.line, editor));
-  } else {
-    editor.replaceRange("", getLineStartPos(from.line), getLineStartPos(to.line + 1));
-  }
-  return { anchor: { line: from.line, ch: selection.head.ch } };
+var deleteLine = (editor) => {
+  editor.exec("deleteLine");
 };
 var deleteToStartOfLine = (editor, selection) => {
   const pos = selection.head;
@@ -634,33 +628,56 @@ var goToLineBoundary = (editor, selection, boundary) => {
     return { anchor: getLineEndPos(to.line, editor) };
   }
 };
-var navigateLine = (editor, selection, direction) => {
+var navigateLine = (editor, selection, position) => {
   const pos = selection.head;
   let line;
-  if (direction === "up") {
+  let ch;
+  if (position === "prev") {
     line = Math.max(pos.line - 1, 0);
-  } else {
-    line = Math.min(pos.line + 1, editor.lineCount() - 1);
+    const endOfLine = getLineEndPos(line, editor);
+    ch = Math.min(pos.ch, endOfLine.ch);
   }
-  const endOfLine = getLineEndPos(line, editor);
-  const ch = Math.min(pos.ch, endOfLine.ch);
+  if (position === "next") {
+    line = Math.min(pos.line + 1, editor.lineCount() - 1);
+    const endOfLine = getLineEndPos(line, editor);
+    ch = Math.min(pos.ch, endOfLine.ch);
+  }
+  if (position === "first") {
+    line = 0;
+    ch = 0;
+  }
+  if (position === "last") {
+    line = editor.lineCount() - 1;
+    const endOfLine = getLineEndPos(line, editor);
+    ch = endOfLine.ch;
+  }
   return { anchor: { line, ch } };
 };
-var moveCursor = (editor, selection, direction) => {
-  const { line, ch } = selection.head;
-  const movement = direction === DIRECTION.BACKWARD ? -1 : 1;
-  const lineLength = editor.getLine(line).length;
-  const newPos = { line, ch: ch + movement };
-  if (newPos.ch < 0 && newPos.line === 0) {
-    newPos.ch = ch;
-  } else if (newPos.ch < 0) {
-    newPos.line = Math.max(newPos.line - 1, 0);
-    newPos.ch = editor.getLine(newPos.line).length;
-  } else if (newPos.ch > lineLength) {
-    newPos.line += 1;
-    newPos.ch = 0;
+var moveCursor = (editor, direction) => {
+  switch (direction) {
+    case "up":
+      editor.exec("goUp");
+      break;
+    case "down":
+      editor.exec("goDown");
+      break;
+    case "left":
+      editor.exec("goLeft");
+      break;
+    case "right":
+      editor.exec("goRight");
+      break;
   }
-  return { anchor: newPos };
+};
+var moveWord = (editor, direction) => {
+  switch (direction) {
+    case "left":
+      editor.exec("goWordLeft");
+      break;
+    case "right":
+      editor.exec("goWordRight");
+      break;
+  }
 };
 var transformCase = (editor, selection, caseType) => {
   let { from, to } = getSelectionBoundaries(selection);
@@ -707,7 +724,7 @@ var expandSelection = ({
     editor,
     startPos: anchor,
     checkCharacter: openingCharacterCheck,
-    searchDirection: DIRECTION.BACKWARD
+    searchDirection: SEARCH_DIRECTION.BACKWARD
   });
   if (!newAnchor) {
     return selection;
@@ -716,7 +733,7 @@ var expandSelection = ({
     editor,
     startPos: head,
     checkCharacter: (char) => char === matchingCharacterMap[newAnchor.match],
-    searchDirection: DIRECTION.FORWARD
+    searchDirection: SEARCH_DIRECTION.FORWARD
   });
   if (!newHead) {
     return selection;
@@ -842,8 +859,35 @@ var SettingTab = class extends import_obsidian.PluginSettingTab {
   }
 };
 
+// src/modals.ts
+var import_obsidian2 = __toModule(require("obsidian"));
+var GoToLineModal = class extends import_obsidian2.SuggestModal {
+  constructor(app, lineCount, onSubmit) {
+    super(app);
+    this.lineCount = lineCount;
+    this.onSubmit = onSubmit;
+    const PROMPT_TEXT = `Enter a line number between 1 and ${lineCount}`;
+    this.limit = 1;
+    this.setPlaceholder(PROMPT_TEXT);
+    this.emptyStateText = PROMPT_TEXT;
+  }
+  getSuggestions(line) {
+    const lineNumber = parseInt(line);
+    if (line.length > 0 && lineNumber > 0 && lineNumber <= this.lineCount) {
+      return [line];
+    }
+    return [];
+  }
+  renderSuggestion(line, el) {
+    el.createEl("div", { text: line });
+  }
+  onChooseSuggestion(line) {
+    this.onSubmit(parseInt(line) - 1);
+  }
+};
+
 // src/main.ts
-var CodeEditorShortcuts = class extends import_obsidian2.Plugin {
+var CodeEditorShortcuts = class extends import_obsidian3.Plugin {
   onload() {
     return __async(this, null, function* () {
       yield this.loadSettings();
@@ -880,7 +924,7 @@ var CodeEditorShortcuts = class extends import_obsidian2.Plugin {
             key: "K"
           }
         ],
-        editorCallback: (editor) => withMultipleSelections(editor, deleteSelectedLines)
+        editorCallback: (editor) => deleteLine(editor)
       });
       this.addCommand({
         id: "deleteToStartOfLine",
@@ -1006,29 +1050,68 @@ var CodeEditorShortcuts = class extends import_obsidian2.Plugin {
         id: "goToNextLine",
         name: "Go to next line",
         editorCallback: (editor) => withMultipleSelections(editor, navigateLine, __spreadProps(__spreadValues({}, defaultMultipleSelectionOptions), {
-          args: "down"
+          args: "next"
         }))
       });
       this.addCommand({
         id: "goToPrevLine",
         name: "Go to previous line",
         editorCallback: (editor) => withMultipleSelections(editor, navigateLine, __spreadProps(__spreadValues({}, defaultMultipleSelectionOptions), {
-          args: "up"
+          args: "prev"
         }))
+      });
+      this.addCommand({
+        id: "goToFirstLine",
+        name: "Go to first line",
+        editorCallback: (editor) => withMultipleSelections(editor, navigateLine, __spreadProps(__spreadValues({}, defaultMultipleSelectionOptions), {
+          args: "first"
+        }))
+      });
+      this.addCommand({
+        id: "goToLastLine",
+        name: "Go to last line",
+        editorCallback: (editor) => withMultipleSelections(editor, navigateLine, __spreadProps(__spreadValues({}, defaultMultipleSelectionOptions), {
+          args: "last"
+        }))
+      });
+      this.addCommand({
+        id: "goToLineNumber",
+        name: "Go to line number",
+        editorCallback: (editor) => {
+          const lineCount = editor.lineCount();
+          const onSubmit = (line) => editor.setCursor({ line, ch: 0 });
+          new GoToLineModal(this.app, lineCount, onSubmit).open();
+        }
       });
       this.addCommand({
         id: "goToNextChar",
         name: "Move cursor forward",
-        editorCallback: (editor) => withMultipleSelections(editor, moveCursor, __spreadProps(__spreadValues({}, defaultMultipleSelectionOptions), {
-          args: DIRECTION.FORWARD
-        }))
+        editorCallback: (editor) => moveCursor(editor, "right")
       });
       this.addCommand({
         id: "goToPrevChar",
         name: "Move cursor backward",
-        editorCallback: (editor) => withMultipleSelections(editor, moveCursor, __spreadProps(__spreadValues({}, defaultMultipleSelectionOptions), {
-          args: DIRECTION.BACKWARD
-        }))
+        editorCallback: (editor) => moveCursor(editor, "left")
+      });
+      this.addCommand({
+        id: "moveCursorUp",
+        name: "Move cursor up",
+        editorCallback: (editor) => moveCursor(editor, "up")
+      });
+      this.addCommand({
+        id: "moveCursorDown",
+        name: "Move cursor down",
+        editorCallback: (editor) => moveCursor(editor, "down")
+      });
+      this.addCommand({
+        id: "goToPreviousWord",
+        name: "Go to previous word",
+        editorCallback: (editor) => moveWord(editor, "left")
+      });
+      this.addCommand({
+        id: "goToNextWord",
+        name: "Go to next word",
+        editorCallback: (editor) => moveWord(editor, "right")
       });
       this.addCommand({
         id: "transformToUppercase",

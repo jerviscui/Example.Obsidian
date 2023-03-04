@@ -1,9 +1,7 @@
 {
   "pluginList": [
     "benmatselby/obsidian-multi-cursor",
-    "nothingislost/obsidian-bartender",
-    "marcusolsson/obsidian-projects",
-    "cumany/obsidian-editing-toolbar"
+    "nothingislost/obsidian-bartender"
   ],
   "pluginSubListFrozenVersion": [],
   "themesList": [],

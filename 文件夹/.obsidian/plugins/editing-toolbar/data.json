@@ -40,7 +40,7 @@
     {
       "id": "markdown-table-editor:markdown-table-editor-open-horizontal",
       "name": "Markdown Table Editor: Open Editor (Below the Active View)",
-      "icon": "remix-LayoutGridLine"
+      "icon": "table"
     },
     {
       "id": "SubmenuCommands-mdcmder",
@@ -141,7 +141,7 @@
     {
       "id": "editing-toolbar:off-Format-Brush",
       "name": "Editing Toolbar: OFF Format Brush",
-      "icon": "remix-FormatClear"
+      "icon": "alarm-clock-off"
     },
     {
       "id": "editing-toolbar:format-eraser",
@@ -166,7 +166,7 @@
     {
       "id": "editing-toolbar:workplace-fullscreen-focus",
       "name": "workplace-Fullscreen ",
-      "icon": "remix-SplitCellsHorizontal"
+      "icon": "arrow-left-right"
     }
   ],
   "appendMethod": "workspace",
@@ -176,5 +176,16 @@
   "cMenuNumRows": 12,
   "cMenuWidth": 448,
   "cMenuFontColor": "#c00000",
-  "cMenuBackgroundColor": "rgba(240, 107, 5, 0.2)"
+  "cMenuBackgroundColor": "rgba(240, 107, 5, 0.2)",
+  "autohide": false,
+  "custom_bg1": "#FFB78B8C",
+  "custom_bg2": "#CDF4698C",
+  "custom_bg3": "#A0CCF68C",
+  "custom_bg4": "#F0A7D88C",
+  "custom_bg5": "#ADEFEF8C",
+  "custom_fc1": "#D83931",
+  "custom_fc2": "#DE7802",
+  "custom_fc3": "#245BDB",
+  "custom_fc4": "#6425D0",
+  "custom_fc5": "#646A73"
 }

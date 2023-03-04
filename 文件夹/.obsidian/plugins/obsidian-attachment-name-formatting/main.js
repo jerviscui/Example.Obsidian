@@ -2770,14 +2770,26 @@ __export(exports, {
 var import_obsidian3 = __toModule(require("obsidian"));
 
 // src/constants.ts
+var extensions = {
+  image: ["png", "jpg", "jpeg", "gif", "bmp", "svg"],
+  audio: ["mp3", "wav", "m4a", "ogg", "3gp", "flac"],
+  video: ["mp4", "ogv", "mov", "mkv"],
+  pdf: ["pdf"]
+};
 var DEFAULT_SETTINGS = {
+  enableAuto: true,
+  excludedFolders: [],
   enableImage: true,
+  imageExtensions: [true, true, true, true, true, true],
   image: "image",
   enableAudio: true,
+  audioExtensions: [true, true, true, true, true, true],
   audio: "audio",
   enableVideo: true,
+  videoExtensions: [true, true, true, true],
   video: "video",
   enablePdf: true,
+  pdfExtensions: [true],
   pdf: "pdf",
   connector: "_",
   exportCurrentRiboon: false,
@@ -2796,9 +2808,96 @@ var import_obsidian2 = __toModule(require("obsidian"));
 
 // src/modals.ts
 var import_obsidian = __toModule(require("obsidian"));
+var ExcludedFoldersModad = class extends import_obsidian.Modal {
+  constructor(app2, plugin) {
+    super(app2);
+    this.noneExcludedFolders = {};
+    this.plugin = plugin;
+    this.reloadFolders();
+  }
+  reloadFolders() {
+    this.noneExcludedFolders = {};
+    this.plugin.allFolders.map((d) => {
+      if (!this.plugin.settings.excludedFolders.includes(d)) {
+        this.noneExcludedFolders[d] = d;
+      }
+    });
+    delete this.noneExcludedFolders["/"];
+  }
+  onOpen() {
+    const { contentEl } = this;
+    contentEl.createEl("h2", {
+      text: `Excluded Folders`
+    });
+    for (const folder of this.plugin.settings.excludedFolders) {
+      let oldValue = folder;
+      new import_obsidian.Setting(contentEl).addDropdown((drop) => {
+        drop.setValue(folder).addOption(folder, folder).addOptions(this.noneExcludedFolders).onChange((value) => {
+          const ind = this.plugin.settings.excludedFolders.indexOf(oldValue);
+          this.noneExcludedFolders[oldValue] = oldValue;
+          this.plugin.settings.excludedFolders[ind] = value;
+          delete this.noneExcludedFolders[value];
+          oldValue = value;
+          this.plugin.saveSettings();
+          this.reloadFolders();
+          this.close();
+          this.open();
+        });
+      }).addExtraButton((extraButton) => {
+        extraButton.setIcon("x-circle").onClick(() => {
+          this.plugin.settings.excludedFolders.remove(folder);
+          this.noneExcludedFolders[folder] = folder;
+          this.plugin.saveSettings();
+          this.reloadFolders();
+          this.close();
+          this.open();
+        });
+      });
+    }
+    new import_obsidian.Setting(contentEl).addButton((button) => {
+      button.setButtonText("Add").onClick(() => {
+        this.plugin.settings.excludedFolders.push("Select excluded folder");
+        this.plugin.saveSettings();
+        this.close();
+        this.open();
+      });
+    });
+  }
+  onClose() {
+    const { contentEl } = this;
+    contentEl.empty();
+  }
+};
+var AttachmentExtensionModad = class extends import_obsidian.Modal {
+  constructor(app2, attachmentType, plugin) {
+    super(app2);
+    this.attachmentType = attachmentType;
+    this.plugin = plugin;
+  }
+  onOpen() {
+    const { contentEl } = this;
+    contentEl.createEl("h2", {
+      text: `Enable/Disable the ${this.attachmentType} extenstions.`
+    });
+    for (const indStr in extensions[this.attachmentType]) {
+      const ind = parseInt(indStr);
+      const extensionSettingName = this.attachmentType + "Extensions";
+      new import_obsidian.Setting(contentEl).setName(extensions[this.attachmentType][ind]).addToggle((toggle) => {
+        toggle.setValue(this.plugin.settings[extensionSettingName][ind]).onChange((value) => __async(this, null, function* () {
+          this.plugin.settings[extensionSettingName][ind] = value;
+          yield this.plugin.saveSettings();
+        }));
+      });
+    }
+  }
+  onClose() {
+    const { contentEl } = this;
+    contentEl.empty();
+  }
+};
 var DeletionWarningModal = class extends import_obsidian.Modal {
-  constructor(app) {
-    super(app);
+  constructor(app2) {
+    super(app2);
   }
   onOpen() {
     const { contentEl } = this;
@@ -2812,8 +2911,8 @@ var DeletionWarningModal = class extends import_obsidian.Modal {
   }
 };
 var FilenameWarningModal = class extends import_obsidian.Modal {
-  constructor(app) {
-    super(app);
+  constructor(app2) {
+    super(app2);
   }
   onOpen() {
     const { contentEl } = this;
@@ -2827,8 +2926,8 @@ var FilenameWarningModal = class extends import_obsidian.Modal {
   }
 };
 var FolderScanModal = class extends import_obsidian.FuzzySuggestModal {
-  constructor(app, plugin, returnSelect) {
-    super(app);
+  constructor(app2, plugin, returnSelect) {
+    super(app2);
     this.plugin = plugin;
     this.returnSelect = returnSelect;
   }
@@ -2843,8 +2942,8 @@ var FolderScanModal = class extends import_obsidian.FuzzySuggestModal {
   }
 };
 var FolderRenameWarningModal = class extends import_obsidian.Modal {
-  constructor(app, onSubmit) {
-    super(app);
+  constructor(app2, onSubmit) {
+    super(app2);
     this.onSubmit = onSubmit;
   }
   onOpen() {
@@ -2878,8 +2977,8 @@ var ribbons = {
   exportUnusesdFile: null
 };
 var ANFSettingTab = class extends import_obsidian2.PluginSettingTab {
-  constructor(app, plugin) {
-    super(app, plugin);
+  constructor(app2, plugin) {
+    super(app2, plugin);
     this.plugin = plugin;
   }
   display() {
@@ -2908,6 +3007,17 @@ var ANFSettingTab = class extends import_obsidian2.PluginSettingTab {
       text: 'Do not have "webm" extension in audio and video right now'
     });
     containerEl.createEl("h2", { text: "Attachments Format Setting" });
+    new import_obsidian2.Setting(containerEl).setName("Automic formatting").setDesc("Automic formatting the attachments' name when changing note content").addToggle((toggle) => {
+      toggle.setValue(this.plugin.settings.enableAuto).onChange((value) => __async(this, null, function* () {
+        this.plugin.settings.enableAuto = value;
+        yield this.plugin.saveSettings();
+      }));
+    });
+    new import_obsidian2.Setting(containerEl).setName("Excluded folders").setDesc("The notes under these folders will not reformat auto format the attachment name").addExtraButton((extraButton) => {
+      extraButton.onClick(() => {
+        new ExcludedFoldersModad(app, this.plugin).open();
+      });
+    });
     new import_obsidian2.Setting(containerEl).setName("Format for connector").setDesc("Set the format for connector between file name and attachment name.").addText((text) => text.setPlaceholder("_").setValue(this.plugin.settings.connector === "_" ? "" : this.plugin.settings.connector).onChange((value) => __async(this, null, function* () {
       const fileNamepatn = /\||<|>|\?|\*|:|\/|\\|"/;
       if (fileNamepatn.test(value)) {
@@ -2933,6 +3043,11 @@ var ANFSettingTab = class extends import_obsidian2.PluginSettingTab {
           this.plugin.settings[attachmentType] = value === "" ? DEFAULT_SETTINGS[attachmentType] : value;
           yield this.plugin.saveSettings();
         })));
+        typeSetting.addExtraButton((extraButton) => {
+          extraButton.onClick(() => {
+            new AttachmentExtensionModad(app, attachmentType, this.plugin).open();
+          });
+        });
       }
       typeSetting.addToggle((toggle) => {
         toggle.setValue(this.plugin.settings[attachmentEnable]).onChange((value) => __async(this, null, function* () {
@@ -3026,19 +3141,29 @@ var ANFSettingTab = class extends import_obsidian2.PluginSettingTab {
 var fs = require("fs");
 var JSZip = require_jszip_min();
 var timeInterval = new Date();
-var extensions = {
-  image: ["png", "jpg", "jpeg", "gif", "bmp", "svg"],
-  audio: ["mp3", "wav", "m4a", "ogg", "3gp", "flac"],
-  video: ["mp4", "ogv", "mov", "mkv"],
-  pdf: ["pdf"]
-};
 var AttachmentNameFormatting = class extends import_obsidian3.Plugin {
   onload() {
     return __async(this, null, function* () {
       yield this.loadSettings();
       this.loadFolders();
       this.addSettingTab(new ANFSettingTab(this.app, this));
-      this.registerEvent(this.app.metadataCache.on("changed", (file) => this.handleAttachmentNameFormatting(file)));
+      this.registerEvent(this.app.metadataCache.on("changed", (file) => {
+        if (this.settings.enableAuto) {
+          let parentFolder = file.parent;
+          let excluded = false;
+          while (parentFolder.path !== "/") {
+            if (!this.settings.excludedFolders.includes(parentFolder.path)) {
+              parentFolder = parentFolder.parent;
+            } else {
+              excluded = true;
+              break;
+            }
+          }
+          if (!excluded) {
+            this.handleAttachmentNameFormatting(file);
+          }
+        }
+      }));
       this.registerEvent(this.app.vault.on("create", (folderOrFile) => {
         if (folderOrFile instanceof import_obsidian3.TFolder) {
           if (!this.allFolders.includes(folderOrFile.path)) {
@@ -3151,8 +3276,13 @@ var AttachmentNameFormatting = class extends import_obsidian3.Plugin {
         for (const item of attachments.embeds) {
           for (const [fileType, fileExtensions] of Object.entries(extensions)) {
             const attachmentEnable = "enable" + fileType.slice(0, 1).toUpperCase() + fileType.slice(1);
+            const extensionEnable = fileType + "Extensions";
+            if (item.link.split(this.settings.connector).slice(-2, -1)[0] === fileType) {
+              const attachmentName = item.link.split(".")[0];
+            }
             const attachmentExtension = item.link.split(".").pop();
-            if (fileExtensions.contains(attachmentExtension) && this.settings[attachmentEnable]) {
+            const attachmentExtensionInd = extensions[fileType].indexOf(attachmentExtension);
+            if (fileExtensions.contains(attachmentExtension) && this.settings[attachmentEnable] && this.settings[extensionEnable][attachmentExtensionInd]) {
               if (!attachmentList.hasOwnProperty(fileType)) {
                 attachmentList[fileType] = [];
               }
