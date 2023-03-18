@@ -199,6 +199,24 @@
     },
     "Space between Chinese Japanese or Korean and English or numbers": {
       "Ensures that Chinese, Japanese, or Korean and English or numbers are separated by a single space. Follows these [guidelines](https://github.com/sparanoid/chinese-copywriting-guidelines)": true
+    },
+    "Headings Start Line": {
+      "Headings that do not start a line will have their preceding whitespace removed to make sure they get recognized as headers.": false
+    },
+    "Remove Trailing Punctuation in Heading": {
+      "Removes the specified punctuation from the end of headings making sure to ignore the semicolon at the end of [HTML entity references](https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references).": false,
+      "Trailing Punctuation": ".,;:!。，；：！"
+    },
+    "Auto-correct Common Misspellings": {
+      "Uses a dictionary of common misspellings to automatically convert them to their proper spellings. See [auto-correct map](https://github.com/platers/obsidian-linter/tree/master/src/utils/auto-correct-misspellings.ts) for the full list of auto-corrected words.": false,
+      "Ignore Words": ""
+    },
+    "Remove Space around Characters": {
+      "Ensures that certain characters are not surrounded by whitespace (either single spaces or a tab). Note that this may causes issues with markdown format in some cases.": false,
+      "Include Fullwidth Forms": true,
+      "Include CJK Symbols and Punctuation": true,
+      "Include Dashes": true,
+      "Other symbols": ""
     }
   },
   "lintOnSave": true,

@@ -3,7 +3,7 @@
   "theme": "moonstone",
   "translucency": false,
   "nativeMenus": false,
-  "baseFontSizeAction": true,
+  "baseFontSizeAction": false,
   "textFontFamily": "Inconsolata",
   "interfaceFontFamily": "微软雅黑",
   "monospaceFontFamily": "Inconsolata",
