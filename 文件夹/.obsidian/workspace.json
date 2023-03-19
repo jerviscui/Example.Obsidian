@@ -196,14 +196,26 @@
               "pos": 1,
               "stack": [
                 {
-                  "title": "QMK 烧录",
+                  "title": "使用说明",
                   "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"分体键盘/QMK 烧录.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":13,\"ch\":0},\"to\":{\"line\":13,\"ch\":0}},\"scroll\":9.566840171813965}"
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"分体键盘/使用说明.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{}"
                 },
                 {
                   "state": "{}",
                   "eState": "{}"
+                },
+                {
+                  "title": "QMK 烧录",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"分体键盘/QMK 烧录.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":0}"
+                },
+                {
+                  "title": "键盘布局",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"分体键盘/键盘布局.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":0}"
                 }
               ]
             },
@@ -211,14 +223,76 @@
               "type": "markdown",
               "state": {
                 "file": "分体键盘/键盘布局.md",
-                "mode": "preview",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "9469db4c6b131d47",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "使用说明",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"分体键盘/使用说明.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "分体键盘/QMK 烧录.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "f358c0f28025d0af",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "如何打造自己的键盘",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/004 数据处理与计算机科学/004.3 外部设备/自定义键盘/如何打造自己的键盘.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":0}"
+                },
+                {
+                  "title": "QMK 烧录",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"分体键盘/QMK 烧录.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":26.122460496613996}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "分体键盘/使用说明.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": true
               }
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -374,7 +448,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "分体键盘/键盘布局.md",
+                "file": "分体键盘/使用说明.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -400,7 +474,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "分体键盘/键盘布局.md",
+                "file": "分体键盘/使用说明.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -448,16 +522,18 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "93cd28b5b111f2cf",
+  "active": "f358c0f28025d0af",
   "ophidian:layout-settings": {
     "pane-relief:focus-lock": true
   },
   "lastOpenFiles": [
-    "分体键盘/QMK 烧录.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.7 计算机系统中的数据/数据库/KyeValue/Redis/Redis 性能.md",
     "分体键盘/键盘布局.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/004 数据处理与计算机科学/004.3 外部设备/自定义键盘/QMK.md",
+    "分体键盘/使用说明.md",
+    "_assets/392a3abcb854ad807b78bc462222e81.jpg",
+    "分体键盘/QMK 烧录.md",
     "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/004 数据处理与计算机科学/004.3 外部设备/自定义键盘/如何打造自己的键盘.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/004 数据处理与计算机科学/004.3 外部设备/自定义键盘/QMK.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.7 计算机系统中的数据/数据库/KyeValue/Redis/Redis 性能.md",
     "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/004 数据处理与计算机科学/004.3 外部设备/自定义键盘/控制器.md",
     "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 状态机图.md",
     "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.7 计算机系统中的数据/数据库/KyeValue/Redis/Redis 下 Lua 脚本的复制模式.md",
@@ -485,10 +561,7 @@
     "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 功能设置.md",
     "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 对象图.md",
     "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 插件.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 事件和信号.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/UML/Enterprise Architect/EA 问题汇总.md",
     "_assets/Pasted image 20230314092650.png",
-    "_assets/Pasted image 20230314092604.png",
     "测试白板.canvas"
   ]
 }
