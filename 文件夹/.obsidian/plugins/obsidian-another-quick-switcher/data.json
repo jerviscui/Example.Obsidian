@@ -17,7 +17,8 @@
           "modifiers": [
             "Alt"
           ],
-          "key": "i"
+          "key": "i",
+          "hideHotkeyGuide": true
         }
       ],
       "down": [
@@ -25,7 +26,8 @@
           "modifiers": [
             "Alt"
           ],
-          "key": "k"
+          "key": "k",
+          "hideHotkeyGuide": true
         }
       ],
       "clear input": [
@@ -40,6 +42,12 @@
         {
           "modifiers": [],
           "key": "Tab"
+        }
+      ],
+      "open": [
+        {
+          "modifiers": [],
+          "key": "Enter"
         }
       ],
       "open in new tab": [
@@ -111,6 +119,7 @@
           "key": "p"
         }
       ],
+      "open in default app": [],
       "open in google": [
         {
           "modifiers": [
@@ -135,6 +144,7 @@
           "key": "Enter"
         }
       ],
+      "insert to editor in background": [],
       "insert all to editor": [],
       "show backlinks": [
         {
@@ -142,6 +152,36 @@
             "Mod"
           ],
           "key": "h"
+        }
+      ],
+      "show links": [
+        {
+          "modifiers": [
+            "Mod"
+          ],
+          "key": "l"
+        }
+      ],
+      "navigate forward": [
+        {
+          "modifiers": [
+            "Alt"
+          ],
+          "key": "ArrowRight"
+        }
+      ],
+      "navigate back": [
+        {
+          "modifiers": [
+            "Alt"
+          ],
+          "key": "ArrowLeft"
+        }
+      ],
+      "dismiss": [
+        {
+          "modifiers": [],
+          "key": "Escape"
         }
       ]
     },
@@ -151,7 +191,8 @@
           "modifiers": [
             "Alt"
           ],
-          "key": "i"
+          "key": "i",
+          "hideHotkeyGuide": true
         }
       ],
       "down": [
@@ -159,7 +200,15 @@
           "modifiers": [
             "Alt"
           ],
-          "key": "k"
+          "key": "k",
+          "hideHotkeyGuide": true
+        }
+      ],
+      "open in default app": [],
+      "dismiss": [
+        {
+          "modifiers": [],
+          "key": "Escape"
         }
       ]
     },
@@ -169,7 +218,8 @@
           "modifiers": [
             "Alt"
           ],
-          "key": "i"
+          "key": "i",
+          "hideHotkeyGuide": true
         }
       ],
       "down": [
@@ -177,7 +227,8 @@
           "modifiers": [
             "Alt"
           ],
-          "key": "k"
+          "key": "k",
+          "hideHotkeyGuide": true
         }
       ],
       "clear input": [
@@ -209,6 +260,12 @@
           ],
           "key": ","
         }
+      ],
+      "dismiss": [
+        {
+          "modifiers": [],
+          "key": "Escape"
+        }
       ]
     },
     "grep": {
@@ -223,7 +280,8 @@
           "modifiers": [
             "Alt"
           ],
-          "key": "i"
+          "key": "i",
+          "hideHotkeyGuide": true
         }
       ],
       "down": [
@@ -231,7 +289,8 @@
           "modifiers": [
             "Alt"
           ],
-          "key": "k"
+          "key": "k",
+          "hideHotkeyGuide": true
         }
       ],
       "clear input": [
@@ -256,6 +315,12 @@
             "Alt"
           ],
           "key": "c"
+        }
+      ],
+      "open": [
+        {
+          "modifiers": [],
+          "key": "Enter"
         }
       ],
       "open in new tab": [
@@ -316,6 +381,12 @@
             "Mod"
           ],
           "key": ","
+        }
+      ],
+      "dismiss": [
+        {
+          "modifiers": [],
+          "key": "Escape"
         }
       ]
     }
