@@ -3,6 +3,6 @@
   "dismissedVersionsByPluginId": {},
   "showIconOnMobile": true,
   "excludeBetaVersions": true,
-  "excludeDisabledPlugins": true,
+  "excludeDisabledPlugins": false,
   "hideIconIfNoUpdatesAvailable": false
 }

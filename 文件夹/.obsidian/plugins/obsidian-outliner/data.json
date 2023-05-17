@@ -6,5 +6,7 @@
   "betterTab": true,
   "selectAll": true,
   "listLines": false,
-  "listLineAction": "none"
+  "listLineAction": "none",
+  "dndExperiment": false,
+  "previousRelease": "4.6.5"
 }

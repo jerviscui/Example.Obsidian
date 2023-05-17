@@ -12,7 +12,6 @@
   "showViewHeader": true,
   "enabledCssSnippets": [
     "file-explorer-scrolling1",
-    "file-explorer-note-count",
     "smaller-scrollbar",
     "evelf-rainbow_file_explorer-colors",
     "file-explorer-scrolling",
@@ -24,14 +23,15 @@
     "file-explorer-color",
     "editor-reading-mode-table",
     "realistic-highlight",
-    "media-grid-snippet",
-    "image-cards",
     "editor-title-bar-hover-editor",
     "editor-source-mode-cMenu",
     "editor-title-bar",
-    "test",
     "quiet-outline",
     "another-quick-switcher",
-    "editor-reading-mode-code"
+    "editor-reading-mode-code",
+    "file-explorer-note-count",
+    "test",
+    "media-grid-snippet",
+    "image-cards"
   ]
 }

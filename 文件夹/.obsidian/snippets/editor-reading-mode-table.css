@@ -17,21 +17,35 @@ body {
     border-collapse: collapse;
     table-layout: auto;
     width: 100%;
+    word-break: break-word;
+    word-wrap: break-word;
+    white-space: pre-wrap;
 }
 
-/* tr */
+/* thead tbody */
 .cm-embed-block.markdown-rendered .block-language-dataview thead,
-.cm-embed-block.markdown-rendered .block-language-dataview tbody tr,
+/* .cm-embed-block.markdown-rendered .block-language-dataview tbody tr, */
+.cm-embed-block.markdown-rendered .block-language-dataview tbody,
 .markdown-rendered table thead,
-.markdown-rendered table tbody tr,
+/* .markdown-rendered table tbody tr, */
+.markdown-rendered table tbody,
 .markdown-rendered .table-view-table thead,
-.markdown-rendered .table-view-table tbody tr {
+/* .markdown-rendered .table-view-table tbody tr { */
+.markdown-rendered .table-view-table tbody {
     border-collapse: collapse;
-    display: table;
+    /* display: table; */
     width: 100%;
     table-layout: fixed;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+.cm-embed-block.markdown-rendered .block-language-dataview tbody,
+.markdown-rendered table tbody,
+.markdown-rendered .table-view-table tbody {
+    /* display: block; */
+    max-height: var(--table-sticky-height);
+    overflow: auto;
 }
 
 /* th */
@@ -49,18 +63,10 @@ body {
     color: var(--table-header-color);
 }
 
-/* tbody */
-.cm-embed-block.markdown-rendered .block-language-dataview tbody,
-.markdown-rendered table tbody,
-.markdown-rendered .table-view-table tbody {
-    display: block;
-    max-height: var(--table-sticky-height);
-    overflow: auto;
-}
-
 /* td */
 .cm-embed-block.markdown-rendered .block-language-dataview td,
 .markdown-rendered table tr > td,
 .markdown-rendered .table-view-table td {
     border: 1px solid var(--border-subtle-1);
+    min-width: 3rem;
 }

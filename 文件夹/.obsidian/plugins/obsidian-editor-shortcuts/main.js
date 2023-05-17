@@ -182,13 +182,15 @@ var getLeadingWhitespace = (lineContent) => {
   return indentation ? indentation[0] : "";
 };
 var isLetterCharacter = (char) => /\p{L}\p{M}*/u.test(char);
+var isDigit = (char) => /\d/.test(char);
+var isLetterOrDigit = (char) => isLetterCharacter(char) || isDigit(char);
 var wordRangeAtPos = (pos, lineContent) => {
   let start = pos.ch;
   let end = pos.ch;
-  while (start > 0 && isLetterCharacter(lineContent.charAt(start - 1))) {
+  while (start > 0 && isLetterOrDigit(lineContent.charAt(start - 1))) {
     start--;
   }
-  while (end < lineContent.length && isLetterCharacter(lineContent.charAt(end))) {
+  while (end < lineContent.length && isLetterOrDigit(lineContent.charAt(end))) {
     end++;
   }
   return {
@@ -375,10 +377,13 @@ var getNextCase = (selectedText) => {
 };
 var isNumeric = (input) => input.length > 0 && !isNaN(+input);
 var getNextListPrefix = (text, direction) => {
-  var _a;
-  const listChars = (_a = text.match(LIST_CHARACTER_REGEX)) != null ? _a : [];
-  if (listChars.length > 0) {
+  const listChars = text.match(LIST_CHARACTER_REGEX);
+  if (listChars && listChars.length > 0) {
     let prefix = listChars[0].trimStart();
+    const isEmptyListItem = prefix === listChars.input.trimStart();
+    if (isEmptyListItem) {
+      return null;
+    }
     if (isNumeric(prefix) && direction === "after") {
       prefix = +prefix + 1 + ". ";
     }
@@ -433,12 +438,19 @@ var insertLineAbove = (editor, selection) => {
 };
 var insertLineBelow = (editor, selection) => {
   const { line } = selection.head;
+  const startOfCurrentLine = getLineStartPos(line);
   const endOfCurrentLine = getLineEndPos(line, editor);
   const contentsOfCurrentLine = editor.getLine(line);
   const indentation = getLeadingWhitespace(contentsOfCurrentLine);
   let listPrefix = "";
   if (SettingsState.autoInsertListPrefix) {
     listPrefix = getNextListPrefix(contentsOfCurrentLine, "after");
+    if (listPrefix === null) {
+      editor.replaceRange("", startOfCurrentLine, endOfCurrentLine);
+      return {
+        anchor: { line, ch: 0 }
+      };
+    }
     if (isNumeric(listPrefix)) {
       formatRemainingListPrefixes(editor, line + 1, indentation);
     }
@@ -448,8 +460,26 @@ var insertLineBelow = (editor, selection) => {
     anchor: { line: line + 1, ch: indentation.length + listPrefix.length }
   };
 };
-var deleteLine = (editor) => {
-  editor.exec("deleteLine");
+var deleteLine = (editor, selection) => {
+  const { from, to } = getSelectionBoundaries(selection);
+  if (to.line === editor.lastLine()) {
+    const endOfPreviousLine = getLineEndPos(from.line - 1, editor);
+    editor.replaceRange("", endOfPreviousLine, getLineEndPos(to.line, editor));
+    return {
+      anchor: {
+        line: from.line - 1,
+        ch: Math.min(from.ch, endOfPreviousLine.ch)
+      }
+    };
+  }
+  const endOfNextLine = getLineEndPos(to.line + 1, editor);
+  editor.replaceRange("", getLineStartPos(from.line), getLineStartPos(to.line + 1));
+  return {
+    anchor: {
+      line: from.line,
+      ch: Math.min(from.ch, endOfNextLine.ch)
+    }
+  };
 };
 var deleteToStartOfLine = (editor, selection) => {
   const pos = selection.head;
@@ -924,7 +954,7 @@ var CodeEditorShortcuts = class extends import_obsidian3.Plugin {
             key: "K"
           }
         ],
-        editorCallback: (editor) => deleteLine(editor)
+        editorCallback: (editor) => withMultipleSelections(editor, deleteLine)
       });
       this.addCommand({
         id: "deleteToStartOfLine",

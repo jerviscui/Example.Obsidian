@@ -20,5 +20,6 @@
   ],
   "foldIndent": false,
   "trashOption": "local",
-  "showFrontmatter": true
+  "showFrontmatter": true,
+  "smartIndentList": false
 }

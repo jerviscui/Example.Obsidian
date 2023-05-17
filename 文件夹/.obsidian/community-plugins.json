@@ -21,7 +21,6 @@
   "obsidian-contextual-typography",
   "workspaces-plus",
   "update-relative-links",
-  "obsidian-plugin-update-tracker",
   "keyboard-analyzer",
   "obsidian-outliner",
   "heatmap-calendar",
@@ -35,5 +34,6 @@
   "obsidian-latex-suite",
   "obsidian-multi-cursor",
   "obsidian-scroll-to-top-plugin",
-  "obsidian-attachment-name-formatting"
+  "obsidian-attachment-name-formatting",
+  "obsidian-plugin-update-tracker"
 ]
