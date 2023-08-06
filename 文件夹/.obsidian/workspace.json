@@ -32,7 +32,7 @@
             }
           },
           {
-            "id": "b4c54228b90119c5",
+            "id": "ad338ab3e110afb9",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 1,
@@ -46,21 +46,147 @@
                 {
                   "state": "{}",
                   "eState": "{}"
+                },
+                {
+                  "title": "热键",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/热键.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":36,\"ch\":0},\"to\":{\"line\":36,\"ch\":0}},\"scroll\":16.063650873465537}"
+                },
+                {
+                  "title": "AutoHotkey",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/AutoHotkey.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":156,\"ch\":0},\"to\":{\"line\":156,\"ch\":0}},\"scroll\":55.463986021552465}"
+                },
+                {
+                  "title": "热键",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/热键.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":15,\"ch\":4},\"to\":{\"line\":15,\"ch\":4}},\"scroll\":0}"
+                },
+                {
+                  "title": "AutoHotkey",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/AutoHotkey.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":36,\"ch\":21},\"to\":{\"line\":36,\"ch\":21}},\"scroll\":14.891666571299234}"
+                },
+                {
+                  "title": "键盘改进",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/键盘改进.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":9,\"ch\":0},\"to\":{\"line\":9,\"ch\":0}}}"
+                },
+                {
+                  "title": "热键",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/热键.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":21,\"ch\":0},\"to\":{\"line\":21,\"ch\":0}},\"scroll\":0}"
+                },
+                {
+                  "title": "键盘改进",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/键盘改进.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":16,\"ch\":0},\"to\":{\"line\":16,\"ch\":0}},\"scroll\":0}"
+                },
+                {
+                  "title": "热键",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/热键.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":30,\"ch\":2},\"to\":{\"line\":30,\"ch\":1}},\"scroll\":10.566666603088379}"
+                },
+                {
+                  "title": "字符串替换",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/字符串替换.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":11.866667111714682}"
+                },
+                {
+                  "title": "热键",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/热键.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":31.8593746026357}"
+                },
+                {
+                  "title": "字符串替换",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/字符串替换.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "全半角转换",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/全半角转换.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":7,\"ch\":0},\"to\":{\"line\":7,\"ch\":0}},\"scroll\":0}"
+                },
+                {
+                  "title": "AutoHotkey",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/AutoHotkey.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":69,\"ch\":44},\"to\":{\"line\":69,\"ch\":44}},\"scroll\":24.924652947319878}"
+                },
+                {
+                  "title": "热键",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/热键.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":71,\"ch\":0},\"to\":{\"line\":71,\"ch\":0}},\"scroll\":44.65364774068197}"
+                },
+                {
+                  "title": "字符串替换",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/字符串替换.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "AutoHotkey",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/AutoHotkey.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":0}"
+                },
+                {
+                  "title": "热键",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/热键.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":41,\"ch\":12},\"to\":{\"line\":41,\"ch\":12}},\"scroll\":6.624999975164732}"
+                },
+                {
+                  "title": "字符串替换",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/字符串替换.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":38,\"ch\":0},\"to\":{\"line\":38,\"ch\":0}},\"scroll\":26.311556943396283}"
+                },
+                {
+                  "title": "热键",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/热键.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":31,\"ch\":0},\"to\":{\"line\":31,\"ch\":0}}}"
+                },
+                {
+                  "title": "字符串替换",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/字符串替换.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "热键",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/热键.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":20,\"ch\":0},\"to\":{\"line\":20,\"ch\":0}}}"
                 }
               ]
             },
             "state": {
               "type": "markdown",
               "state": {
-                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/架构设计/分布式系统关注点/1.2 数据一致性-分布式事务.md",
-                "mode": "preview",
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/AutoHotkey.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": true
               }
             }
           },
           {
-            "id": "6b016b52bb41e365",
+            "id": "dca6b026d543273e",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -70,17 +196,87 @@
                   "eState": "{}"
                 },
                 {
-                  "title": "Resharper snippets",
+                  "title": "热键",
                   "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/JetBrains/Resharper snippets.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
-                  "eState": "{\"scroll\":28.240860477570564}"
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/热键.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":136,\"ch\":7},\"to\":{\"line\":136,\"ch\":7}},\"scroll\":131.59854229581126}"
+                },
+                {
+                  "title": "字符串替换",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/字符串替换.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":6.693641572612151}"
+                },
+                {
+                  "title": "全半角转换",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/全半角转换.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "字符串替换",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/字符串替换.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "热键",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/热键.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":0}"
+                },
+                {
+                  "title": "键盘改进",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/键盘改进.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":18,\"ch\":15},\"to\":{\"line\":18,\"ch\":15}},\"scroll\":0.5571428707667759}"
+                },
+                {
+                  "title": "热键",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/热键.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":82.3199951171875}"
+                },
+                {
+                  "title": "字符串替换",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/字符串替换.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":3.225806451612903}"
+                },
+                {
+                  "title": "热键",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/热键.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":142.84713212649027}"
                 }
               ]
             },
             "state": {
               "type": "markdown",
               "state": {
-                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.7 计算机系统中的数据/数据库/KyeValue/Redis/Redis key 规范.md",
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/键盘改进.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "fc276d75f10dbc32",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.0 开发平台/Core/Tools/dotnet-counters.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -88,33 +284,121 @@
             }
           },
           {
-            "id": "c0e31bc4308fa6f9",
+            "id": "94a9648171e75d06",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
               "stack": [
                 {
                   "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.0 开发平台/Core/Tools/LLDB.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "d8345d4570abf7ea",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 1,
+              "stack": [
+                {
+                  "title": "valgrind",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/操作系统/Linux/运维工具/valgrind.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
                   "eState": "{}"
                 },
                 {
-                  "title": "EF Core 批量操作",
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.0 开发平台/Core/Tools/Memory Leak.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "1954e9086e4c578c",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.0 开发平台/Core/Tools/dotnet-dump.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "4d6deb047a17fb3a",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.0 开发平台/Core/Tools/Linux core dump.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "09af93609f707770",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 1,
+              "stack": [
+                {
+                  "title": "Redis 执行 Lua",
                   "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.3 持久化/ORM/EF Core/EF Core 批量操作.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.7 计算机系统中的数据/数据库/KyeValue/Redis/Redis 执行 Lua.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
                   "eState": "{}"
                 },
                 {
-                  "title": "EFCore.BulkExtensions",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.3 持久化/ORM/EF Core/EFCore.BulkExtensions.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
-                  "eState": "{\"scroll\":14.123076923076923}"
+                  "state": "{}",
+                  "eState": "{}"
                 }
               ]
             },
             "state": {
               "type": "markdown",
               "state": {
-                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.3 持久化/ORM/EF Core/EFCore.BulkExtensions.md",
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/操作系统/Linux/运维工具/valgrind.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -122,7 +406,7 @@
             }
           },
           {
-            "id": "b0bc462f24952f48",
+            "id": "93d2d49d1454b247",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -136,32 +420,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian/Pane Relief.md",
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/操作系统/Linux/运维工具/Dr.Memory.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
               }
-            }
-          },
-          {
-            "id": "e79006bc0ead971c",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "swar8080/AVAILABLE_PLUGIN_UPDATES",
-              "state": {}
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -208,7 +475,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Pane Relief",
+                "query": "singleinstance",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -271,8 +538,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -318,7 +584,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Obsidian/Pane Relief.md",
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/键盘改进.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -344,7 +610,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Obsidian/Pane Relief.md",
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/键盘改进.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -384,63 +650,65 @@
       "command-palette:打开命令面板": false,
       "zk-prefixer:创建时间戳笔记": false,
       "workspaces:管理工作区布局": false,
-      "obsidian-attachment-name-formatting:Export Unused Attachments": false,
       "oz-clear-unused-images:Clear Unused Images": false,
       "cmdr:Pane Relief: Toggle sliding panes (for current window)": false,
       "cmdr:Keyboard Analyzer: Open keyboard shortcuts view": false,
       "obsidian42-brat:BRAT": false,
+      "obsidian-attachment-name-formatting:Export Unused Attachments": false,
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "e79006bc0ead971c",
+  "active": "dca6b026d543273e",
   "ophidian:layout-settings": {
     "pane-relief:focus-lock": true
   },
   "lastOpenFiles": [
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.3 持久化/ORM/EF Core/EF Core 批量操作.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.3 持久化/ORM/EF Core/EFCore.BulkExtensions.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.7 计算机系统中的数据/数据库/KyeValue/Redis/Redis key 规范.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/JetBrains/Resharper snippets.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/架构设计/分布式系统关注点/1.2 数据一致性-分布式事务.md",
-    "知识树/6 - 技术/610 医学/613 健康的推动/中国居民膳食营养素参考摄入量.md",
-    "_assets/wNeCLjYJ_2x.jpg",
-    "_assets/Pasted image 20230511102000 (1).png",
-    "_assets/Pasted image 20230511104129.png",
-    "_assets/Pasted image 20230511102000.png",
-    "知识树/6 - 技术/610 医学/613 健康的推动/中国居民膳食指南.md",
-    "_assets/Pasted image 20230511100956.png",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.8 消息总线/EasyNetQ/EasyNetQ 批量消费.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.7 计算机系统中的数据/数据库/Insert 如何加锁.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.3 持久化/ORM/EF Core/DbUpdateException.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/ChatGPT.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.3 持久化/ORM/EF Core/使用事务.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.7 计算机系统中的数据/数据库/Relational/自增主键.md",
-    "_assets/Pasted image 20230510175252.png",
-    "_assets/Pasted image 20230510175018.png",
-    "_assets/Pasted image 20230510174328.png",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/ABP vNext/异常处理.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.7 计算机系统中的数据/数据库/KyeValue/Redis/仅主节点可以执行的命令.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.6 测试/Stress Testing/JMeter/JMeter CLI.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.3 持久化/ORM/EF Core/自定义主键值.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.6 测试/Stress Testing/压测主机资源配置.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.7 计算机系统中的数据/数据库/KyeValue/Redis/Redis 二.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.0 开发平台/Core/dotNET 6/ASP.NET Core 6.0.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.4 缓存/StackExchange.Redis/StackExchange.Redis 性能分析.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/3.1 监控/AppMetrics/AppMetrics.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/3.1 监控/AppMetrics/RedisProfilerReport.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.7 计算机系统中的数据/数据库/KyeValue/Redis/Keyspace 事件.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.7 计算机系统中的数据/数据库/KyeValue/Redis/Pub and Sub.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.4 缓存/StackExchange.Redis/StackExchange.Redis 使用.md",
-    "_assets/Pasted image 20230510114055.png",
-    "_assets/Pasted image 20230510114048.png",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/AutoHotkey.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/键盘改进.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/热键.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/字符串替换.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/全半角转换.md",
+    "_assets/Pasted image 20230801200632.png",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/生产力工具.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Carnac.md",
+    "_assets/Pasted image 20230801164226.png",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/004 数据处理与计算机科学/004.2 系统分析与设计，计算机体系结构/UTF-16.md",
+    "我的笔记/名词/BOM(Byte Order Mark).md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/004 数据处理与计算机科学/004.2 系统分析与设计，计算机体系结构/UTF-8 UTF8 GB2312之间的区别和关系.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/OpenArk.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/编程/编程工具.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/编程/RedisInsight.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/编程/sqlfiddle.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/TTS.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Wox.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Sokit.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/ripgrep.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Pandoc.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Anki.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/new bing.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/NeoVim.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Microsoft Whiteboard.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/MacType 使用.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Linux 使用 Shadowsocks.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/just.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/编程",
+    "_assets/MouseInc 7.json",
+    "_assets/Pasted image 20230801093021.png",
+    "_assets/Pasted image 20230801093013.png",
+    "_assets/settings_133352585817228310.ptb",
+    "_assets/settings_133352576871236611.ptb",
+    "_assets/Pasted image 20230731102857.png",
+    "_assets/Pasted image 20230731100250.png",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK",
+    "_assets/Pasted image 20230726122314.png",
+    "我的笔记/NOIP",
+    "_assets/Pasted image 20230626160645.png",
+    "_assets/OzCode_2.0.0.1029.7z",
+    "_assets/Pasted image 20230621112616.png",
+    "_assets/Pasted image 20230609133706.png",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/3 Algorithm/未命名",
     "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/虚拟化/腾讯云",
     "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.6 测试/Stress Testing/JMeter",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/4.1 性能优化/ASP.NET Core 性能最佳实践-JervisPC.md~RF158cce00.TMP",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/操作系统/Linux/运维工具",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.8 消息总线/EasyNetQ",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/架构设计/高并发系统设计 40 问",
-    "_assets/Inter-Thread Test Plan.jmx",
-    "未命名",
     "测试白板.canvas"
   ]
 }

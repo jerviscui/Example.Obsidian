@@ -143,6 +143,11 @@
     margin: 0 5px;
     padding: 0.5rem 1rem 0 1rem;
 }
+.another-quick-switcher__status__search-command-separator:before {
+    content: "...";
+    padding-left: 5px;
+    padding-right: 5px;
+}
 .another-quick-switcher__status__default-input {
     display: flex;
     align-items: center;
@@ -274,6 +279,18 @@
     display: inline-block;
 }
 .another-quick-switcher__item__meta__front_matter {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 5px;
+}
+.another-quick-switcher__item__meta__front_matter__key::after {
+    content: ":";
+}
+.another-quick-switcher__item__meta__front_matter__value {
+    margin-left: 3px;
+}
+
+.another-quick-switcher__item__meta__score {
     display: inline-flex;
     align-items: center;
     margin-right: 5px;

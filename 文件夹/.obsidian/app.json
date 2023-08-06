@@ -21,5 +21,6 @@
   "foldIndent": false,
   "trashOption": "local",
   "showFrontmatter": true,
-  "smartIndentList": false
+  "smartIndentList": false,
+  "autoConvertHtml": true
 }

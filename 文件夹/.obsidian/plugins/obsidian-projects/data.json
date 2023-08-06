@@ -26,6 +26,9 @@
           "colors": {
             "conditions": []
           },
+          "sort": {
+            "criteria": []
+          },
           "id": "28f38429-bdd7-4b40-9530-bd89057b23db",
           "name": "Calendar",
           "type": "calendar"
@@ -46,6 +49,9 @@
           "colors": {
             "conditions": []
           },
+          "sort": {
+            "criteria": []
+          },
           "id": "08c3c7fb-ab6e-4371-820f-c9c8a19dbf39",
           "name": "Table",
           "type": "table"
@@ -60,6 +66,7 @@
     "frontmatter": {
       "quoteStrings": "PLAIN"
     },
-    "commands": []
+    "commands": [],
+    "linkBehavior": "open-editor"
   }
 }
