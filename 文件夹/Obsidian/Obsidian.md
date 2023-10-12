@@ -1,7 +1,7 @@
 ---
 tags: [moc]
 date created: 2022-10-24T22:18:14+08:00
-date modified: 2023-10-12T23:17:00+08:00
+date modified: 2023-10-13T02:38:26+08:00
 ---
 
 # Obsidian
@@ -69,6 +69,8 @@ Sanctum
 [Quiet Outline](Quiet%20Outline.md)
 [Pane Relief](Pane%20Relief.md)
 [Bartender](Bartender.md)
+[Janitor](Janitor.md)
+[Custom Attachment location](Custom%20Attachment%20location.md)
 
 ### 数据展示
 
@@ -159,18 +161,13 @@ Search Obsidian In Google
 ### Bug
 
 [Commits](Commits.md)
-[Activity History](Activity%20History.md)
 [Dynamic Highlights](Dynamic%20Highlights.md)
-[Attachment Name Formatting](Attachment%20Name%20Formatting.md)
-[Paste image rename](Paste%20image%20rename.md)
-[Unique attachments](Unique%20attachments.md)
 [Heading Level Indent](Heading%20Level%20Indent.md)
 
 ### 不友好的方案
 
 [Show Current File Path](Show%20Current%20File%20Path.md)
 [Find and replace in selection](Find%20and%20replace%20in%20selection.md)
-[Consistent attachments and links](Consistent%20attachments%20and%20links.md)
 [Quick Explorer](Quick%20Explorer.md)
 [File Tree Alternative Plugin](File%20Tree%20Alternative%20Plugin.md)
 

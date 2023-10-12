@@ -1,10 +1,12 @@
 ---
 tags: []
 date created: 2022-11-01T20:30:05+08:00
-date modified: 2022-11-02T10:03:09+08:00
+date modified: 2023-10-13T02:37:08+08:00
 ---
 
-# Consistent Attachments and Links
+# Consistent attachments and links
+
+使用 [Custom Attachment location](Custom%20Attachment%20location.md) 替代。
 
 使用相对路径，并且在笔记当前位置创建附件文件夹。
 [GitHub - dy-sh/obsidian-consistent-attachments-and-links: Obsidian plugin. Move note with attachments.](https://github.com/dy-sh/obsidian-consistent-attachments-and-links)
