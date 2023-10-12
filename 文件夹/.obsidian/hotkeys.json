@@ -299,5 +299,13 @@
       "key": "F3"
     }
   ],
-  "obsidian-auto-link-title:auto-link-title-normal-paste": []
+  "obsidian-auto-link-title:auto-link-title-normal-paste": [],
+  "editor:rename-heading": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "R"
+    }
+  ]
 }

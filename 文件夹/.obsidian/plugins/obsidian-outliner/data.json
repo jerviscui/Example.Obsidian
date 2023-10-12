@@ -7,7 +7,7 @@
   "selectAll": true,
   "listLines": false,
   "listLineAction": "none",
-  "dnd": true,
+  "dnd": false,
   "previousRelease": "4.7.1",
   "dndExperiment": false
 }

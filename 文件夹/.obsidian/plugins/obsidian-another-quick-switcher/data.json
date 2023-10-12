@@ -2,6 +2,7 @@
   "searchDelayMilliSeconds": 100,
   "maxNumberOfSuggestions": 50,
   "normalizeAccentsAndDiacritics": false,
+  "useSelectionWordsAsDefaultInputQuery": false,
   "showDirectory": true,
   "showDirectoryAtNewLine": false,
   "showFullPathOfDirectory": false,
@@ -120,6 +121,7 @@
         }
       ],
       "open in default app": [],
+      "show in system explorer": [],
       "open in google": [
         {
           "modifiers": [
@@ -160,6 +162,15 @@
             "Mod"
           ],
           "key": "l"
+        }
+      ],
+      "show all results": [
+        {
+          "modifiers": [
+            "Shift",
+            "Alt"
+          ],
+          "key": "a"
         }
       ],
       "navigate forward": [
@@ -254,6 +265,202 @@
         }
       ],
       "toggle auto preview": [
+        {
+          "modifiers": [
+            "Mod"
+          ],
+          "key": ","
+        }
+      ],
+      "dismiss": [
+        {
+          "modifiers": [],
+          "key": "Escape"
+        }
+      ]
+    },
+    "backlink": {
+      "up": [
+        {
+          "modifiers": [
+            "Mod"
+          ],
+          "key": "p"
+        }
+      ],
+      "down": [
+        {
+          "modifiers": [
+            "Mod"
+          ],
+          "key": "n"
+        }
+      ],
+      "open": [
+        {
+          "modifiers": [],
+          "key": "Enter"
+        }
+      ],
+      "open in new tab": [
+        {
+          "modifiers": [
+            "Mod"
+          ],
+          "key": "Enter"
+        }
+      ],
+      "open in new pane (horizontal)": [
+        {
+          "modifiers": [
+            "Mod"
+          ],
+          "key": "-"
+        }
+      ],
+      "open in new pane (vertical)": [
+        {
+          "modifiers": [
+            "Mod"
+          ],
+          "key": "i"
+        }
+      ],
+      "open in new window": [
+        {
+          "modifiers": [
+            "Mod"
+          ],
+          "key": "o"
+        }
+      ],
+      "open in popup": [],
+      "open in new tab in background": [
+        {
+          "modifiers": [
+            "Alt"
+          ],
+          "key": "o"
+        }
+      ],
+      "open all in new tabs": [
+        {
+          "modifiers": [
+            "Mod",
+            "Shift",
+            "Alt"
+          ],
+          "key": "o"
+        }
+      ],
+      "show all results": [
+        {
+          "modifiers": [
+            "Shift",
+            "Alt"
+          ],
+          "key": "a"
+        }
+      ],
+      "preview": [
+        {
+          "modifiers": [
+            "Mod"
+          ],
+          "key": ","
+        }
+      ],
+      "dismiss": [
+        {
+          "modifiers": [],
+          "key": "Escape"
+        }
+      ]
+    },
+    "link": {
+      "up": [
+        {
+          "modifiers": [
+            "Mod"
+          ],
+          "key": "p"
+        }
+      ],
+      "down": [
+        {
+          "modifiers": [
+            "Mod"
+          ],
+          "key": "n"
+        }
+      ],
+      "open": [
+        {
+          "modifiers": [],
+          "key": "Enter"
+        }
+      ],
+      "open in new tab": [
+        {
+          "modifiers": [
+            "Mod"
+          ],
+          "key": "Enter"
+        }
+      ],
+      "open in new pane (horizontal)": [
+        {
+          "modifiers": [
+            "Mod"
+          ],
+          "key": "-"
+        }
+      ],
+      "open in new pane (vertical)": [
+        {
+          "modifiers": [
+            "Mod"
+          ],
+          "key": "i"
+        }
+      ],
+      "open in new window": [
+        {
+          "modifiers": [
+            "Mod"
+          ],
+          "key": "o"
+        }
+      ],
+      "open in popup": [],
+      "open in new tab in background": [
+        {
+          "modifiers": [
+            "Alt"
+          ],
+          "key": "o"
+        }
+      ],
+      "open all in new tabs": [
+        {
+          "modifiers": [
+            "Mod",
+            "Shift",
+            "Alt"
+          ],
+          "key": "o"
+        }
+      ],
+      "show all results": [
+        {
+          "modifiers": [
+            "Shift",
+            "Alt"
+          ],
+          "key": "a"
+        }
+      ],
+      "preview": [
         {
           "modifiers": [
             "Mod"
@@ -400,6 +607,8 @@
         "header": false
       },
       "searchTarget": "file",
+      "allowFuzzySearchForSearchTarget": false,
+      "minFuzzyMatchScore": 0.5,
       "targetExtensions": [
         "md"
       ],
@@ -432,6 +641,8 @@
         "header": false
       },
       "searchTarget": "file",
+      "allowFuzzySearchForSearchTarget": false,
+      "minFuzzyMatchScore": 0.5,
       "targetExtensions": [
         "md"
       ],
@@ -465,6 +676,8 @@
         "header": true
       },
       "searchTarget": "file",
+      "allowFuzzySearchForSearchTarget": false,
+      "minFuzzyMatchScore": 0.5,
       "targetExtensions": [
         "md"
       ],
@@ -479,7 +692,7 @@
         "publish"
       ],
       "defaultInput": "",
-      "commandPrefix": ":l ",
+      "commandPrefix": "",
       "sortPriorities": [
         "Prefix name match",
         "Name match",
@@ -501,6 +714,8 @@
         "header": false
       },
       "searchTarget": "file",
+      "allowFuzzySearchForSearchTarget": false,
+      "minFuzzyMatchScore": 0.5,
       "targetExtensions": [
         "md"
       ],
@@ -523,7 +738,7 @@
       ],
       "includePrefixPathPatterns": [],
       "excludePrefixPathPatterns": [],
-      "expand": true
+      "expand": false
     },
     {
       "name": "Backlink search",
@@ -533,9 +748,9 @@
         "header": false
       },
       "searchTarget": "backlink",
-      "targetExtensions": [
-        "md"
-      ],
+      "allowFuzzySearchForSearchTarget": false,
+      "minFuzzyMatchScore": 0.5,
+      "targetExtensions": [],
       "floating": false,
       "showFrontMatter": false,
       "excludeFrontMatterKeys": [
@@ -555,10 +770,50 @@
       "includePrefixPathPatterns": [],
       "excludePrefixPathPatterns": [],
       "expand": true
+    },
+    {
+      "name": "Link search",
+      "searchBy": {
+        "tag": false,
+        "link": false,
+        "header": false
+      },
+      "searchTarget": "link",
+      "allowFuzzySearchForSearchTarget": false,
+      "minFuzzyMatchScore": 0.5,
+      "targetExtensions": [],
+      "floating": false,
+      "showFrontMatter": false,
+      "excludeFrontMatterKeys": [
+        "aliases",
+        "alias",
+        "tag",
+        "tags",
+        "cssclass",
+        "publish"
+      ],
+      "defaultInput": "",
+      "commandPrefix": ":l",
+      "sortPriorities": [
+        "Last opened",
+        "Last modified"
+      ],
+      "includePrefixPathPatterns": [],
+      "excludePrefixPathPatterns": [],
+      "expand": true
     }
   ],
   "autoPreviewInFloatingHeaderSearch": true,
+  "backlinkExcludePrefixPathPatterns": [],
   "ripgrepCommand": "rg",
-  "moveFileExcludePrefixPathPatterns": [],
-  "showLogAboutPerformanceInConsole": false
+  "grepExtensions": [
+    "md",
+    "html"
+  ],
+  "maxDisplayLengthAroundMatchedWord": 64,
+  "moveFileExcludePrefixPathPatterns": [
+    "_assets"
+  ],
+  "showLogAboutPerformanceInConsole": false,
+  "showFuzzyMatchScore": false
 }

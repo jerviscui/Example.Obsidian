@@ -138,7 +138,7 @@ __export(main_exports, {
   default: () => AnotherQuickSwitcher
 });
 module.exports = __toCommonJS(main_exports);
-var import_obsidian9 = require("obsidian");
+var import_obsidian11 = require("obsidian");
 
 // src/ui/AnotherQuickSwitcherModal.ts
 var import_obsidian4 = require("obsidian");
@@ -177,6 +177,16 @@ function flatten(matrix) {
 }
 function uniq(values) {
   return [...new Set(values)];
+}
+function uniqBy(values, fn) {
+  const m = /* @__PURE__ */ new Map();
+  values.forEach((x) => {
+    const k = fn(x);
+    if (!m.has(k)) {
+      m.set(k, x);
+    }
+  });
+  return Array.from(m.values());
 }
 function uniqFlatMap(values, mapper) {
   return uniq(flatten(values.map(mapper)));
@@ -900,6 +910,36 @@ var createDefaultHotkeys = () => ({
     "toggle auto preview": [{ modifiers: ["Mod"], key: "," }],
     dismiss: [{ modifiers: [], key: "Escape" }]
   },
+  backlink: {
+    up: [{ modifiers: ["Mod"], key: "p" }],
+    down: [{ modifiers: ["Mod"], key: "n" }],
+    open: [{ modifiers: [], key: "Enter" }],
+    "open in new tab": [{ modifiers: ["Mod"], key: "Enter" }],
+    "open in new pane (horizontal)": [{ modifiers: ["Mod"], key: "-" }],
+    "open in new pane (vertical)": [{ modifiers: ["Mod"], key: "i" }],
+    "open in new window": [{ modifiers: ["Mod"], key: "o" }],
+    "open in popup": [],
+    "open in new tab in background": [{ modifiers: ["Alt"], key: "o" }],
+    "open all in new tabs": [{ modifiers: ["Mod", "Shift", "Alt"], key: "o" }],
+    "show all results": [{ modifiers: ["Shift", "Alt"], key: "a" }],
+    preview: [{ modifiers: ["Mod"], key: "," }],
+    dismiss: [{ modifiers: [], key: "Escape" }]
+  },
+  link: {
+    up: [{ modifiers: ["Mod"], key: "p" }],
+    down: [{ modifiers: ["Mod"], key: "n" }],
+    open: [{ modifiers: [], key: "Enter" }],
+    "open in new tab": [{ modifiers: ["Mod"], key: "Enter" }],
+    "open in new pane (horizontal)": [{ modifiers: ["Mod"], key: "-" }],
+    "open in new pane (vertical)": [{ modifiers: ["Mod"], key: "i" }],
+    "open in new window": [{ modifiers: ["Mod"], key: "o" }],
+    "open in popup": [],
+    "open in new tab in background": [{ modifiers: ["Alt"], key: "o" }],
+    "open all in new tabs": [{ modifiers: ["Mod", "Shift", "Alt"], key: "o" }],
+    "show all results": [{ modifiers: ["Shift", "Alt"], key: "a" }],
+    preview: [{ modifiers: ["Mod"], key: "," }],
+    dismiss: [{ modifiers: [], key: "Escape" }]
+  },
   grep: {
     search: [{ modifiers: [], key: "Tab" }],
     up: [{ modifiers: ["Mod"], key: "p" }],
@@ -1145,7 +1185,6 @@ var createPreSettingSearchCommands = () => [
     expand: false
   },
   createDefaultLinkSearchCommand(),
-  createDefaultBacklinkSearchCommand(),
   createDefault2HopLinkSearchCommand()
 ];
 var DEFAULT_SETTINGS = {
@@ -1164,6 +1203,7 @@ var DEFAULT_SETTINGS = {
   hotkeys: createDefaultHotkeys(),
   searchCommands: createPreSettingSearchCommands(),
   autoPreviewInFloatingHeaderSearch: true,
+  backlinkExcludePrefixPathPatterns: [],
   ripgrepCommand: "rg",
   grepExtensions: ["md"],
   maxDisplayLengthAroundMatchedWord: 64,
@@ -1179,6 +1219,8 @@ var AnotherQuickSwitcherSettingTab = class extends import_obsidian2.PluginSettin
       main: false,
       move: false,
       header: false,
+      backlink: false,
+      link: false,
       grep: false
     };
     this.plugin = plugin;
@@ -1192,6 +1234,7 @@ var AnotherQuickSwitcherSettingTab = class extends import_obsidian2.PluginSettin
     this.addHotKeysInDialogSettings(containerEl);
     this.addSearchSettings(containerEl);
     this.addHeaderSearchSettings(containerEl);
+    this.addBacklinkSettings(containerEl);
     this.addGrepSettings(containerEl);
     this.addMoveSettings(containerEl);
     this.addDebugSettings(containerEl);
@@ -1382,6 +1425,8 @@ var AnotherQuickSwitcherSettingTab = class extends import_obsidian2.PluginSettin
     addHotkeysForDialog("main", "Main dialog");
     addHotkeysForDialog("move", "Move dialog");
     addHotkeysForDialog("header", "Header dialog");
+    addHotkeysForDialog("backlink", "Backlink dialog");
+    addHotkeysForDialog("link", "Link dialog");
     addHotkeysForDialog("grep", "Grep dialog");
   }
   addSearchSettings(containerEl) {
@@ -1630,6 +1675,21 @@ ${invalidValues.map((x) => `- ${x}`).join("\n")}
       });
     });
   }
+  addBacklinkSettings(containerEl) {
+    containerEl.createEl("h3", { text: "\u{1F50D} Backlink search" });
+    new import_obsidian2.Setting(containerEl).setName('Exclude prefix path patterns for "Backlink search"').setDesc(
+      "If set, folders whose paths start with one of the patterns will not be suggested. It can set multi patterns by line breaks"
+    ).addTextArea((tc) => {
+      const el = tc.setPlaceholder("Prefix match patterns").setValue(
+        this.plugin.settings.backlinkExcludePrefixPathPatterns.join("\n")
+      ).onChange(async (value) => {
+        this.plugin.settings.backlinkExcludePrefixPathPatterns = smartLineBreakSplit(value);
+        await this.plugin.saveSettings();
+      });
+      el.inputEl.className = "another-quick-switcher__settings__ignore_path_patterns";
+      return el;
+    });
+  }
   addGrepSettings(containerEl) {
     containerEl.createEl("h3", { text: "\u{1F50D} Grep" });
     new import_obsidian2.Setting(containerEl).setName("Ripgrep command").setDesc("A command that can execute ripgrep").addText(
@@ -1732,6 +1792,9 @@ function normalizeRelativePath(path, base) {
 
 // src/app-helper.ts
 var import_ts_deepmerge = __toESM(require_dist());
+function isFrontMatterLinkCache(x) {
+  return x.position == null;
+}
 var AppHelper = class {
   constructor(app2) {
     this.unsafeApp = app2;
@@ -1797,18 +1860,27 @@ var AppHelper = class {
     return matches.map((x) => x[0]);
   }
   findFirstLinkOffset(file, linkFile) {
-    var _a, _b;
-    const fileCache = this.unsafeApp.metadataCache.getFileCache(file);
+    var _a, _b, _c;
+    const fileCache = this.unsafeApp.metadataCache.getFileCache(
+      file
+    );
     const links = (_a = fileCache == null ? void 0 : fileCache.links) != null ? _a : [];
-    const embeds = (_b = fileCache == null ? void 0 : fileCache.embeds) != null ? _b : [];
-    return [...links, ...embeds].find((x) => {
-      var _a2;
-      const firstLinkPath = this.isPhantomFile(linkFile) ? this.getPathToBeCreated(x.link) : (_a2 = this.unsafeApp.metadataCache.getFirstLinkpathDest(
-        (0, import_obsidian3.getLinkpath)(x.link),
-        file.path
-      )) == null ? void 0 : _a2.path;
-      return firstLinkPath === linkFile.path;
-    }).position.start.offset;
+    const frontmatterLinks = (_b = fileCache == null ? void 0 : fileCache.frontmatterLinks) != null ? _b : [];
+    const embeds = (_c = fileCache == null ? void 0 : fileCache.embeds) != null ? _c : [];
+    const first = [...links, ...frontmatterLinks, ...embeds].find(
+      (x) => {
+        var _a2;
+        const firstLinkPath = this.isPhantomFile(linkFile) ? this.getPathToBeCreated(x.link) : (_a2 = this.unsafeApp.metadataCache.getFirstLinkpathDest(
+          (0, import_obsidian3.getLinkpath)(x.link),
+          file.path
+        )) == null ? void 0 : _a2.path;
+        return firstLinkPath === linkFile.path;
+      }
+    );
+    if (!first || isFrontMatterLinkCache(first)) {
+      return 0;
+    }
+    return first.position.start.offset;
   }
   findFirstHeaderOffset(file, header) {
     var _a, _b;
@@ -1820,6 +1892,13 @@ var AppHelper = class {
       (x) => excludeFormat(x.heading) === excludeFormat(header)
     );
     return (_b = target == null ? void 0 : target.position.start.offset) != null ? _b : null;
+  }
+  getBacklinksByFilePathInActiveFile() {
+    const f = this.getActiveFile();
+    if (!f) {
+      return null;
+    }
+    return this.unsafeApp.metadataCache.getBacklinksForFile(f).data;
   }
   createBacklinksMap() {
     const backLinksMap = {};
@@ -1840,17 +1919,44 @@ var AppHelper = class {
     return backLinksMap;
   }
   createLinksMap(file) {
-    var _a, _b;
-    const cache = this.unsafeApp.metadataCache.getFileCache(file);
+    var _a, _b, _c;
+    const cache = this.unsafeApp.metadataCache.getFileCache(
+      file
+    );
     return mapValues(
       groupBy(
-        [...(_a = cache == null ? void 0 : cache.embeds) != null ? _a : [], ...(_b = cache == null ? void 0 : cache.links) != null ? _b : []],
+        [
+          ...(_a = cache == null ? void 0 : cache.embeds) != null ? _a : [],
+          ...(_b = cache == null ? void 0 : cache.links) != null ? _b : [],
+          ...(_c = cache == null ? void 0 : cache.frontmatterLinks) != null ? _c : []
+        ],
         (x) => {
           var _a2;
           return (_a2 = this.linkText2Path(x.link)) != null ? _a2 : this.getPathToBeCreated(x.link);
         }
       ),
       (caches) => caches[0]
+    );
+  }
+  getLinksByFilePathInActiveFile() {
+    var _a, _b, _c;
+    const file = this.getActiveFile();
+    if (!file) {
+      return null;
+    }
+    const cache = this.unsafeApp.metadataCache.getFileCache(
+      file
+    );
+    return groupBy(
+      [
+        ...(_a = cache == null ? void 0 : cache.embeds) != null ? _a : [],
+        ...(_b = cache == null ? void 0 : cache.links) != null ? _b : [],
+        ...(_c = cache == null ? void 0 : cache.frontmatterLinks) != null ? _c : []
+      ],
+      (x) => {
+        var _a2;
+        return (_a2 = this.linkText2Path(x.link)) != null ? _a2 : this.getPathToBeCreated(x.link);
+      }
     );
   }
   async moveTo(to, editor) {
@@ -2015,7 +2121,7 @@ var AppHelper = class {
   }
   insertLinkToActiveFileBy(file, phantom) {
     const activeMarkdownView = this.unsafeApp.workspace.getActiveViewOfType(import_obsidian3.MarkdownView);
-    if (!activeMarkdownView) {
+    if (!(activeMarkdownView == null ? void 0 : activeMarkdownView.file)) {
       return;
     }
     let linkText = this.unsafeApp.fileManager.generateMarkdownLink(
@@ -2160,12 +2266,15 @@ function matchQuery(item, query, options) {
   if (!includeDir) {
     return [{ type: "not found", query }];
   }
+  if (file.length === 0) {
+    return [{ type: "directory", meta: [item.file.path], query }];
+  }
   let results = [];
   if (item.tokens.some((t) => smartEquals(t, file, isNormalizeAccentsDiacritics))) {
     results.push({ type: "word-perfect", meta: [item.file.name], query });
   }
   const fuzzyResult = smartMicroFuzzy(
-    item.file.name,
+    item.file.extension === "md" ? item.file.basename : item.file.name,
     query,
     isNormalizeAccentsDiacritics
   );
@@ -2377,7 +2486,7 @@ function createMetaDiv(args) {
   const metaDiv = createDiv({
     cls: "another-quick-switcher__item__metas"
   });
-  if (options.showFuzzyMatchScore) {
+  if (options.showFuzzyMatchScore && args.score > 0) {
     const scoreDiv = createDiv({
       cls: "another-quick-switcher__item__meta"
     });
@@ -2707,10 +2816,15 @@ var AnotherQuickSwitcherModal = class extends import_obsidian4.SuggestModal {
           ...(_c = (0, import_obsidian4.parseFrontMatterTags)(cache.frontmatter)) != null ? _c : []
         ]) : [],
         headers: this.command.searchBy.header ? ((_d = cache.headings) != null ? _d : []).map((x2) => excludeFormat(x2.heading)) : [],
-        links: this.command.searchBy.link ? uniq((_f = (_e = cache.links) == null ? void 0 : _e.map((x2) => {
-          var _a3;
-          return (_a3 = x2.displayText) != null ? _a3 : "";
-        })) != null ? _f : []) : [],
+        links: this.command.searchBy.link ? uniq(
+          [
+            ...(_e = cache.links) != null ? _e : [],
+            ...(_f = cache.frontmatterLinks) != null ? _f : []
+          ].map((x2) => {
+            var _a3;
+            return (_a3 = x2.displayText) != null ? _a3 : "";
+          })
+        ) : [],
         frontMatter: this.command.showFrontMatter && cache.frontmatter ? omitBy(cache.frontmatter, (key, _) => key === "position") : void 0,
         phantom: false,
         starred: x.path in starredPathMap,
@@ -2751,9 +2865,10 @@ var AnotherQuickSwitcherModal = class extends import_obsidian4.SuggestModal {
         case "link":
           const originFileLinkMap = this.originFile ? this.appHelper.createLinksMap(this.originFile) : {};
           items = items.filter((x) => originFileLinkMap[x.file.path]).sort(
-            sorter(
-              (x) => originFileLinkMap[x.file.path].position.start.offset
-            )
+            sorter((x) => {
+              const c = originFileLinkMap[x.file.path];
+              return isFrontMatterLinkCache(c) ? -1 : c.position.start.offset;
+            })
           );
           break;
         case "2-hop-link":
@@ -2765,12 +2880,10 @@ var AnotherQuickSwitcherModal = class extends import_obsidian4.SuggestModal {
           );
           const filteredPaths = uniq([...linkPaths, ...backlinkPaths]);
           items = items.filter((x) => filteredPaths.includes(x.file.path)).sort(
-            sorter(
-              (x) => {
-                var _a, _b;
-                return (_b = (_a = originFileLinkMap2[x.file.path]) == null ? void 0 : _a.position.start.offset) != null ? _b : 65535;
-              }
-            )
+            sorter((x) => {
+              const c = originFileLinkMap2[x.file.path];
+              return !c || isFrontMatterLinkCache(c) ? 65535 : c.position.start.offset;
+            })
           );
           break;
       }
@@ -2816,6 +2929,10 @@ var AnotherQuickSwitcherModal = class extends import_obsidian4.SuggestModal {
       this.showDebugLog(() => `afterCommand: ${this.command.name}`);
     }
     this.searchQuery = query.startsWith(this.command.commandPrefix) ? query.replace(this.command.commandPrefix, "") : query;
+    this.searchQuery = this.searchQuery.replace(
+      /<cd>/g,
+      this.appHelper.getCurrentDirPath()
+    );
     if (this.command.defaultInput) {
       this.searchQuery = `${this.command.defaultInput}${this.searchQuery}`;
     }
@@ -3306,7 +3423,7 @@ var AnotherQuickSwitcherModal = class extends import_obsidian4.SuggestModal {
 };
 
 // src/commands.ts
-var import_obsidian8 = require("obsidian");
+var import_obsidian10 = require("obsidian");
 
 // src/ui/MoveModal.ts
 var import_obsidian5 = require("obsidian");
@@ -4147,12 +4264,652 @@ var GrepModal = class extends import_obsidian7.SuggestModal {
   }
 };
 
+// src/ui/BacklinkModal.ts
+var import_obsidian8 = require("obsidian");
+function buildLogMessage3(message, msec) {
+  return `${message}: ${Math.round(msec)}[ms]`;
+}
+var BacklinkModal = class extends import_obsidian8.SuggestModal {
+  constructor(app2, settings, initialLeaf) {
+    super(app2);
+    this.lastOpenFileIndexByPath = {};
+    this.suggestions = [];
+    this.isClosed = new Promise((resolve) => {
+      this.markClosed = resolve;
+    });
+    this.navQueue = Promise.resolve();
+    this.vaultRootPath = normalizePath(
+      this.app.vault.adapter.basePath
+    );
+    this.appHelper = new AppHelper(app2);
+    this.settings = settings;
+    this.initialLeaf = initialLeaf;
+    this.limit = 255;
+    this.app.workspace.getLastOpenFiles().forEach((v, i) => {
+      this.lastOpenFileIndexByPath[v] = i;
+    });
+    this.setHotkeys();
+    this.debounceGetSuggestions = (0, import_obsidian8.debounce)(
+      (query, cb) => {
+        cb(this._getSuggestions(query));
+      },
+      this.settings.searchDelayMilliSeconds,
+      true
+    );
+  }
+  async init() {
+    await this.indexingItems();
+  }
+  onOpen() {
+    super.onOpen();
+    setFloatingModal(this.appHelper);
+    this.opened = true;
+  }
+  onClose() {
+    super.onClose();
+    if (this.stateToRestore) {
+      this.navigate(() => this.stateToRestore.restore());
+    }
+    this.navigate(this.markClosed);
+  }
+  async indexingItems() {
+    const ignoredItems = [];
+    const backlinks = this.appHelper.getBacklinksByFilePathInActiveFile();
+    if (!backlinks) {
+      return;
+    }
+    for (const [path, caches] of Object.entries(backlinks)) {
+      const file = this.appHelper.getFileByPath(path);
+      if (this.settings.backlinkExcludePrefixPathPatterns.some(
+        (p) => file.path.startsWith(p)
+      )) {
+        continue;
+      }
+      const content = await this.app.vault.cachedRead(file);
+      for (const cache of caches) {
+        ignoredItems.push(
+          isFrontMatterLinkCache(cache) ? {
+            file,
+            line: `<${cache.key}: in properties>`,
+            lineNumber: 1,
+            offset: 0
+          } : {
+            file,
+            line: content.split("\n").at(cache.position.start.line),
+            lineNumber: cache.position.start.line + 1,
+            offset: cache.position.start.offset
+          }
+        );
+      }
+    }
+    this.ignoredItems = uniqBy(
+      ignoredItems,
+      (item) => `${item.file.path}/${item.lineNumber}`
+    );
+  }
+  getSuggestions(query) {
+    if (!query || !this.opened) {
+      return this._getSuggestions(query);
+    }
+    return new Promise((resolve) => {
+      this.debounceGetSuggestions(query, (items) => {
+        resolve(items);
+      });
+    });
+  }
+  _getSuggestions(query) {
+    var _a;
+    const start = performance.now();
+    const isQueryEmpty = query.trim() === "";
+    const queries = query.trim().split(" ");
+    const matchedSuggestions = isQueryEmpty ? this.ignoredItems : this.ignoredItems.filter(
+      (x) => queries.every(
+        (q) => smartIncludes(
+          x.file.path,
+          q,
+          this.settings.normalizeAccentsAndDiacritics
+        ) || smartIncludes(
+          x.line,
+          q,
+          this.settings.normalizeAccentsAndDiacritics
+        )
+      )
+    );
+    this.showDebugLog(
+      () => buildLogMessage3(`Get suggestions: ${query}`, performance.now() - start)
+    );
+    (_a = this.countInputEl) == null ? void 0 : _a.remove();
+    this.countInputEl = createDiv({
+      text: `${Math.min(matchedSuggestions.length, this.limit)} / ${matchedSuggestions.length}`,
+      cls: "another-quick-switcher__backlink__status__count-input"
+    });
+    this.inputEl.before(this.countInputEl);
+    this.suggestions = matchedSuggestions.sort(
+      (a, b) => compare(
+        a,
+        b,
+        (x) => {
+          var _a2;
+          return (_a2 = this.lastOpenFileIndexByPath[x.file.path]) != null ? _a2 : 999999;
+        },
+        "asc"
+      )
+    ).slice(0, this.limit).map((x, order) => ({ ...x, order }));
+    return this.suggestions;
+  }
+  renderSuggestion(item, el) {
+    var _a, _b, _c;
+    const previousPath = (_a = this.suggestions[item.order - 1]) == null ? void 0 : _a.file.path;
+    const sameFileWithPrevious = previousPath === item.file.path;
+    const itemDiv = createDiv({
+      cls: "another-quick-switcher__item"
+    });
+    const entryDiv = createDiv({
+      cls: "another-quick-switcher__item__entry"
+    });
+    if (!sameFileWithPrevious) {
+      const titleDiv = createDiv({
+        cls: [
+          "another-quick-switcher__item__title",
+          "another-quick-switcher__backlink__item__title_entry"
+        ],
+        text: item.file.basename,
+        attr: {
+          extension: item.file.extension
+        }
+      });
+      const isExcalidraw = item.file.basename.endsWith(".excalidraw");
+      if (item.file.extension !== "md" || isExcalidraw) {
+        const extDiv = createDiv({
+          cls: "another-quick-switcher__item__extension",
+          text: isExcalidraw ? "excalidraw" : item.file.extension
+        });
+        titleDiv.appendChild(extDiv);
+      }
+      entryDiv.appendChild(titleDiv);
+      itemDiv.appendChild(entryDiv);
+      if (this.settings.showDirectory) {
+        const directoryDiv = createDiv({
+          cls: "another-quick-switcher__item__directory"
+        });
+        directoryDiv.insertAdjacentHTML("beforeend", FOLDER);
+        const text = this.settings.showFullPathOfDirectory ? (_b = item.file.parent) == null ? void 0 : _b.path : (_c = item.file.parent) == null ? void 0 : _c.name;
+        directoryDiv.appendText(` ${text}`);
+        entryDiv.appendChild(directoryDiv);
+        if (this.settings.showDirectoryAtNewLine) {
+          itemDiv.appendChild(directoryDiv);
+        }
+      }
+    }
+    const descriptionsDiv = createDiv({
+      cls: "another-quick-switcher__item__descriptions"
+    });
+    const descriptionDiv = createDiv({
+      cls: "another-quick-switcher__backlink__item__description"
+    });
+    descriptionDiv.createSpan({
+      text: item.line
+    });
+    if (item.order < 9) {
+      const hotKeyGuide = createSpan({
+        cls: "another-quick-switcher__backlink__item__hot-key-guide",
+        text: `${item.order + 1}`
+      });
+      descriptionsDiv.appendChild(hotKeyGuide);
+    }
+    descriptionsDiv.appendChild(descriptionDiv);
+    itemDiv.appendChild(descriptionsDiv);
+    el.appendChild(itemDiv);
+  }
+  navigate(cb) {
+    this.navQueue = this.navQueue.then(cb);
+  }
+  async chooseCurrentSuggestion(leaf, option = {}) {
+    var _a, _b;
+    const item = (_a = this.chooser.values) == null ? void 0 : _a[this.chooser.selectedItem];
+    if (!item) {
+      return null;
+    }
+    if (!option.keepOpen) {
+      this.close();
+      this.navigate(() => this.isClosed);
+    } else if (leaf === "same-tab") {
+      (_b = this.stateToRestore) != null ? _b : this.stateToRestore = this.appHelper.captureState(this.initialLeaf);
+    }
+    this.navigate(
+      () => this.appHelper.openFile(
+        item.file,
+        {
+          leaf,
+          line: item.lineNumber - 1,
+          inplace: option.keepOpen
+        },
+        this.stateToRestore
+      )
+    );
+    return item.file;
+  }
+  async onChooseSuggestion(item, evt) {
+    await this.chooseCurrentSuggestion("same-tab");
+  }
+  showDebugLog(toMessage) {
+    if (this.settings.showLogAboutPerformanceInConsole) {
+      console.log(toMessage());
+    }
+  }
+  registerKeys(key, handler) {
+    var _a;
+    (_a = this.settings.hotkeys.backlink[key]) == null ? void 0 : _a.forEach((x) => {
+      this.scope.register(x.modifiers, capitalizeFirstLetter(x.key), (evt) => {
+        if (!evt.isComposing) {
+          evt.preventDefault();
+          handler();
+          return false;
+        }
+      });
+    });
+  }
+  setHotkeys() {
+    this.scope.unregister(this.scope.keys.find((x) => x.key === "Enter"));
+    this.scope.unregister(this.scope.keys.find((x) => x.key === "Escape"));
+    this.scope.unregister(this.scope.keys.find((x) => x.key === "Home"));
+    this.scope.unregister(this.scope.keys.find((x) => x.key === "End"));
+    const openNthMod = quickResultSelectionModifier(
+      this.settings.userAltInsteadOfModForQuickResultSelection
+    );
+    if (!this.settings.hideHotkeyGuides) {
+      this.setInstructions([
+        { command: "[\u21B5]", purpose: "open" },
+        { command: `[\u2191]`, purpose: "up" },
+        { command: `[\u2193]`, purpose: "down" },
+        { command: `[${openNthMod} 1~9]`, purpose: "open Nth" },
+        ...createInstructions(this.settings.hotkeys.backlink)
+      ]);
+    }
+    this.registerKeys("up", () => {
+      document.dispatchEvent(new KeyboardEvent("keydown", { key: "ArrowUp" }));
+    });
+    this.registerKeys("down", () => {
+      document.dispatchEvent(
+        new KeyboardEvent("keydown", { key: "ArrowDown" })
+      );
+    });
+    this.registerKeys("open", async () => {
+      await this.chooseCurrentSuggestion("same-tab");
+    });
+    this.registerKeys("open in new tab", async () => {
+      await this.chooseCurrentSuggestion("new-tab");
+    });
+    this.registerKeys("open in new pane (horizontal)", async () => {
+      await this.chooseCurrentSuggestion("new-pane-horizontal");
+    });
+    this.registerKeys("open in new pane (vertical)", async () => {
+      await this.chooseCurrentSuggestion("new-pane-vertical");
+    });
+    this.registerKeys("open in new window", async () => {
+      await this.chooseCurrentSuggestion("new-window");
+    });
+    this.registerKeys("open in popup", async () => {
+      await this.chooseCurrentSuggestion("popup");
+    });
+    this.registerKeys("open in new tab in background", async () => {
+      await this.chooseCurrentSuggestion("new-tab-background", {
+        keepOpen: true
+      });
+    });
+    this.registerKeys("open all in new tabs", () => {
+      this.close();
+      if (this.chooser.values == null) {
+        return;
+      }
+      this.chooser.values.slice().reverse().forEach(
+        (x) => this.appHelper.openFile(x.file, {
+          leaf: "new-tab-background"
+        })
+      );
+    });
+    this.registerKeys("show all results", () => {
+      this.limit = Number.MAX_SAFE_INTEGER;
+      this.inputEl.dispatchEvent(new Event("input"));
+    });
+    this.registerKeys("preview", async () => {
+      const file = await this.chooseCurrentSuggestion("same-tab", {
+        keepOpen: true
+      });
+    });
+    const modifierKey = this.settings.userAltInsteadOfModForQuickResultSelection ? "Alt" : "Mod";
+    [1, 2, 3, 4, 5, 6, 7, 8, 9].forEach((n) => {
+      this.scope.register([modifierKey], String(n), (evt) => {
+        this.chooser.setSelectedItem(n - 1, evt, true);
+        this.chooser.useSelectedItem({});
+        return false;
+      });
+    });
+    this.registerKeys("dismiss", async () => {
+      this.close();
+    });
+  }
+};
+
+// src/ui/LinkModal.ts
+var import_obsidian9 = require("obsidian");
+
+// src/utils/types.ts
+function isPresent(arg) {
+  return arg != null;
+}
+
+// src/ui/LinkModal.ts
+function buildLogMessage4(message, msec) {
+  return `${message}: ${Math.round(msec)}[ms]`;
+}
+var LinkModal = class extends import_obsidian9.SuggestModal {
+  constructor(app2, settings, initialLeaf) {
+    super(app2);
+    this.lastOpenFileIndexByPath = {};
+    this.suggestions = [];
+    this.isClosed = new Promise((resolve) => {
+      this.markClosed = resolve;
+    });
+    this.navQueue = Promise.resolve();
+    this.vaultRootPath = normalizePath(
+      this.app.vault.adapter.basePath
+    );
+    this.appHelper = new AppHelper(app2);
+    this.settings = settings;
+    this.initialLeaf = initialLeaf;
+    this.limit = 255;
+    this.app.workspace.getLastOpenFiles().forEach((v, i) => {
+      this.lastOpenFileIndexByPath[v] = i;
+    });
+    this.setHotkeys();
+    this.debounceGetSuggestions = (0, import_obsidian9.debounce)(
+      (query, cb) => {
+        cb(this._getSuggestions(query));
+      },
+      this.settings.searchDelayMilliSeconds,
+      true
+    );
+  }
+  async init() {
+    await this.indexingItems();
+  }
+  onOpen() {
+    super.onOpen();
+    setFloatingModal(this.appHelper);
+    this.opened = true;
+  }
+  onClose() {
+    super.onClose();
+    if (this.stateToRestore) {
+      this.navigate(() => this.stateToRestore.restore());
+    }
+    this.navigate(this.markClosed);
+  }
+  async indexingItems() {
+    const ignoredItems = [];
+    const links = this.appHelper.getLinksByFilePathInActiveFile();
+    if (!links) {
+      return;
+    }
+    for (const [path, caches] of Object.entries(links)) {
+      const file = this.appHelper.getFileByPath(path);
+      const content = this.appHelper.getCurrentEditor().getValue();
+      for (const cache of caches) {
+        if (!isFrontMatterLinkCache(cache)) {
+          ignoredItems.push({
+            file,
+            displayLink: cache.displayText,
+            line: content.split("\n").at(cache.position.start.line),
+            lineNumber: cache.position.start.line + 1,
+            offset: cache.position.start.offset
+          });
+        }
+      }
+    }
+    this.ignoredItems = ignoredItems;
+  }
+  getSuggestions(query) {
+    if (!query || !this.opened) {
+      return this._getSuggestions(query);
+    }
+    return new Promise((resolve) => {
+      this.debounceGetSuggestions(query, (items) => {
+        resolve(items);
+      });
+    });
+  }
+  _getSuggestions(query) {
+    var _a;
+    const start = performance.now();
+    const isQueryEmpty = query.trim() === "";
+    const queries = query.trim().split(" ");
+    const matchedSuggestions = isQueryEmpty ? this.ignoredItems : this.ignoredItems.filter(
+      (x) => queries.every(
+        (q) => x.file && smartIncludes(
+          x.file.path,
+          q,
+          this.settings.normalizeAccentsAndDiacritics
+        ) || smartIncludes(
+          x.line,
+          q,
+          this.settings.normalizeAccentsAndDiacritics
+        )
+      )
+    );
+    this.showDebugLog(
+      () => buildLogMessage4(`Get suggestions: ${query}`, performance.now() - start)
+    );
+    (_a = this.countInputEl) == null ? void 0 : _a.remove();
+    this.countInputEl = createDiv({
+      text: `${Math.min(matchedSuggestions.length, this.limit)} / ${matchedSuggestions.length}`,
+      cls: "another-quick-switcher__link__status__count-input"
+    });
+    this.inputEl.before(this.countInputEl);
+    this.suggestions = matchedSuggestions.slice(0, this.limit).map((x, order) => ({ ...x, order }));
+    return this.suggestions;
+  }
+  renderSuggestion(item, el) {
+    var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n, _o;
+    const previousPath = (_d = (_b = (_a = this.suggestions[item.order - 1]) == null ? void 0 : _a.file) == null ? void 0 : _b.path) != null ? _d : (_c = this.suggestions[item.order - 1]) == null ? void 0 : _c.displayLink;
+    const sameFileWithPrevious = previousPath === ((_f = (_e = item.file) == null ? void 0 : _e.path) != null ? _f : item.displayLink);
+    const itemDiv = createDiv({
+      cls: "another-quick-switcher__item"
+    });
+    const entryDiv = createDiv({
+      cls: "another-quick-switcher__item__entry"
+    });
+    if (!sameFileWithPrevious) {
+      const extension = (_h = (_g = item.file) == null ? void 0 : _g.extension) != null ? _h : "md";
+      const titleDiv = createDiv({
+        cls: [
+          "another-quick-switcher__item__title",
+          "another-quick-switcher__link__item__title_entry"
+        ],
+        text: (_j = (_i = item.file) == null ? void 0 : _i.basename) != null ? _j : item.displayLink,
+        attr: {
+          extension
+        }
+      });
+      const isExcalidraw = (_k = item.file) == null ? void 0 : _k.basename.endsWith(".excalidraw");
+      if (extension !== "md" || isExcalidraw) {
+        const extDiv = createDiv({
+          cls: "another-quick-switcher__item__extension",
+          text: isExcalidraw ? "excalidraw" : extension
+        });
+        titleDiv.appendChild(extDiv);
+      }
+      entryDiv.appendChild(titleDiv);
+      itemDiv.appendChild(entryDiv);
+      if (this.settings.showDirectory) {
+        const directoryDiv = createDiv({
+          cls: "another-quick-switcher__item__directory"
+        });
+        directoryDiv.insertAdjacentHTML("beforeend", FOLDER);
+        const text = this.settings.showFullPathOfDirectory ? (_m = (_l = item.file) == null ? void 0 : _l.parent) == null ? void 0 : _m.path : (_o = (_n = item.file) == null ? void 0 : _n.parent) == null ? void 0 : _o.name;
+        directoryDiv.appendText(` ${text}`);
+        entryDiv.appendChild(directoryDiv);
+        if (this.settings.showDirectoryAtNewLine) {
+          itemDiv.appendChild(directoryDiv);
+        }
+      }
+    }
+    const descriptionsDiv = createDiv({
+      cls: "another-quick-switcher__item__descriptions"
+    });
+    const descriptionDiv = createDiv({
+      cls: "another-quick-switcher__link__item__description"
+    });
+    descriptionDiv.createSpan({
+      text: item.line
+    });
+    if (item.order < 9) {
+      const hotKeyGuide = createSpan({
+        cls: "another-quick-switcher__link__item__hot-key-guide",
+        text: `${item.order + 1}`
+      });
+      descriptionsDiv.appendChild(hotKeyGuide);
+    }
+    descriptionsDiv.appendChild(descriptionDiv);
+    itemDiv.appendChild(descriptionsDiv);
+    el.appendChild(itemDiv);
+  }
+  navigate(cb) {
+    this.navQueue = this.navQueue.then(cb);
+  }
+  async chooseCurrentSuggestion(leaf, option = {}) {
+    var _a, _b;
+    const item = (_a = this.chooser.values) == null ? void 0 : _a[this.chooser.selectedItem];
+    if (!item) {
+      return null;
+    }
+    if (!option.keepOpen) {
+      this.close();
+      this.navigate(() => this.isClosed);
+    } else if (leaf === "same-tab") {
+      (_b = this.stateToRestore) != null ? _b : this.stateToRestore = this.appHelper.captureState(this.initialLeaf);
+    }
+    this.navigate(
+      () => this.appHelper.openFile(
+        this.appHelper.getActiveFile(),
+        {
+          leaf,
+          line: item.lineNumber - 1,
+          inplace: option.keepOpen
+        },
+        this.stateToRestore
+      )
+    );
+    return this.appHelper.getActiveFile();
+  }
+  async onChooseSuggestion(item, evt) {
+    await this.chooseCurrentSuggestion("same-tab");
+  }
+  showDebugLog(toMessage) {
+    if (this.settings.showLogAboutPerformanceInConsole) {
+      console.log(toMessage());
+    }
+  }
+  registerKeys(key, handler) {
+    var _a;
+    (_a = this.settings.hotkeys.link[key]) == null ? void 0 : _a.forEach((x) => {
+      this.scope.register(x.modifiers, capitalizeFirstLetter(x.key), (evt) => {
+        if (!evt.isComposing) {
+          evt.preventDefault();
+          handler();
+          return false;
+        }
+      });
+    });
+  }
+  setHotkeys() {
+    this.scope.unregister(this.scope.keys.find((x) => x.key === "Enter"));
+    this.scope.unregister(this.scope.keys.find((x) => x.key === "Escape"));
+    this.scope.unregister(this.scope.keys.find((x) => x.key === "Home"));
+    this.scope.unregister(this.scope.keys.find((x) => x.key === "End"));
+    const openNthMod = quickResultSelectionModifier(
+      this.settings.userAltInsteadOfModForQuickResultSelection
+    );
+    if (!this.settings.hideHotkeyGuides) {
+      this.setInstructions([
+        { command: "[\u21B5]", purpose: "open" },
+        { command: `[\u2191]`, purpose: "up" },
+        { command: `[\u2193]`, purpose: "down" },
+        { command: `[${openNthMod} 1~9]`, purpose: "open Nth" },
+        ...createInstructions(this.settings.hotkeys.link)
+      ]);
+    }
+    this.registerKeys("up", () => {
+      document.dispatchEvent(new KeyboardEvent("keydown", { key: "ArrowUp" }));
+    });
+    this.registerKeys("down", () => {
+      document.dispatchEvent(
+        new KeyboardEvent("keydown", { key: "ArrowDown" })
+      );
+    });
+    this.registerKeys("open", async () => {
+      await this.chooseCurrentSuggestion("same-tab");
+    });
+    this.registerKeys("open in new tab", async () => {
+      await this.chooseCurrentSuggestion("new-tab");
+    });
+    this.registerKeys("open in new pane (horizontal)", async () => {
+      await this.chooseCurrentSuggestion("new-pane-horizontal");
+    });
+    this.registerKeys("open in new pane (vertical)", async () => {
+      await this.chooseCurrentSuggestion("new-pane-vertical");
+    });
+    this.registerKeys("open in new window", async () => {
+      await this.chooseCurrentSuggestion("new-window");
+    });
+    this.registerKeys("open in popup", async () => {
+      await this.chooseCurrentSuggestion("popup");
+    });
+    this.registerKeys("open in new tab in background", async () => {
+      await this.chooseCurrentSuggestion("new-tab-background", {
+        keepOpen: true
+      });
+    });
+    this.registerKeys("open all in new tabs", () => {
+      this.close();
+      if (this.chooser.values == null) {
+        return;
+      }
+      this.chooser.values.slice().reverse().map((x) => x.file).filter(isPresent).forEach(
+        (x) => this.appHelper.openFile(x, {
+          leaf: "new-tab-background"
+        })
+      );
+    });
+    this.registerKeys("show all results", () => {
+      this.limit = Number.MAX_SAFE_INTEGER;
+      this.inputEl.dispatchEvent(new Event("input"));
+    });
+    this.registerKeys("preview", async () => {
+      const file = await this.chooseCurrentSuggestion("same-tab", {
+        keepOpen: true
+      });
+    });
+    const modifierKey = this.settings.userAltInsteadOfModForQuickResultSelection ? "Alt" : "Mod";
+    [1, 2, 3, 4, 5, 6, 7, 8, 9].forEach((n) => {
+      this.scope.register([modifierKey], String(n), (evt) => {
+        this.chooser.setSelectedItem(n - 1, evt, true);
+        this.chooser.useSelectedItem({});
+        return false;
+      });
+    });
+    this.registerKeys("dismiss", async () => {
+      this.close();
+    });
+  }
+};
+
 // src/commands.ts
 var SEARCH_COMMAND_PREFIX = "search-command";
 function showSearchDialog(app2, settings, command) {
   var _a, _b, _c, _d, _e;
-  const activeFileLeaf = (_b = (_a = app2.workspace.getActiveViewOfType(import_obsidian8.FileView)) == null ? void 0 : _a.leaf) != null ? _b : null;
-  const editor = (_d = (_c = app2.workspace.getActiveViewOfType(import_obsidian8.MarkdownView)) == null ? void 0 : _c.editor) != null ? _d : null;
+  const activeFileLeaf = (_b = (_a = app2.workspace.getActiveViewOfType(import_obsidian10.FileView)) == null ? void 0 : _a.leaf) != null ? _b : null;
+  const editor = (_d = (_c = app2.workspace.getActiveViewOfType(import_obsidian10.MarkdownView)) == null ? void 0 : _c.editor) != null ? _d : null;
   const modal = new AnotherQuickSwitcherModal({
     app: app2,
     settings,
@@ -4175,18 +4932,38 @@ function showMoveDialog(app2, settings) {
 }
 async function showGrepDialog(app2, settings) {
   var _a, _b;
-  if (!import_obsidian8.Platform.isDesktop) {
-    new import_obsidian8.Notice("Grep is not supported on mobile.");
+  if (!import_obsidian10.Platform.isDesktop) {
+    new import_obsidian10.Notice("Grep is not supported on mobile.");
     return;
   }
   if (!await existsRg(settings.ripgrepCommand)) {
-    new import_obsidian8.Notice(
+    new import_obsidian10.Notice(
       `"${settings.ripgrepCommand}" was not working as a ripgrep command. If you have not installed ripgrep yet, please install it.`
     );
     return;
   }
-  const activeFileLeaf = (_b = (_a = app2.workspace.getActiveViewOfType(import_obsidian8.FileView)) == null ? void 0 : _a.leaf) != null ? _b : null;
+  const activeFileLeaf = (_b = (_a = app2.workspace.getActiveViewOfType(import_obsidian10.FileView)) == null ? void 0 : _a.leaf) != null ? _b : null;
   const modal = new GrepModal(app2, settings, activeFileLeaf);
+  modal.open();
+}
+async function showBacklinkDialog(app2, settings) {
+  var _a, _b;
+  if (!app2.workspace.getActiveFile()) {
+    return;
+  }
+  const activeFileLeaf = (_b = (_a = app2.workspace.getActiveViewOfType(import_obsidian10.FileView)) == null ? void 0 : _a.leaf) != null ? _b : null;
+  const modal = new BacklinkModal(app2, settings, activeFileLeaf);
+  await modal.init();
+  modal.open();
+}
+async function showLinkDialog(app2, settings) {
+  var _a, _b;
+  if (!app2.workspace.getActiveFile()) {
+    return;
+  }
+  const activeFileLeaf = (_b = (_a = app2.workspace.getActiveViewOfType(import_obsidian10.FileView)) == null ? void 0 : _a.leaf) != null ? _b : null;
+  const modal = new LinkModal(app2, settings, activeFileLeaf);
+  await modal.init();
   modal.open();
 }
 function showHeaderDialog(app2, settings, floating) {
@@ -4235,9 +5012,31 @@ function createCommands(app2, settings) {
       hotkeys: [],
       checkCallback: (checking) => {
         if (checking) {
-          return import_obsidian8.Platform.isDesktop;
+          return import_obsidian10.Platform.isDesktop;
         }
         showGrepDialog(app2, settings);
+      }
+    },
+    {
+      id: "backlink",
+      name: "Backlink search",
+      hotkeys: [],
+      checkCallback: (checking) => {
+        if (checking) {
+          return Boolean(app2.workspace.getActiveFile());
+        }
+        showBacklinkDialog(app2, settings);
+      }
+    },
+    {
+      id: "link",
+      name: "Link search",
+      hotkeys: [],
+      checkCallback: (checking) => {
+        if (checking) {
+          return Boolean(app2.workspace.getActiveFile());
+        }
+        showLinkDialog(app2, settings);
       }
     },
     ...settings.searchCommands.map((command) => {
@@ -4255,7 +5054,7 @@ function createCommands(app2, settings) {
 
 // src/main.ts
 var import_ts_deepmerge2 = __toESM(require_dist());
-var AnotherQuickSwitcher = class extends import_obsidian9.Plugin {
+var AnotherQuickSwitcher = class extends import_obsidian11.Plugin {
   async onload() {
     await this.loadSettings();
     this.addSettingTab(new AnotherQuickSwitcherSettingTab(this.app, this));

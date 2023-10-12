@@ -23,6 +23,16 @@
       "title": "file:未命名",
       "query": "file:未命名",
       "ctime": 1683597210753
+    },
+    {
+      "type": "search",
+      "ctime": 1693291462747,
+      "query": "path: \"ef core\""
+    },
+    {
+      "type": "search",
+      "ctime": 1697104709787,
+      "query": "line:(\"[000\")"
     }
   ]
 }

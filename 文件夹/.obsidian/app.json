@@ -11,7 +11,7 @@
   "defaultViewMode": "preview",
   "promptDelete": false,
   "showInlineTitle": false,
-  "readableLineLength": true,
+  "readableLineLength": false,
   "newLinkFormat": "relative",
   "userIgnoreFilters": [
     "_assets/",
@@ -21,6 +21,8 @@
   "foldIndent": false,
   "trashOption": "local",
   "showFrontmatter": true,
-  "smartIndentList": false,
-  "autoConvertHtml": true
+  "smartIndentList": true,
+  "autoConvertHtml": true,
+  "spellcheck": false,
+  "showIndentGuide": true
 }

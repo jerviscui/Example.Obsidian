@@ -36,7 +36,6 @@
   "sanctum@@nav-folder-indicators": true,
   "sanctum@@colorful-active-nav": true,
   "sanctum@@no-sanctum-icons": true,
-  "minimal-advanced@@folding-offset": 10,
   "minimal-style@@col-lines": false,
   "minimal-style@@col-alt": false,
   "minimal-style@@table-tabular": false,
@@ -92,5 +91,6 @@
   "sanctum@@tag-decoration-hover": "none",
   "pane-relief@@pane-relief-pane-numbering": false,
   "pane-relief@@pane-relief-disable-counts": true,
-  "control-characters@@control-character-space": "url('data:image/svg+xml,%3Csvg xmlns=\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\" width=\"1em\" height=\"1em\" preserveAspectRatio=\"xMidYMid meet\" viewBox=\"0 0 24 24\"%3E%3Cpath fill=\"currentColor\" d=\"M10 12a4 4 0 1 0 0-4a4 4 0 0 0 0 4z\"%2F%3E%3C%2Fsvg%3E')"
+  "control-characters@@control-character-space": "url('data:image/svg+xml,%3Csvg xmlns=\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\" width=\"1em\" height=\"1em\" preserveAspectRatio=\"xMidYMid meet\" viewBox=\"0 0 24 24\"%3E%3Cpath fill=\"currentColor\" d=\"M10 12a4 4 0 1 0 0-4a4 4 0 0 0 0 4z\"%2F%3E%3C%2Fsvg%3E')",
+  "media-grid-snippet@@content-max-width": "var(--content-base-width)"
 }

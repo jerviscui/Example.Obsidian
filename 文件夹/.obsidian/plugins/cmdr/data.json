@@ -47,19 +47,15 @@
       "icon": "lucide-navigation",
       "name": "文件列表: 在文件列表中显示当前文件",
       "mode": "any"
-    },
-    {
-      "id": "starred:star-current-file",
-      "icon": "lucide-star",
-      "name": "星标: 为当前文件增加/取消星标",
-      "mode": "any"
     }
   ],
   "macros": [],
   "explorer": [],
   "hide": {
     "statusbar": [
-      "keyboard-analyzer"
+      "keyboard-analyzer",
+      "properties",
+      "editing-toolbar"
     ],
     "leftRibbon": [
       "Open Markdown Formatting Assistant",

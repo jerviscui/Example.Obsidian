@@ -1,8 +1,9 @@
 {
   "showAllNumbers": true,
   "filterList": [
-    "md"
+    "png",
+    "jpg"
   ],
-  "blacklist": false,
+  "blacklist": true,
   "filterFolderNote": false
 }
