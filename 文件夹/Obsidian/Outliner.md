@@ -1,5 +1,4 @@
 ---
-aliases: []
 tags: []
 date created: 2022-11-01T20:40:13+08:00
 date modified: 2022-11-02T17:52:08+08:00

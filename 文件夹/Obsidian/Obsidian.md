@@ -1,10 +1,12 @@
 ---
 tags: [moc]
 date created: 2022-10-24T22:18:14+08:00
-date modified: 2023-02-06T15:30:14+08:00
+date modified: 2023-10-12T23:17:00+08:00
 ---
 
 # Obsidian
+
+[Obsidian Plugin Stats](https://obsidian-plugin-stats.vercel.app/)
 
 ## 快捷键
 
@@ -51,11 +53,15 @@ Sanctum
 [Editing Toolbar](Editing%20Toolbar.md)
 [Linter](Linter.md)
 [Multi-cursor](Multi-cursor.md)
+[HK Code Block](HK%20Code%20Block.md)
+[Typewriter Mode](Typewriter%20Mode.md)
+[Optimize Canvas Connections](Optimize%20Canvas%20Connections.md)
+[HTML Reader](HTML%20Reader.md)
 
 ### 功能
 
 [Chronology](Chronology.md)
-3[Style Settings](Style%20Settings.md)
+[Style Settings](Style%20Settings.md)
 [Workspaces Plus](Workspaces%20Plus.md)
 [Buttons](Buttons.md)
 [Another Quick Switcher Plugin](Another%20Quick%20Switcher%20Plugin.md)
@@ -63,7 +69,6 @@ Sanctum
 [Quiet Outline](Quiet%20Outline.md)
 [Pane Relief](Pane%20Relief.md)
 [Bartender](Bartender.md)
-[Scroll To Top Plugin](Scroll%20To%20Top%20Plugin.md)
 
 ### 数据展示
 
@@ -74,20 +79,19 @@ Sanctum
 
 ### 研究
 
+AI
+<https://github.com/exoascension/vault-chat>
+
+MarkSearch-Chrome
+<https://n0pw46fau7.feishu.cn/mindnotes/URmLbpzFqm0hqsnViu7chbvnnfe>
+
 批量保存，文件未保存提醒？或者图标状态？
 
 File info
 <https://github.com/CattailNu/obsidian-file-info-panel-plugin>
 
-Text Snippets
-[GitHub - ArianaKhit/text-snippets-obsidian: Snippets plugin for obsidian](https://github.com/ArianaKhit/text-snippets-obsidian)
-
 Homepage
 <https://github.com/mirnovov/obsidian-homepage>
-
-MetaEdit
-<https://github.com/chhoumann/MetaEdit>
-轻松添加或更新 Yaml 属性和 Dataview 字段，提供 Api 结合 Templater 使用。
 
 **QuickAdd**
 <https://github.com/chhoumann/quickadd>
@@ -131,6 +135,25 @@ obsidian-spaced-repetition
 <https://github.com/Johnson0907/obsidian-file-cleaner>
 <https://github.com/sandorex/nuke-orphans-plugin>
 
+Number Headings
+给标题自动添加编号
+<https://github.com/onhttps://github.com/onlyafly/number-headings-obsidianlyafly/number-headings-obsidian>
+
+Dynamic Background Plugin
+背景图
+<https://github.com/samuelsong70/obsidian-dynamic-background/>
+
+Banners
+头图
+<https://github.com/noatpad/obsidian-banners>
+
+obsidian-language-learner
+学习英语，查词功能、添加笔记
+<https://github.com/guopenghui/obsidian-language-learner>
+
+Search Obsidian In Google
+<https://pkmer.cn/Pkmer-Docs/10-obsidian/obsidian%E7%A4%BE%E5%8C%BA%E6%8F%92%E4%BB%B6/search-obsidian-in-google/>
+
 ## 不选用的插件及原因
 
 ### Bug
@@ -141,6 +164,7 @@ obsidian-spaced-repetition
 [Attachment Name Formatting](Attachment%20Name%20Formatting.md)
 [Paste image rename](Paste%20image%20rename.md)
 [Unique attachments](Unique%20attachments.md)
+[Heading Level Indent](Heading%20Level%20Indent.md)
 
 ### 不友好的方案
 
@@ -164,5 +188,8 @@ link-favicon
 
 obsidian-kanban
 笔记里使用效果一般
+
+Focus and Highlight
+阅读时容易误触
 
 ## 问题
