@@ -1,5 +1,6 @@
 {
   "pluginList": [
+    "Canna71/obsidian-janitor",
     "benmatselby/obsidian-multi-cursor",
     "nothingislost/obsidian-bartender"
   ],
