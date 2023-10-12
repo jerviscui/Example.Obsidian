@@ -1,0 +1,53 @@
+{
+  "attachPath": {
+    "attachmentRoot": "",
+    "saveAttE": "obsFolder",
+    "attachmentPath": "${notename}_files",
+    "attachFormat": "${originalname}",
+    "type": "GLOBAL",
+    "extensionOverride": [
+      {
+        "extension": "txt",
+        "attachmentRoot": "",
+        "saveAttE": "obsFolder",
+        "attachmentPath": "${notename}_files",
+        "attachFormat": "${originalname}"
+      },
+      {
+        "extension": "zip",
+        "attachmentRoot": "",
+        "saveAttE": "obsFolder",
+        "attachmentPath": "${notename}_files",
+        "attachFormat": "${originalname}"
+      },
+      {
+        "extension": "rar",
+        "attachmentRoot": "",
+        "saveAttE": "obsFolder",
+        "attachmentPath": "${notename}_files",
+        "attachFormat": "${originalname}"
+      },
+      {
+        "extension": "pdf",
+        "attachmentRoot": "",
+        "saveAttE": "obsFolder",
+        "attachmentPath": "${notename}_files",
+        "attachFormat": "${originalname}"
+      },
+      {
+        "extension": "json",
+        "attachmentRoot": "",
+        "saveAttE": "obsFolder",
+        "attachmentPath": "${notename}_files",
+        "attachFormat": "${originalname}"
+      }
+    ]
+  },
+  "dateFormat": "YYYYMMDDHHmmssSSS",
+  "excludeExtensionPattern": "",
+  "autoRenameAttachment": true,
+  "excludedPaths": "",
+  "excludePathsArray": [],
+  "excludeSubpaths": false,
+  "overridePath": {}
+}
