@@ -32,7 +32,7 @@
             }
           },
           {
-            "id": "126fd403c95d4b40",
+            "id": "30a0c096f2d6e372",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -45,7 +45,7 @@
                   "title": "Obsidian",
                   "icon": "lucide-file",
                   "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Obsidian/Obsidian.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
-                  "eState": "{\"scroll\":35.8}"
+                  "eState": "{\"scroll\":3.870967741935484}"
                 },
                 {
                   "title": "后台程序员转算法的参考秘籍：大规模机器学习框架的四重境界 (2023_10_12 22_41_37)",
@@ -118,7 +118,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.7 计算机系统中的数据/数据库/Relational/SQL Server/Plan Explorer/SQL Sentry Plan Explorer.md",
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/操作系统/Windows/批量删除文件.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -365,8 +365,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -413,7 +412,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "line:(\"[eBook-PE-query-optimization.pdf\")",
+                "query": "空文件夹",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -495,8 +494,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -543,7 +541,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.7 计算机系统中的数据/数据库/Relational/SQL Server/Plan Explorer/SQL Sentry Plan Explorer.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -569,7 +566,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.7 计算机系统中的数据/数据库/Relational/SQL Server/Plan Explorer/SQL Sentry Plan Explorer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -592,7 +588,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "2c67f4750978a007",
@@ -614,7 +611,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.7 计算机系统中的数据/数据库/Relational/SQL Server/Plan Explorer/SQL Sentry Plan Explorer.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -655,70 +651,69 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
       "markdown-table-editor:Open Markdown Table Editor": false,
       "graph:查看关系图谱": false,
+      "cmdr:Attachment Management: Rearrange linked attachments": false,
+      "janitor:Janitor: scan vault": false,
+      "obsidian-projects:Open projects": false,
       "daily-notes:打开/创建今天的日记": false,
       "command-palette:打开命令面板": false,
       "zk-prefixer:创建时间戳笔记": false,
       "workspaces:管理工作区布局": false,
-      "oz-clear-unused-images:Clear Unused Images": false,
-      "cmdr:Pane Relief: Toggle sliding panes (for current window)": false,
-      "cmdr:Keyboard Analyzer: Open keyboard shortcuts view": false,
       "obsidian42-brat:BRAT": false,
-      "obsidian-attachment-name-formatting:Export Unused Attachments": false,
-      "obsidian-projects:Open projects": false
+      "cmdr:Keyboard Analyzer: Open keyboard shortcuts view": false
     }
   },
-  "active": "126fd403c95d4b40",
+  "active": "de5c1ded03df7d9d",
   "ophidian:layout-settings": {
     "pane-relief:focus-lock": true
   },
   "lastOpenFiles": [
-    "Unused_Attachments.zip",
-    "222Unused_Attachments.zip",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/操作系统/Windows/批量删除文件.md",
     "Obsidian/Obsidian.md",
+    "_assets/阿里技术专家详解 DDD 系列 - Domain Primitive_files/阿里技术专家详解 DDD 系列- Domain Primitive-20221027.png",
+    "_assets/安息角_files/bec3b85e-c919-4fab-bf5f-e875aac893fe.jpg",
+    "我的笔记/名词/安息角.md",
+    "_assets/安息角_files",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/架构设计/DDD/阿里技术专家详解 DDD 系列 - Domain Primitive.md",
+    "_assets/testabc.md_files/使用说明.md",
+    "_assets/使用说明.md",
+    "分体键盘/使用说明.md",
+    "_assets/阿里技术专家详解 DDD 系列 - Domain Primitive_files",
+    "Obsidian/File Tree Alternative Plugin.md",
+    "Obsidian/Show Current File Path.md",
+    "Obsidian/Consistent attachments and links.md",
+    "Obsidian/Custom Attachment location.md",
+    "Obsidian/Attachment Name Formatting.md",
+    "Obsidian/Commits.md",
     "Web Clipper/后台程序员转算法的参考秘籍：大规模机器学习框架的四重境界 (2023_10_12 22_41_37).html",
-    "Web Clipper/postgresql中的各种scan的比较 - 非我在 - 博客园 (2023_10_12 16_10_56).html",
-    "Web Clipper/分布式任务调度平台XXL-JOB (2023_10_12 18_52_01).html",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.2 通信协议/gateway.md",
-    "Web Clipper/后台程序员转算法的参考秘籍：大规模机器学习框架的四重境界 (2023_10_12 16_03_14).html",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/鼠标改建.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/热键.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/动态桌面.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/键盘改进.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/AutoHotkey.md",
-    "Obsidian/HTML Reader.md",
-    "_assets/000 1.pdf",
-    "我的笔记/同步/MouseInc.md",
-    "知识树/杜威十进图书分类法.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/000 计算机科学、资讯与总类.md",
-    "Obsidian/文件管理器水平滚动.md",
-    "Obsidian/File Explorer Note Count.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/架构设计/MicroService/dotNet 微服务架构指南.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/架构设计/CAP 理论.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/架构设计/MicroService/dotNET Core 微服务架构学习.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/架构设计/MicroService/ABP 微服务解决方案示例.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.3 持久化/ORM/EF Core/DbContext 池.md",
-    "Obsidian/SingleFile.md",
-    "Obsidian/未命名.md",
-    "测试白板.canvas",
-    "test.md",
-    "我的笔记/考研/计算机组成原理/2. 数据的表示和运算.md",
+    "Obsidian/Activity History.md",
+    "Obsidian/Dynamic Highlights.md",
+    "Obsidian/Heading Level Indent.md",
+    "Obsidian/Unique attachments.md",
+    "Obsidian/Attachment Management.md",
+    "Obsidian/Paste Image Rename.md",
     "test 1.md",
-    "_assets/wNeCLjYJ_2x.jpg",
-    "_assets/6种事件驱动的架构模式-20221027-1.png",
-    "_assets/~$jianpan.xlsx",
-    "_assets/000.pdf",
-    "知识树/0 - 计算机科学、资讯与总类/020 图书馆学和信息科学/025 图书馆营运/025.04 信息存储和检索系统/SEO/SEO.md",
-    "Web Clipper",
-    "知识树/6 - 技术/650 管理及辅助服务/658 综合管理/Scrum/Scrum敏捷开发.md",
-    "知识树/0 - 计算机科学、资讯与总类/020 图书馆学和信息科学/025 图书馆营运/025.04 信息存储和检索系统",
-    "_assets/Pasted image 20231011003115.png",
-    "未命名.canvas",
-    "_assets/Pasted image 20231009153743.png",
-    "_assets/Pasted image 20231009153739.png",
-    "_assets/Pasted image 20231009153731.png",
-    "_assets/Pasted image 20231009153725.png",
-    "_assets/Pasted image 20231009153650.png",
-    "_assets/Pasted image 20231009153644.png",
-    "_assets/Pasted image 20231009153633.png"
+    "testa.md",
+    "未命名/testa.md",
+    "_assets/testa_files/20231013022009993.png",
+    "_assets/testa_files/20231013021950017.png",
+    "_assets/testa_files",
+    "未命名/asstestb.md",
+    "未命名/testabc1234.md",
+    "_assets/testabc1234_files/20231013021829842.png",
+    "_assets/testabc1234_files/settings_133352585817228310.ptb",
+    "_assets/testabc1234_files/dnSpy-net-win64.zip",
+    "_assets/testabc1234_files/dactyl-manuform-pcb_PCB_单轴体排针_3_20221223011914 (1).zip",
+    "_assets/testabc1234_files/MyFileName.csv",
+    "_assets/testabc1234_files/20231013021634918.png",
+    "_assets/testabc1234_files",
+    "_assets/testabc/20231013021524015.png",
+    "_assets/testabc",
+    "assets/testabc/20231013021331064.png",
+    "未命名/_assets/testab.md_files/Pasted image 20231013021117.png",
+    "Pasted image 20231013021007.png",
+    "test.md",
+    "_assets/使用说明 2.md",
+    "测试白板.canvas",
+    "未命名.canvas"
   ]
 }

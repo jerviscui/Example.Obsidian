@@ -40,6 +40,13 @@
         "saveAttE": "obsFolder",
         "attachmentPath": "${notename}_files",
         "attachFormat": "${originalname}"
+      },
+      {
+        "extension": "csv",
+        "attachmentRoot": "",
+        "saveAttE": "obsFolder",
+        "attachmentPath": "${notename}_files",
+        "attachFormat": "${originalname}"
       }
     ]
   },

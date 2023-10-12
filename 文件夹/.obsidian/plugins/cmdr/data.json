@@ -19,15 +19,15 @@
   ],
   "leftRibbon": [
     {
-      "id": "pane-relief:toggle-sliding",
-      "icon": "align-horizontal-space-between",
-      "name": "Pane Relief: Toggle sliding panes (for current window)",
-      "mode": "any"
-    },
-    {
       "id": "keyboard-analyzer:show-shortcuts-analyzer-view",
       "icon": "building",
       "name": "Keyboard Analyzer: Open keyboard shortcuts view",
+      "mode": "any"
+    },
+    {
+      "id": "attachment-management:attachment-management-rearrange-active-links",
+      "icon": "anchor",
+      "name": "Attachment Management: Rearrange linked attachments",
       "mode": "any"
     }
   ],

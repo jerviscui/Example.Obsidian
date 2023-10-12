@@ -2,7 +2,6 @@
   "obsidian-linter",
   "obsidian-auto-link-title",
   "obsidian-enhancing-mindmap",
-  "oz-clear-unused-images",
   "tag-wrangler",
   "dataview",
   "obsidian-editor-shortcuts",
@@ -28,12 +27,13 @@
   "chronology",
   "obsidian-latex-suite",
   "obsidian-multi-cursor",
-  "obsidian-attachment-name-formatting",
   "obsidian-plugin-update-tracker",
   "hk-code-block",
   "obsidian-footnotes",
   "typewriter-mode",
   "optimize-canvas-connections",
   "obsidian-html-plugin",
-  "keyboard-analyzer"
+  "keyboard-analyzer",
+  "janitor",
+  "attachment-management"
 ]
