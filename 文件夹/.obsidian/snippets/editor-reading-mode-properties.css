@@ -1,0 +1,44 @@
+/* ───────────────────────────────────────────────── */
+/* << NEW Metadata Block (since 1.4)
+https://github.com/chrisgrieser/shimmering-focus/blob/a16cf8a64383b22a22c08da6432daa1a6d553457/source.css
+──────────────────────────────────────────────────── */
+
+.metadata-properties-heading:not(.is-collapsed) {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.metadata-properties-heading.is-collapsed {
+    padding: 6px 8px;
+    font-size: 0.9em;
+    margin-bottom: 0;
+}
+
+.metadata-properties-heading:not(.is-collapsed) .metadata-properties-title {
+    display: none;
+}
+
+.metadata-properties-heading.is-collapsed .metadata-properties-title {
+    color: var(--text-muted);
+}
+
+.mod-root .metadata-add-button.metadata-add-button {
+    color: var(--text-gray);
+    font-style: italic;
+    font-size: 75%;
+    margin-top: 0;
+    position: absolute;
+    height: 28px;
+    padding: 4px 6px;
+    bottom: 0;
+    right: 0;
+    background: var(--bg4);
+    border-top: var(--thin-border);
+    border-left: var(--thin-border);
+    border-radius: var(--radius-s) 0 var(--radius-s) 0;
+}
+
+.metadata-add-button.text-icon-button .text-button-label {
+    display: none;
+}
