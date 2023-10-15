@@ -4,7 +4,7 @@ date created: 2023-03-04T11:19:47+08:00
 date modified: 2023-10-16T01:48:00+08:00
 ---
 
-![](_templates/background-3.jpg##background_fade)
+![](../_templates/background-3.jpg##background_fade)
 
 # QMK 烧录
 
