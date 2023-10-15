@@ -430,11 +430,13 @@ function isPastedImage(file) {
   return false;
 }
 function isImage(extension) {
-  const match = extension.match(ImageExtensionRegex);
-  if (match !== null) {
-    return true;
-  }
-  return false;
+  // cuizj: always return true
+  return true;
+  // const match = extension.match(ImageExtensionRegex);
+  // if (match !== null) {
+  //   return true;
+  // }
+  // return false;
 }
 function stripPaths(src, dst) {
   if (src === dst) {
@@ -475,6 +477,12 @@ function isAttachment(settings, filePath) {
   if (isMarkdownFile(file.extension) || isCanvasFile(file.extension)) {
     return false;
   }
+
+  // cuizj: exclude background image
+  if (file.name.match(/background-/i)) {
+    return false;
+  }
+
   return !matchExtension(file.extension, settings.excludeExtensionPattern);
 }
 function attachRenameType(setting) {

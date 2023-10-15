@@ -2,7 +2,8 @@
   "showAllNumbers": true,
   "filterList": [
     "png",
-    "jpg"
+    "jpg",
+    "jpeg"
   ],
   "blacklist": true,
   "filterFolderNote": false

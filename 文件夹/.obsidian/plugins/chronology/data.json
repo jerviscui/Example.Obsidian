@@ -3,5 +3,10 @@
   "launchOnStartup": false,
   "use24Hours": true,
   "avgDailyNotes": 5,
-  "useSimpleList": true
+  "useSimpleList": true,
+  "groupItemsInSameSlot": false,
+  "firstDayOfWeek": -1,
+  "creationDateAttribute": "date created",
+  "modifiedDateAttribute": "date modified",
+  "computeHeat": false
 }

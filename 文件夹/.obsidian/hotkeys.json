@@ -23,14 +23,6 @@
       "key": "ArrowDown"
     }
   ],
-  "editor:toggle-code": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "K"
-    }
-  ],
   "editor:insert-link": [],
   "workspace:next-tab": [],
   "workspace:previous-tab": [],
@@ -112,15 +104,6 @@
   "editing-toolbar:header0-text": [],
   "obsidian-linter:lint-file": [],
   "obsidian-auto-link-title:enhance-url-with-title": [],
-  "editing-toolbar:codeblock": [
-    {
-      "modifiers": [
-        "Alt",
-        "Shift"
-      ],
-      "key": "C"
-    }
-  ],
   "obsidian-outliner:fold": [],
   "obsidian-outliner:unfold": [],
   "obsidian-outliner:move-list-item-up": [
@@ -191,7 +174,12 @@
     }
   ],
   "editing-toolbar:fullscreen-focus": [],
-  "editing-toolbar:workplace-fullscreen-focus": [],
+  "editing-toolbar:workplace-fullscreen-focus": [
+    {
+      "modifiers": [],
+      "key": "F12"
+    }
+  ],
   "pane-relief:put-1st": [],
   "pane-relief:put-2nd": [],
   "pane-relief:put-3rd": [],
@@ -306,6 +294,15 @@
         "Mod"
       ],
       "key": "R"
+    }
+  ],
+  "workspace:copy-path": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "C"
     }
   ]
 }

@@ -53,30 +53,6 @@ https://github.com/joethei/obsidian-non-printing-chars
     
 } */
 
-/* banner */
-.view-content {
-    z-index: 0;
-}
-
-img[alt^="test"] {
-    width: 100%;
-    margin: 0px auto;
-    /* ding wei */
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    /* jian bian */
-    -webkit-mask-image: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        from(rgba(0, 0, 0, 1)),
-        to(rgba(0, 0, 0, 0))
-    );
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-    opacity: 0.4;
-}
 
 
 /* heading number */

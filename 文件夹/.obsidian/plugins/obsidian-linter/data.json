@@ -249,7 +249,7 @@
     "_templates"
   ],
   "linterLocale": "system-default",
-  "logLevel": 4,
+  "logLevel": "ERROR",
   "lintCommands": [],
   "customRegexes": [],
   "commonStyles": {

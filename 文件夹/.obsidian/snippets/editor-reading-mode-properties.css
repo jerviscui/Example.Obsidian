@@ -42,3 +42,12 @@ https://github.com/chrisgrieser/shimmering-focus/blob/a16cf8a64383b22a22c08da643
 .metadata-add-button.text-icon-button .text-button-label {
     display: none;
 }
+
+/* Hover Editor */
+.metadata-container .metadata-add-button {
+    display: none;
+}
+
+.mod-root .metadata-add-button.metadata-add-button {
+    display: flex;
+}

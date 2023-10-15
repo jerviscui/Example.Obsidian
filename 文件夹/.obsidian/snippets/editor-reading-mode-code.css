@@ -11,3 +11,8 @@
 	-webkit-font-smoothing: auto;
 	font-size: var(--font-text-size);
 }
+
+/* Templater */
+.cm-s-obsidian .cm-templater-command {
+	font-size: var(--code-size);
+}

@@ -7,19 +7,20 @@
       ""
     ]
   ],
-  "trigger_on_file_creation": false,
-  "auto_jump_to_cursor": true,
+  "trigger_on_file_creation": true,
+  "auto_jump_to_cursor": false,
   "enable_system_commands": false,
   "shell_path": "",
   "user_scripts_folder": "_scripts",
   "enable_folder_templates": true,
   "folder_templates": [
     {
-      "folder": "",
-      "template": ""
+      "folder": "/",
+      "template": "_templates/_newNote.md"
     }
   ],
   "syntax_highlighting": true,
+  "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
     ""
   ],

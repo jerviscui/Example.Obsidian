@@ -16,7 +16,8 @@
   "userIgnoreFilters": [
     "_assets/",
     "_templates/",
-    "_scripts/"
+    "_scripts/",
+    "我的笔记/同步/"
   ],
   "foldIndent": false,
   "trashOption": "local",

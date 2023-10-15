@@ -33,6 +33,8 @@
     "realistic-highlight",
     "test",
     "editor-reading-mode-properties",
-    "editor-reading-mode-color"
+    "editor-reading-mode-color",
+    "editor-reading-mode-lsit",
+    "editor-reading-mode-banner"
   ]
 }

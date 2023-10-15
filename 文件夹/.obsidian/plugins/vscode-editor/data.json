@@ -1,0 +1,29 @@
+{
+  "extensions": [
+    "ts",
+    "js",
+    "py",
+    "css",
+    "c",
+    "cpp",
+    "go",
+    "rs",
+    "java",
+    "json",
+    "txt",
+    "lua",
+    "php",
+    "rb",
+    "sh",
+    "swift",
+    "xml",
+    "yaml"
+  ],
+  "folding": true,
+  "lineNumbers": true,
+  "minimap": true,
+  "semanticValidation": true,
+  "syntaxValidation": true,
+  "themeColor": "AUTO",
+  "fontSize": 16
+}

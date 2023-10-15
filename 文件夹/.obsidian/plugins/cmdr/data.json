@@ -29,18 +29,17 @@
       "icon": "anchor",
       "name": "Attachment Management: Rearrange linked attachments",
       "mode": "any"
+    },
+    {
+      "id": "obsidian-link-converter:convert-wikis-to-md-in-active-file",
+      "icon": "baseline",
+      "name": "Obsidian Link Converter: Active File: Links to Markdown",
+      "mode": "any"
     }
   ],
   "rightRibbon": [],
   "titleBar": [],
-  "statusBar": [
-    {
-      "id": "obsidian42-brat:BRAT-allCommands",
-      "icon": "BratIcon",
-      "name": "Obsidian42 - BRAT: All Commands list",
-      "mode": "any"
-    }
-  ],
+  "statusBar": [],
   "pageHeader": [
     {
       "id": "file-explorer:reveal-active-file",
@@ -54,15 +53,16 @@
   "hide": {
     "statusbar": [
       "keyboard-analyzer",
-      "properties",
-      "editing-toolbar"
+      "editing-toolbar",
+      "properties"
     ],
     "leftRibbon": [
       "Open Markdown Formatting Assistant",
       "Open Markdown Table Editor",
       "BRAT",
       "打开命令面板",
-      "管理工作区布局"
+      "管理工作区布局",
+      "Templater"
     ]
   },
   "spacing": "8",

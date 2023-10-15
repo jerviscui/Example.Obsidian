@@ -2757,9 +2757,19 @@ var AnotherQuickSwitcherModal = class extends import_obsidian4.SuggestModal {
       true
     );
   }
+  close() {
+    if (import_obsidian4.Platform.isMobile) {
+      this.onClose();
+    }
+    super.close();
+  }
   safeClose() {
     this.close();
     return this.isClosed;
+  }
+  silentClose() {
+    this.willSilentClose = true;
+    this.close();
   }
   onOpen() {
     super.onOpen();
@@ -2786,10 +2796,6 @@ var AnotherQuickSwitcherModal = class extends import_obsidian4.SuggestModal {
       this.navigate(() => this.stateToRestore.restore());
     }
     this.navigate(this.markClosed);
-  }
-  silentClose() {
-    this.willSilentClose = true;
-    this.close();
   }
   enableFloating() {
     this.floating = true;
