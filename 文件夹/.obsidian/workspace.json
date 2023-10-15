@@ -54,22 +54,34 @@
             "id": "5995faa1a0b2c9ea",
             "type": "leaf",
             "pane-relief:history-v1": {
-              "pos": 2,
+              "pos": 0,
               "stack": [
                 {
-                  "title": "test 1",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"test 1.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
-                  "eState": "{\"scroll\":0}"
-                },
-                {
-                  "title": "test",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"test.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
-                  "eState": "{\"scroll\":0}"
-                },
-                {
                   "state": "{}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "QMK 烧录",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"分体键盘/QMK 烧录.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "使用说明",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"分体键盘/使用说明.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "键盘布局",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"分体键盘/键盘布局.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "Templater",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Obsidian/Templater.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
                   "eState": "{}"
                 }
               ]
@@ -77,7 +89,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian/Templater.md",
+                "file": "分体键盘/键盘布局.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -371,7 +383,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Obsidian/Templater.md",
+                "file": "分体键盘/键盘布局.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -397,7 +409,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Obsidian/Templater.md",
+                "file": "分体键盘/键盘布局.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -442,7 +454,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Obsidian/Templater.md",
+                "file": "分体键盘/键盘布局.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -502,14 +514,17 @@
     "pane-relief:focus-lock": true
   },
   "lastOpenFiles": [
+    "分体键盘/QMK 烧录.md",
+    "分体键盘/使用说明.md",
+    "分体键盘/键盘布局.md",
+    "Obsidian/Templater.md",
+    "_templates/_newNote.md",
     "test.md",
     "test 1.md",
-    "Obsidian/Templater.md",
     "我的笔记/Mathematics/简介.md",
     "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/Rust/学习.md",
     "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/3 Algorithm/一些编程算法技巧.md",
     "Obsidian/Obsidian.md",
-    "_templates/_newNote.md",
     "我的笔记/面试/未命名/abc.md",
     "我的笔记/面试/未命名/ccc.md",
     "Obsidian/插件开发.md",
@@ -532,9 +547,6 @@
     "_assets/test_files/Pasted image 20231015210117.png",
     "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/操作系统/Linux/运维工具/Dr.Memory.md",
     "我的笔记/面试/1111.md",
-    "我的笔记/面试/阿斯蒂芬.md",
-    "Obsidian/Linter.md",
-    "Obsidian/Moment.md",
     "_templates/background-3.jpg",
     "_assets/1. 计算机系统概述 - 错题本_files/0b9647a2-0a32-4472-becf-d68aa07a6c99.jpg",
     "_assets/1. 计算机系统概述 - 错题本_files/Pasted image 20231015131047.png",
