@@ -1,7 +1,7 @@
 ---
 tags: [moc]
 date created: 2022-10-24T22:18:14+08:00
-date modified: 2023-10-13T02:38:26+08:00
+date modified: 2023-10-16T01:15:17+08:00
 ---
 
 # Obsidian
@@ -22,7 +22,7 @@ Example of this above image resized to 200 pixels wide:
 
 ## 设置
 
-## Css
+## css
 
 file manager
 [GitHub - Evelf/obsidian-recipes: Tips and tricks for obsidian.md configuration](https://github.com/Evelf/obsidian-recipes)
@@ -37,6 +37,8 @@ link
 [分享一些css代码片段 - 经验分享 - Obsidian 中文论坛](https://forum-zh.obsidian.md/t/topic/2578)
 
 [GitHub - efemkay/obsidian-modular-css-layout: CSS Layout hack for Obsidian.md](https://github.com/efemkay/obsidian-modular-css-layout)
+
+[Banner image](Banner%20image.md)
 
 ## Theme
 
@@ -103,25 +105,11 @@ Macro Choice - Macros to augment your workflow. Do more, faster.
 Multi Choice - Organize your choices in folders.
 结合 Templater 使用？
 
-Text Snippets
-<https://github.com/ArianaKhit/text-snippets-obsidian>
-代码片段，可以被 lax 替代？
-
-Excalidraw
-绘图插件，听说官方 1.0 正在开发该功能替代。
-
 Juggl
 Obsidian 的交互式、可样式化和可扩展的图形视图。
 
-Tracker
-<https://github.com/pyrochlore/obsidian-tracker>
-跟踪笔记中出现的事件和数字
-
 obsidian-better-command-palette
 ？效果
-
-obsidian-admonition
-还有用吗？
 
 obsidian-memos
 这是我写的一个类 Flomo 插件。
@@ -136,18 +124,6 @@ obsidian-spaced-repetition
 <https://github.com/dy-sh/obsidian-consistent-attachments-and-links>
 <https://github.com/Johnson0907/obsidian-file-cleaner>
 <https://github.com/sandorex/nuke-orphans-plugin>
-
-Number Headings
-给标题自动添加编号
-<https://github.com/onhttps://github.com/onlyafly/number-headings-obsidianlyafly/number-headings-obsidian>
-
-Dynamic Background Plugin
-背景图
-<https://github.com/samuelsong70/obsidian-dynamic-background/>
-
-Banners
-头图
-<https://github.com/noatpad/obsidian-banners>
 
 obsidian-language-learner
 学习英语，查词功能、添加笔记

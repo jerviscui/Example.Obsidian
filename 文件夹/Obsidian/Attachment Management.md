@@ -1,7 +1,7 @@
 ---
 tags: []
 date created: 2023-10-13T01:43:53+08:00
-date modified: 2023-10-13T02:32:23+08:00
+date modified: 2023-10-13T09:30:25+08:00
 ---
 
 # Attachment Management
@@ -11,6 +11,10 @@ date modified: 2023-10-13T02:32:23+08:00
 <https://github.com/trganda/obsidian-attachment-management>
 
 只对图片生效？其他类型需要单独配置？issue: <https://github.com/trganda/obsidian-attachment-management/issues/72>
+
+## 设置
+
+![](../_assets/Attachment%20Management_files/Pasted%20image%2020231013093021.png)
 
 ## 重建附件目录
 

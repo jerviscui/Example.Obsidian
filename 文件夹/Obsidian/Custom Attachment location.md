@@ -1,7 +1,7 @@
 ---
 tags: []
 date created: 2023-10-13T02:21:16+08:00
-date modified: 2023-10-13T02:32:59+08:00
+date modified: 2023-10-13T10:22:53+08:00
 ---
 
 # Custom Attachment location
@@ -10,4 +10,12 @@ date modified: 2023-10-13T02:32:59+08:00
 
 <https://github.com/RainCat1998/obsidian-custom-attachment-location>
 
-另一个方案：[Attachment Management](Attachment%20Management.md) 提供重建附件文件夹命令。
+## 已有附件整理
+
+另一个扩展 [Attachment Management](Attachment%20Management.md) 提供重建附件文件夹命令。
+
+两个插件切换后要重新设置**附件默认存放路径**：
+
+![](../_assets/Custom%20Attachment%20location_files/20231013091404080.png)
+
+![](../_assets/Custom%20Attachment%20location_files/20231013091555199.png)
