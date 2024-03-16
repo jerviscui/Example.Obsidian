@@ -80,7 +80,10 @@ body {
     margin-block-end: var(--heading-spacing);
 }
 
-.markdown-rendered div:has( > :is(p,pre,table,ul,ol)) + div > :is(h1,h2,h3,h4,h5,h6) {
+.markdown-rendered
+    div:has(> :is(p, pre, table, ul, ol))
+    + div
+    > :is(h1, h2, h3, h4, h5, h6) {
     margin-top: var(--p-spacing);
 }
 
@@ -89,7 +92,8 @@ body {
 .markdown-preview-view .markdown-preview-section > div.el-table,
 .markdown-preview-view .markdown-preview-section > div.el-ul,
 .markdown-preview-view .markdown-preview-section > div.el-ol,
-.markdown-preview-view .markdown-preview-section > div.el-blockquote {
+.markdown-preview-view .markdown-preview-section > div.el-blockquote,
+.markdown-preview-view .markdown-preview-section > div.el-div {
     margin-left: 23px;
     margin-right: 23px;
 }
@@ -97,4 +101,15 @@ body {
 /* code font-size */
 body {
     --code-size: var(--font-small);
+}
+
+/* ctrl+shift+f */
+.is-flashing {
+    box-shadow: 0 0 0px 3px var(--text-accent);
+    border-radius: 2px;
+}
+
+/* ctrl+f */
+.cm-s-obsidian span.obsidian-search-match-highlight {
+    background-color: var(--text-highlight-bg) !important;
 }

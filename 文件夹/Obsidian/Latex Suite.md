@@ -1,7 +1,7 @@
 ---
 tags: []
 date created: 2022-10-24T22:18:14+08:00
-date modified: 2022-11-06T00:07:38+08:00
+date modified: 2023-10-31T15:44:13+08:00
 ---
 
 # Latex Suite
@@ -58,3 +58,7 @@ date modified: 2022-11-06T00:07:38+08:00
 * options：r 表示使用正则，
 * trigger：`()` 实现分组，
 * replacement：`[[0]]` 表示正则分组内容。
+
+## 配置文件
+
+[LatexSuite](../我的笔记/同步/LatexSuite.md)

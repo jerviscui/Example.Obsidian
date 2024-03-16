@@ -11,6 +11,8 @@
 /* title path */
 .view-header-title-parent:hover {
     overflow: overlay;
+    /* margin-block-end: -12px; */
+    /* var(--file-header-font-size) * var(--line-height-tight) */
 }
 
 /* title */

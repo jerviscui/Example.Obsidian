@@ -5,7 +5,7 @@
   "avgDailyNotes": 5,
   "useSimpleList": true,
   "groupItemsInSameSlot": false,
-  "firstDayOfWeek": -1,
+  "firstDayOfWeek": 1,
   "creationDateAttribute": "date created",
   "modifiedDateAttribute": "date modified",
   "computeHeat": false

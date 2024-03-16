@@ -8,8 +8,8 @@
   "showLinenosSplitter": true,
   "useHighlightGlobal": "default off, but on when specified",
   "highlightColor": "#ff0000",
-  "useLanguageGlobal": "default off, but on when specified",
-  "defaultLanguage": "plain text",
+  "useLanguageGlobal": "default on, but off when specified",
+  "defaultLanguage": "",
   "useCopyBtnGlobal": "default on, but off when specified",
   "usePromptGlobal": "default off, but on when specified",
   "promptingLanguages": [

@@ -41,10 +41,10 @@ div[src$="background_fade"] img {
 }
 ```
 
-然后在笔记中添加背景图，以 `##background_fade` 结尾：
+然后在笔记中添加背景图，以 `#background_fade` 结尾：
 
 ```
-![](_templates/background.jpg##background_fade)
+![](_templates/background.jpg#background_fade)
 ```
 
 可以使用 [Templater](Templater.md) 创建文件模板自动引入 background。

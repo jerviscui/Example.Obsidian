@@ -15,7 +15,6 @@
   "honorObsidianExcludedFiles": false,
   "excludedFilesFilters": [
     "_scripts/",
-    "_templates/",
-    "\\.html*$"
+    "_templates/"
   ]
 }

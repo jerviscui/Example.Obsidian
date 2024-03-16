@@ -24,5 +24,12 @@
     "_scripts"
   ],
   "excludeSubpaths": true,
-  "overridePath": {}
+  "originalNameStorage": [
+    {
+      "n": "Pasted image 20240316142115",
+      "md5": "AA2EC71BACCFC241888EBB34BAAA419D"
+    }
+  ],
+  "overridePath": {},
+  "disableNotification": false
 }

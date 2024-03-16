@@ -12,7 +12,7 @@ Markdown 语法格式化。**必备**
 
 yml 格式化、Markdown 格式化、Footnote、Content、Spacing 格式化等等。
 
-使用 [Moment](Obsidian/Moment.md) 格式化时间，ISO8601 format:
+使用 [Moment](Moment.md) 格式化时间，ISO8601 format:
 
 ```
 YYYY-MM-DDTHH:mm:ssZ

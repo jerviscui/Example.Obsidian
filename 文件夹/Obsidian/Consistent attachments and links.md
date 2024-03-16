@@ -13,5 +13,5 @@ date modified: 2023-10-13T02:37:08+08:00
 
 可以结合 [Unique attachments](Unique%20attachments.md) 使用，同一个作者。
 
-和 [Obsidian](Obsidian.md) 兼容性不好，**附件文件夹无法隐藏**。
+和 Obsidian 兼容性不好，**附件文件夹无法隐藏**。
 跟进问题：[Hide certain named directory - Feature requests - Obsidian Forum](https://forum.obsidian.md/t/hide-certain-named-directory/19544/4)

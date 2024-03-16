@@ -11,6 +11,10 @@
 .modal_select{
     margin-right: 10px;
 }
+
+.setting_ext textarea{
+    height: 6rem !important;
+}
 /* node_modules/monaco-editor/esm/vs/editor/standalone/browser/standalone-tokens.css */
 .monaco-editor {
   font-family:

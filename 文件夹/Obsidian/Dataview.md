@@ -1,10 +1,8 @@
 ---
 tags: []
 date created: 2022-10-24T22:18:14+08:00
-date modified: 2022-12-13T11:47:34+08:00
+date modified: 2023-11-01T22:21:22+08:00
 ---
-
-[TOC]
 
 # Dataview
 
@@ -84,8 +82,9 @@ from 支持：
 |  `[1, 2, 3]`        |  A list of numbers 1, 2, and 3    |
 |  `[[1, 2],[3, 4]]`  |  A list of lists                  |
 |  `{ a: 1, b: 2 }`   |  An object                        |
-|  `date()`           |  返回 luxon 库 [DateTime](https://moment.github.io/luxon/api-docs/index.html#datetime)   |
-|  `dur()`            |   返回 luxon 库 [Duration](https://moment.github.io/luxon/api-docs/index.html#duration) |
+|  `date()`           |  [Luxon DateTime](https://moment.github.io/luxon/api-docs/index.html#datetime) 返回 DateTime 对象  |
+|  `duration("3 days 7 hours 43 seconds")`  |  [Luxon Duration](https://moment.github.io/luxon/api-docs/index.html#duration) 返回 Duration 对象  |
+|  `dv.luxon.DateTime.now()`  |  当前时间 DateTime 对象  |
 
 ### 表达式
 
@@ -102,6 +101,8 @@ Lambdas：
 
 #### 日期处理
 
+使用 [Luxon](Luxon.md) 处理日期和时间。
+
 ```javascript
 dateformat(file.ctime,"yyyy-MM-dd") = "2022-01-05"
 dateformat(file.ctime,"HH:mm:ss") = "12:18:04"
@@ -109,11 +110,16 @@ dateformat(date(now),"x") = "1407287224054"
 dateformat(file.mtime,"ffff") = "Wednesday, August 6, 2014, 1:07 PM Eastern Daylight Time"
 ```
 
-DateTime 类型支持方法参考：<https://moment.github.io/luxon/api-docs/index.html#datetime>
-
 ### 处理字段格式
 
-todo：
+在表达式中使用字符串模板：
+
+```
+notes.map(o => [`[[${o.file.name}]]`, o.file.mday, o.file.mday - now])
+```
+
+* 使用 `` ` `` 包裹字符串
+* `${}` 中使用变量
 
 ## Dataviewjs
 
@@ -141,12 +147,21 @@ dv.pages("") //返回所有页面
 数据数组像普通数组一样支持索引和迭代（通过 for 和 for ...的循环），还支持许多数据处理方法，如 sort、groupBy、distinct、where 等。
 [Data Arrays - Dataview](https://blacksmithgu.github.io/obsidian-dataview/api/data-array/)
 
+### fileLink
+
+生成文件链接：
+
+```
+dv.fileLink(path, [embed?], [display-name])
+```
+
 ### 调试
 
 在控制台中使用 `DataviewAPI` 可以调试 Dv 对象：
 
 ```
 DataviewAPI.pages('""').groupBy(o => o.file.mday).limit(365)
+DataviewAPI.luxon.DateTime.now()
 ```
 
 ### 示例
@@ -159,7 +174,7 @@ LIST WITHOUT ID file.path FROM "4. Archive"
 ```
 ~~~
 
-基于 dataview 实现的上下周的功能，一并列举在此：
+基于 dataview 实现的上下周的功能：
 
 ~~~
 ```dataviewjs
@@ -168,7 +183,7 @@ dv.paragraph(`<<[[${moment(dv.current().file.name, format).subtract(1, "week").f
 ```
 ~~~
 
-参考：<https://momentjscom.readthedocs.io/en/latest/moment/04-displaying/01-format/>
+* 使用 [Moment](Moment.md) 处理时间。
 
 ## 示例
 

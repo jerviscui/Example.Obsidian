@@ -8,26 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "de5c1ded03df7d9d",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "pinned": true,
-            "state": {
-              "type": "graph",
-              "state": {},
-              "pinned": true
-            }
-          },
-          {
-            "id": "3f79b1db38963aef",
+            "id": "17fd447164abf58a",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -42,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/Rust/学习.md",
+                "file": "Overview.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -51,7 +32,7 @@
             }
           },
           {
-            "id": "5995faa1a0b2c9ea",
+            "id": "e20a7d49793522d8",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -59,29 +40,27 @@
                 {
                   "state": "{}",
                   "eState": "{}"
-                },
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Akka.NET/Akka.NET.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "29602120b2746536",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
                 {
-                  "title": "QMK 烧录",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"分体键盘/QMK 烧录.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
-                  "eState": "{}"
-                },
-                {
-                  "title": "使用说明",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"分体键盘/使用说明.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
-                  "eState": "{}"
-                },
-                {
-                  "title": "键盘布局",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"分体键盘/键盘布局.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
-                  "eState": "{}"
-                },
-                {
-                  "title": "Templater",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Obsidian/Templater.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "state": "{}",
                   "eState": "{}"
                 }
               ]
@@ -89,7 +68,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "分体键盘/键盘布局.md",
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/架构设计/EventDriven/事件驱动架构.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -97,7 +76,7 @@
             }
           },
           {
-            "id": "5a529225fe1a7152",
+            "id": "70057e3215e3ec9d",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -111,7 +90,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/架构设计/MicroService/dotNet 微服务架构指南.md",
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/Rust/Result.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -119,7 +98,7 @@
             }
           },
           {
-            "id": "d8345d4570abf7ea",
+            "id": "133fb1b9b722ef7c",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -133,73 +112,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.0 开发平台/Core/Tools/Memory Leak.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "4d6deb047a17fb3a",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.0 开发平台/Core/Tools/Linux core dump.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "09af93609f707770",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/操作系统/Linux/运维工具/valgrind.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "93d2d49d1454b247",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/操作系统/Linux/运维工具/Dr.Memory.md",
+                "file": "test 1.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -207,7 +120,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -254,7 +167,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "moment",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -315,7 +228,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           },
@@ -340,7 +255,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270
+    "width": 270.5
   },
   "right": {
     "id": "b13a7484ffacd073",
@@ -352,7 +267,7 @@
         "dimension": 60.43478260869565,
         "children": [
           {
-            "id": "b561d9174f1bf768",
+            "id": "8ed169a40f172157",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -383,7 +298,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "分体键盘/键盘布局.md",
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Akka.NET/Akka.NET.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -409,7 +324,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "分体键盘/键盘布局.md",
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Akka.NET/Akka.NET.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -454,30 +369,38 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "分体键盘/键盘布局.md",
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Akka.NET/Akka.NET.md",
                 "options": {
-                  "collapse-filter": false,
-                  "search": "",
+                  "collapse-filter": true,
+                  "search": "-path:_assets -path:_scripts -path:_templates",
                   "localJumps": 2,
                   "localBacklinks": true,
                   "localForelinks": true,
                   "localInterlinks": true,
-                  "showTags": true,
-                  "showAttachments": false,
+                  "showTags": false,
+                  "showAttachments": true,
                   "hideUnresolved": false,
                   "collapse-color-groups": false,
-                  "colorGroups": [],
-                  "collapse-display": false,
+                  "colorGroups": [
+                    {
+                      "query": "tag:#moc",
+                      "color": {
+                        "a": 1,
+                        "rgb": 16384000
+                      }
+                    }
+                  ],
+                  "collapse-display": true,
                   "showArrow": true,
                   "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
+                  "nodeSizeMultiplier": 0.797817047817048,
                   "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 0.6554983534946917,
+                  "collapse-forces": false,
+                  "centerStrength": 0.6995841995842,
+                  "repelStrength": 10.997920997921,
+                  "linkStrength": 0.5,
+                  "linkDistance": 150,
+                  "scale": 0.6554983534946915,
                   "close": true
                 }
               }
@@ -495,71 +418,67 @@
       "graph:查看关系图谱": false,
       "janitor:Janitor: scan vault": false,
       "daily-notes:打开/创建今天的日记": false,
-      "command-palette:打开命令面板": false,
+      "command-palette:打开命令面板": true,
       "zk-prefixer:创建时间戳笔记": false,
-      "vscode-editor:Create Code File": false,
-      "workspaces:管理工作区布局": false,
-      "obsidian-projects:Open projects": false,
-      "markdown-table-editor:Open Markdown Table Editor": false,
-      "obsidian42-brat:BRAT": false,
-      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
-      "templater-obsidian:Templater": false,
+      "workspaces:管理工作区布局": true,
+      "markdown-table-editor:Open Markdown Table Editor": true,
+      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": true,
       "cmdr:Keyboard Analyzer: Open keyboard shortcuts view": false,
       "cmdr:Attachment Management: Rearrange linked attachments": false,
-      "cmdr:Obsidian Link Converter: Active File: Links to Markdown": false
+      "cmdr:Obsidian Link Converter: Active File: Links to Markdown": false,
+      "cmdr:Obsidian Link Converter: Active File: Links Format": false,
+      "cmdr:Update Relative Links: Update all relative links": false,
+      "obsidian42-brat:BRAT": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "5995faa1a0b2c9ea",
-  "ophidian:layout-settings": {
-    "pane-relief:focus-lock": true
-  },
+  "active": "e20a7d49793522d8",
   "lastOpenFiles": [
-    "分体键盘/QMK 烧录.md",
-    "分体键盘/使用说明.md",
-    "分体键盘/键盘布局.md",
-    "Obsidian/Templater.md",
-    "_templates/_newNote.md",
-    "test.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Git/git tag.md",
     "test 1.md",
-    "我的笔记/Mathematics/简介.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/Rust/学习.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/3 Algorithm/一些编程算法技巧.md",
-    "Obsidian/Obsidian.md",
-    "我的笔记/面试/未命名/abc.md",
-    "我的笔记/面试/未命名/ccc.md",
-    "Obsidian/插件开发.md",
-    "_templates/background-2.jpg",
-    "我的笔记/面试/未命名/aaa.md",
-    "_assets/ccc_files",
-    "_assets/ccc_files/Pasted image 20231016001610.png",
-    "我的笔记/面试/未命名/bbb.md",
-    "Obsidian/文件管理器水平滚动.md",
-    "我的笔记/面试/未命名/bbd.md",
-    "我的笔记/面试/未命名/未命名 1.md",
-    "我的笔记/面试/未命名/ddd.md",
-    "我的笔记/面试/未命名",
-    "我的笔记/面试/test.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/架构设计/MicroService/dotNet 微服务架构指南.md",
-    "_scripts/getRandomNumber.js",
-    "Web Clipper/该直接上《算法导.html",
-    "未命名 1.md",
-    "我的笔记/考研/计算机组成原理/1. 计算机系统概述 - 错题本.md",
-    "_assets/test_files/Pasted image 20231015210117.png",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/操作系统/Linux/运维工具/Dr.Memory.md",
-    "我的笔记/面试/1111.md",
-    "_templates/background-3.jpg",
-    "_assets/1. 计算机系统概述 - 错题本_files/0b9647a2-0a32-4472-becf-d68aa07a6c99.jpg",
-    "_assets/1. 计算机系统概述 - 错题本_files/Pasted image 20231015131047.png",
-    "_assets/1. 计算机系统概述 - 错题本_files/Pasted image 20231015130959.png",
-    "_assets/1. 计算机系统概述 - 错题本_files/Pasted image 20231015130845.png",
-    "_assets/1. 计算机系统概述 - 错题本_files/Pasted image 20231015130839.png",
-    "_assets/1. 计算机系统概述 - 错题本_files/Pasted image 20231015130831.png",
-    "_assets/1. 计算机系统概述 - 错题本_files",
-    "未命名",
-    "_templates/tmp",
-    "_templates/新建文件夹 (2)",
-    "_templates/新建文件夹",
-    "_assets/LatexSuite_files",
+    "aaa.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Akka.NET/Akka.NET.md",
+    "_assets/aaa_files/Pasted image 20240316142115.png",
+    "Overview.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Git/Git 常用命令.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Git/Git 分支和 fork.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/Rust/Result.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/架构设计/EventDriven/事件驱动架构.md",
+    "Obsidian/Outliner.md",
+    "Obsidian/Bartender.md",
+    "test.md",
+    "Obsidian/Hover Editor.md",
+    "Obsidian/Enhancing mindmap.md",
+    "Obsidian/Pane Relief.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/LINQPad/LINQPad 配置.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/3.1 监控/AppMetrics/AppMetrics Dashboard.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/Dictionary 合并.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/Expression/linq 中的连接和左连接.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.3 持久化/ORM/EF Core/EF Core 3.0.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.3 持久化/ORM/EF Core/ExecuteSqlInterpolatedAsync.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.3 持久化/ORM/EF Core/LeftJoin() 方法.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/LINQPad/使用 LINQPad.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/LINQPad/LINQPad 安装.md",
+    "_assets/LINQPad 安装_files/LINQPad NoUpdate Loader.bat",
+    "_assets/LINQPad 安装_files",
+    "_assets/LINQPad 安装_files/LINQPad Premium 7.3.9_fu11.7z",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/LINQPad/How LINQPad Works.md",
+    "_assets/黑湖_files",
+    "_assets/黑湖_files/Pasted image 20240312180409.png",
+    "_assets/Akka.NET_files/Pasted image 20240307125653.png",
+    "Web Clipper/6种事件驱动的架构模式.html",
+    "_assets/资产_files",
+    "Web Clipper/改进的雪花算法——解决时钟回拨问题.html",
+    "Web Clipper/未确认 282350.crdownload",
+    "Web Clipper/分布式 ID 实现方案.html",
+    "_assets/雪花算法_files",
+    "_assets/雪花算法_files/Pasted image 20240306141912.png",
+    "_assets/Paxos_files/Pasted image 20240306133307.png",
+    "_assets/Akka.NET_files/Pasted image 20240226165434.png",
+    "_assets/Akka.NET_files/Pasted image 20240222142929.png",
+    "_assets/Rust 内存布局_files/Pasted image 20240128152343.png",
+    "_assets/Rust 内存布局_files/00F91DAE.png",
+    "_assets/Rust 内存布局_files/Pasted image 20240127212048.png",
     "测试白板.canvas",
     "未命名.canvas"
   ]

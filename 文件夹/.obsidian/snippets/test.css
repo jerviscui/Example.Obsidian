@@ -71,3 +71,42 @@ https://github.com/joethei/obsidian-non-printing-chars
     counter-reset: h3-prev h4-prev h5-prev h6-prev;
     content: counter(h1-prev) "." counter(h2-prev) ". ";
 } */
+
+/* header */
+/* .view-header-title-parent {
+    font-size: var(--file-header-font-size);
+    color: var(--text-muted);
+    min-width: 0;
+    display: flex;
+    gap: 0;
+    overflow: hidden;
+}
+.view-header-title-parent {
+    font-size: var(--file-header-font-size);
+    color: var(--text-muted);
+    min-width: 0;
+    display: flex;
+    gap: 0;
+    overflow: hidden;
+}
+.view-header-title-parent:hover {
+    overflow: overlay;
+}
+.view-header-title-container {
+    flex-grow: 1;
+    overflow: hidden;
+    position: relative;
+    justify-content: var(--file-header-justify);
+    display: flex;
+    align-items: center;
+    gap: 0;
+    white-space: nowrap;
+}
+.view-header-title-parent .view-header-breadcrumb {
+    padding: 2px 4px;
+    border-radius: var(--radius-s);
+}
+.view-header-title-parent .view-header-breadcrumb-separator {
+    padding: 2px 1px;
+    color: var(--text-faint);
+} */

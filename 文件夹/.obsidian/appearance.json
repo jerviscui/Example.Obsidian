@@ -21,7 +21,6 @@
     "editor-reading-mode-table",
     "editor-source-mode",
     "editor-source-mode-cMenu",
-    "editor-title-bar",
     "editor-title-bar-hover-editor",
     "file-explorer-color",
     "file-explorer-file-icon",
@@ -29,12 +28,13 @@
     "file-explorer-scrolling",
     "image-cards",
     "media-grid-snippet",
-    "quiet-outline",
     "realistic-highlight",
     "test",
     "editor-reading-mode-properties",
     "editor-reading-mode-color",
     "editor-reading-mode-lsit",
-    "editor-reading-mode-banner"
+    "editor-reading-mode-banner",
+    "editor-title-bar",
+    "quiet-outline"
   ]
 }

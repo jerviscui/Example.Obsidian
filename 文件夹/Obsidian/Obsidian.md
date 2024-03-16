@@ -1,12 +1,19 @@
 ---
 tags: [moc]
 date created: 2022-10-24T22:18:14+08:00
-date modified: 2023-10-16T01:15:17+08:00
+date modified: 2023-10-29T21:45:25+08:00
 ---
 
 # Obsidian
 
 [Obsidian Plugin Stats](https://obsidian-plugin-stats.vercel.app/)
+
+todo:
+
+- [ ] 导致 `![Pasted image 20230331152207](../../..` 被添加 alt，连接中的 alt 丢失 `[](../RabbitMQ/RabbitMQ%20订阅者.md#预取数量——限流)`，页内引用 `[](.md#返回%20nil)` 文件丢失
+![](../_assets/Obsidian_files/Pasted%20image%2020231029210545.png)
+- [ ] 疑似无法识别页内引用？业内引用绝对地址转换相对链接逻辑有问题 `[换手模式](../../../../../../..//知识树/0%20`
+![](../_assets/Obsidian_files/Pasted%20image%2020231029210718.png)
 
 ## 快捷键
 
@@ -72,7 +79,7 @@ Sanctum
 [Pane Relief](Pane%20Relief.md)
 [Bartender](Bartender.md)
 [Janitor](Janitor.md)
-[Custom Attachment location](Custom%20Attachment%20location.md)
+[Attachment Management](Attachment%20Management.md)
 
 ### 数据展示
 

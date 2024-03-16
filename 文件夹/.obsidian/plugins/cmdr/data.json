@@ -35,6 +35,18 @@
       "icon": "baseline",
       "name": "Obsidian Link Converter: Active File: Links to Markdown",
       "mode": "any"
+    },
+    {
+      "id": "obsidian-link-converter:convert-links-format-in-active-file",
+      "icon": "activity",
+      "name": "Obsidian Link Converter: Active File: Links Format",
+      "mode": "any"
+    },
+    {
+      "id": "update-relative-links:update-all-relative-links",
+      "icon": "at-sign",
+      "name": "Update Relative Links: Update all relative links",
+      "mode": "any"
     }
   ],
   "rightRibbon": [],
@@ -62,7 +74,8 @@
       "BRAT",
       "打开命令面板",
       "管理工作区布局",
-      "Templater"
+      "Templater",
+      "Obsidian Link Converter: Active File: Links Format"
     ]
   },
   "spacing": "8",

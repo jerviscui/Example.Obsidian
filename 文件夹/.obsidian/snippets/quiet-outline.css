@@ -1,3 +1,26 @@
-.quiet-outline .n-tree.ellipsis {
+/* .quiet-outline .n-tree.ellipsis {
+    无用？
     padding-bottom: 20px;
+} */
+
+.quiet-outline {
+    padding-bottom: 0;
+}
+
+/* content: "•▪◈"; */
+.quiet-outline
+    .n-tree-node
+    .n-tree-node-switcher.n-tree-node-switcher--hide
+    + .n-tree-node-content::before {
+    content: "◈";
+    color: var(--n-arrow-color);
+    left: -9px;
+    position: relative;
+    margin-left: -12px;
+}
+
+.n-tree
+    .n-tree-node-switcher.n-tree-node-switcher--hide
+    .n-tree-node-switcher__icon {
+    visibility: hidden;
 }
