@@ -19,7 +19,6 @@
     "editor-reading-mode-code",
     "editor-reading-mode-link",
     "editor-reading-mode-table",
-    "editor-source-mode",
     "editor-source-mode-cMenu",
     "editor-title-bar-hover-editor",
     "file-explorer-color",
@@ -35,6 +34,7 @@
     "editor-reading-mode-lsit",
     "editor-reading-mode-banner",
     "editor-title-bar",
-    "quiet-outline"
+    "quiet-outline",
+    "editor-source-mode"
   ]
 }

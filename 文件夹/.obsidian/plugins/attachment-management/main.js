@@ -1483,6 +1483,13 @@ var ArrangeHandler = class {
           console.log(`Invalid link: ${link}, err: ${err}`);
           continue;
         }
+
+        // cuizj: exclude background image
+        if (isExcluded(path.dirname(link), this.settings)) {
+          debugLog(`${link} was excluded, skipped`);
+          continue;
+        }
+
         debugLog(`rearrangeAttachment - article: ${obNote} links: ${link}`);
         const linkFile = this.app.vault.getAbstractFileByPath(link);
         if (linkFile === null || !(linkFile instanceof import_obsidian8.TFile)) {

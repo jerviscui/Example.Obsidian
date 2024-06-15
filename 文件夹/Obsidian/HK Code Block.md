@@ -20,4 +20,4 @@ print(random.randint(1, 100))
 ```
 ~~~
 
-![](../_assets/Pasted%20image%2020230822115719.png)
+![](../_assets/HK%20Code%20Block_files/Pasted%20image%2020230822115719.png)

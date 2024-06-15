@@ -4,14 +4,12 @@
   "obsidian-style-settings",
   "markdown-table-editor",
   "update-relative-links",
-  "obsidian-quiet-outline",
   "obsidian-latex-suite",
   "obsidian-multi-cursor",
   "obsidian-plugin-update-tracker",
   "optimize-canvas-connections",
   "obsidian42-brat",
   "obsidian-markdown-formatting-assistant-plugin",
-  "typewriter-mode",
   "obsidian-another-quick-switcher",
   "attachment-management",
   "obsidian-auto-link-title",
@@ -21,7 +19,6 @@
   "obsidian-copy-block-link",
   "copy-url-in-preview",
   "janitor",
-  "editing-toolbar",
   "file-explorer-note-count",
   "dataview",
   "obsidian-footnotes",
@@ -35,5 +32,9 @@
   "keyboard-analyzer",
   "obsidian-hover-editor",
   "obsidian-enhancing-mindmap",
-  "pane-relief"
+  "pane-relief",
+  "editing-toolbar",
+  "obsidian-quiet-outline",
+  "typewriter-mode",
+  "obsidian-custom-frames"
 ]

@@ -1,13 +1,17 @@
 #cMenuToolbarModalBar.top {
-    position: absolute !important;
-    top: 40px !important;
+    /* position: absolute !important;
+    top: 40px !important; */
+    top: 0 !important;
     backdrop-filter: none;
     background: white;
     width: 100%;
 }
 
 #cMenuToolbarModalBar.top
-    :is(.cMenuToolbarCommandItem, button[class^="cMenuToolbarCommandsubItem"]):not(.cMenuToolbar-Divider-Line) {
+    :is(
+        .cMenuToolbarCommandItem,
+        button[class^="cMenuToolbarCommandsubItem"]
+    ):not(.cMenuToolbar-Divider-Line) {
     margin-left: 4px;
 }
 

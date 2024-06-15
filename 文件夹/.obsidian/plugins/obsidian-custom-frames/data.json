@@ -1,0 +1,41 @@
+{
+  "frames": [
+    {
+      "url": "https://dida365.com/webapp/#q/all/tasks",
+      "displayName": "dida365",
+      "icon": "layout-list",
+      "hideOnMobile": true,
+      "addRibbonIcon": true,
+      "openInCenter": true,
+      "zoomLevel": 1,
+      "forceIframe": false,
+      "customCss": "",
+      "customJs": ""
+    },
+    {
+      "url": "https://www.inoreader.com/dashboard",
+      "displayName": "inoreader",
+      "icon": "rss",
+      "hideOnMobile": true,
+      "addRibbonIcon": true,
+      "openInCenter": true,
+      "zoomLevel": 1,
+      "forceIframe": false,
+      "customCss": "",
+      "customJs": ""
+    },
+    {
+      "url": "https://news.ycombinator.com/",
+      "displayName": "Hacker News",
+      "icon": "bug",
+      "hideOnMobile": true,
+      "addRibbonIcon": true,
+      "openInCenter": true,
+      "zoomLevel": 1,
+      "forceIframe": false,
+      "customCss": "",
+      "customJs": ""
+    }
+  ],
+  "padding": 5
+}

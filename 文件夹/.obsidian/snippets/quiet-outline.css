@@ -24,3 +24,8 @@
     .n-tree-node-switcher__icon {
     visibility: hidden;
 }
+
+.quiet-outline .n-tree-node-content__text p {
+    overflow-wrap: anywhere;
+    /* word-break: break-word; */
+}

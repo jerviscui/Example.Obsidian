@@ -7,7 +7,7 @@ date modified: 2023-10-11T00:35:38+08:00
 # Optimize Canvas Connections
 
 优化白板的连接效果。
-![](../_assets/Pasted%20image%2020231011003115.png)
+![](../_assets/Optimize%20Canvas%20Connections_files/Pasted%20image%2020231011003115.png)
 
 run command:
 `Optimize Canvas Connections: Optimize selection (preserve axes)` 只进行左/右或者上/下切换

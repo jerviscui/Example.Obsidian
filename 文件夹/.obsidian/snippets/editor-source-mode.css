@@ -39,6 +39,14 @@
 }
 
 /* ident line position */
+.markdown-source-view.mod-cm6 .HyperMD-list-line-nobullet .cm-indent {
+    min-width: 2em;
+}
+
+.markdown-source-view.mod-cm6 .cm-indent {
+    min-width: 2em;
+}
+
 .markdown-source-view.mod-cm6 .cm-indent::before {
     content: "\200B";
     display: block;
@@ -56,7 +64,7 @@
 .cm-s-obsidian .HyperMD-table-row {
     width: auto;
     white-space: pre-wrap;
-    word-break: break-all;/* 英文换行 */
+    word-break: break-all; /* 英文换行 */
     word-wrap: break-word;
 }
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-table-row {
@@ -74,4 +82,9 @@
 /* selected line */
 .cm-line.cm-active {
     background-color: var(--text-selection);
+}
+
+/* content top */
+.view-content > .markdown-source-view.mod-cm6 > .cm-editor > .cm-scroller {
+    padding-top: 0;
 }

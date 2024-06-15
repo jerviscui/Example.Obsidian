@@ -658,23 +658,80 @@ var import_obsidian3 = require("obsidian");
 // src/features/githubUtils.ts
 var import_obsidian = require("obsidian");
 var GITHUB_RAW_USERCONTENT_PATH = "https://raw.githubusercontent.com/";
-var grabReleaseFileFromRepository = async (repository, version, fileName, debugLogging = true) => {
-  const URL = `https://github.com/${repository}/releases/download/${version}/${fileName}`;
+var isPrivateRepo = async (repository, debugLogging = true, personalAccessToken = "") => {
+  const URL2 = `https://api.github.com/repos/${repository}`;
   try {
-    const download = await (0, import_obsidian.request)({ url: URL });
-    return download === "Not Found" || download === `{"error":"Not Found"}` ? null : download;
+    const response = await (0, import_obsidian.request)({
+      url: URL2,
+      headers: personalAccessToken ? {
+        Authorization: `Token ${personalAccessToken}`
+      } : {}
+    });
+    const data = await JSON.parse(response);
+    return data.private;
+  } catch (e) {
+    if (debugLogging)
+      console.log("error in isPrivateRepo", URL2, e);
+    return false;
+  }
+};
+var grabReleaseFileFromRepository = async (repository, version, fileName, debugLogging = true, personalAccessToken = "") => {
+  try {
+    const isPrivate = await isPrivateRepo(repository, debugLogging, personalAccessToken);
+    if (isPrivate) {
+      const URL2 = `https://api.github.com/repos/${repository}/releases`;
+      const response = await (0, import_obsidian.request)({
+        url: URL2,
+        headers: {
+          Authorization: `Token ${personalAccessToken}`
+        }
+      });
+      const data = await JSON.parse(response);
+      const release = data.find((release2) => release2.tag_name === version);
+      if (!release) {
+        return null;
+      }
+      const asset = release.assets.find(
+        (asset2) => asset2.name === fileName
+      );
+      if (!asset) {
+        return null;
+      }
+      const download = await (0, import_obsidian.request)({
+        url: asset.url,
+        headers: {
+          Authorization: `Token ${personalAccessToken}`,
+          Accept: "application/octet-stream"
+        }
+      });
+      return download === "Not Found" || download === `{"error":"Not Found"}` ? null : download;
+    } else {
+      const URL2 = `https://github.com/${repository}/releases/download/${version}/${fileName}`;
+      const download = await (0, import_obsidian.request)({
+        url: URL2,
+        headers: personalAccessToken ? {
+          Authorization: `Token ${personalAccessToken}`
+        } : {}
+      });
+      return download === "Not Found" || download === `{"error":"Not Found"}` ? null : download;
+    }
   } catch (error) {
     if (debugLogging)
       console.log("error in grabReleaseFileFromRepository", URL, error);
     return null;
   }
 };
-var grabManifestJsonFromRepository = async (repositoryPath, rootManifest = true, debugLogging = true) => {
+var grabManifestJsonFromRepository = async (repositoryPath, rootManifest = true, debugLogging = true, personalAccessToken = "") => {
   const manifestJsonPath = GITHUB_RAW_USERCONTENT_PATH + repositoryPath + (rootManifest ? "/HEAD/manifest.json" : "/HEAD/manifest-beta.json");
   if (debugLogging)
     console.log("grabManifestJsonFromRepository manifestJsonPath", manifestJsonPath);
   try {
-    const response = await (0, import_obsidian.request)({ url: manifestJsonPath });
+    const response = await (0, import_obsidian.request)({
+      url: manifestJsonPath,
+      headers: personalAccessToken ? {
+        Authorization: `Token ${personalAccessToken}`
+      } : {}
+    });
     if (debugLogging)
       console.log("grabManifestJsonFromRepository response", response);
     return response === "404: Not Found" ? null : await JSON.parse(response);
@@ -778,11 +835,13 @@ var DEFAULT_SETTINGS = {
   themesList: [],
   updateAtStartup: true,
   updateThemesAtStartup: true,
+  enableAfterInstall: true,
   loggingEnabled: false,
   loggingPath: "BRAT-log",
   loggingVerboseEnabled: false,
   debuggingMode: false,
-  notificationsEnabled: true
+  notificationsEnabled: true,
+  personalAccessToken: ""
 };
 function addBetaPluginToList(plugin, repositoryPath, specifyVersion = "") {
   let save = false;
@@ -912,7 +971,7 @@ var themeSave = async (plugin, cssGithubRepository, newInstall) => {
     msg = `${manifestInfo.name} theme updated from ${cssGithubRepository}.`;
   }
   void plugin.log(msg + `[Theme Info](https://github.com/${cssGithubRepository})`, false);
-  toastMessage(plugin, `${msg}`, 20, () => {
+  toastMessage(plugin, msg, 20, () => {
     window.open(`https://github.com/${cssGithubRepository}`);
   });
   return true;
@@ -961,7 +1020,7 @@ var themeDelete = (plugin, cssGithubRepository) => {
   void plugin.saveSettings();
   const msg = `Removed ${cssGithubRepository} from BRAT themes list and will no longer be updated. However, the theme files still exist in the vault. To remove them, go into Settings > Appearance and remove the theme.`;
   void plugin.log(msg, true);
-  toastMessage(plugin, `${msg}`);
+  toastMessage(plugin, msg);
 };
 var themesRootPath = (plugin) => {
   return (0, import_obsidian3.normalizePath)(plugin.app.vault.configDir + "/themes") + "/";
@@ -1101,6 +1160,15 @@ var BratSettingsTab = class extends import_obsidian5.PluginSettingTab {
   display() {
     const { containerEl } = this;
     containerEl.empty();
+    new import_obsidian5.Setting(containerEl).setName("Auto-enable plugins after installation").setDesc(
+      'If enabled beta plugins will be automatically enabled after installtion by default. Note: you can toggle this on and off for each plugin in the "Add Plugin" form.'
+    ).addToggle((cb) => {
+      cb.setValue(this.plugin.settings.enableAfterInstall);
+      cb.onChange(async (value) => {
+        this.plugin.settings.enableAfterInstall = value;
+        await this.plugin.saveSettings();
+      });
+    });
     new import_obsidian5.Setting(containerEl).setName("Auto-update plugins at startup").setDesc(
       "If enabled all beta plugins will be checked for updates each time Obsidian starts. Note: this does not update frozen version plugins."
     ).addToggle((cb) => {
@@ -1255,6 +1323,15 @@ var BratSettingsTab = class extends import_obsidian5.PluginSettingTab {
         await this.plugin.saveSettings();
       });
     });
+    new import_obsidian5.Setting(containerEl).setName("Personal Access Token").setDesc(
+      "If you need to access private repositories, enter the personal access token here."
+    ).addText((text) => {
+      var _a;
+      text.setPlaceholder("Enter your personal access token").setValue((_a = this.plugin.settings.personalAccessToken) != null ? _a : "").onChange(async (value) => {
+        this.plugin.settings.personalAccessToken = value;
+        await this.plugin.saveSettings();
+      });
+    });
   }
 };
 
@@ -1268,6 +1345,7 @@ var AddNewPluginModal = class extends import_obsidian6.Modal {
     this.address = "";
     this.openSettingsTabAfterwards = openSettingsTabAfterwards;
     this.useFrozenVersion = useFrozenVersion;
+    this.enableAfterInstall = plugin.settings.enableAfterInstall;
     this.version = "";
   }
   async submitForm() {
@@ -1289,7 +1367,9 @@ var AddNewPluginModal = class extends import_obsidian6.Modal {
       false,
       false,
       false,
-      this.version
+      this.version,
+      false,
+      this.enableAfterInstall
     );
     if (result) {
       this.close();
@@ -1327,6 +1407,23 @@ var AddNewPluginModal = class extends import_obsidian6.Modal {
         });
       }
       formEl.createDiv("modal-button-container", (buttonContainerEl) => {
+        buttonContainerEl.createEl(
+          "label",
+          {
+            cls: "mod-checkbox"
+          },
+          (labelEl) => {
+            const checkboxEl = labelEl.createEl("input", {
+              attr: { tabindex: -1 },
+              type: "checkbox"
+            });
+            checkboxEl.checked = this.enableAfterInstall;
+            checkboxEl.addEventListener("click", () => {
+              this.enableAfterInstall = checkboxEl.checked;
+            });
+            labelEl.appendText("Enable after installing the plugin");
+          }
+        );
         buttonContainerEl.createEl("button", { attr: { type: "button" }, text: "Never mind" }).addEventListener("click", () => {
           this.close();
         });
@@ -1403,16 +1500,24 @@ var BetaPlugins = class {
     const manifestJson = await grabManifestJsonFromRepository(
       repositoryPath,
       !getBetaManifest,
-      this.plugin.settings.debuggingMode
+      this.plugin.settings.debuggingMode,
+      this.plugin.settings.personalAccessToken
     );
     if (!manifestJson) {
-      if (reportIssues)
+      if (reportIssues) {
         toastMessage(
           this.plugin,
           `${repositoryPath}
 This does not seem to be an obsidian plugin, as there is no manifest.json file.`,
           noticeTimeout
         );
+        console.error(
+          "BRAT: validateRepository",
+          repositoryPath,
+          getBetaManifest,
+          reportIssues
+        );
+      }
       return null;
     }
     if (!("id" in manifestJson)) {
@@ -1450,24 +1555,28 @@ The version attribute for the release is missing from the manifest file`,
   async getAllReleaseFiles(repositoryPath, manifest, getManifest, specifyVersion = "") {
     const version = specifyVersion === "" ? manifest.version : specifyVersion;
     const reallyGetManifestOrNot = getManifest || specifyVersion !== "";
+    console.log({ reallyGetManifestOrNot, version });
     return {
       mainJs: await grabReleaseFileFromRepository(
         repositoryPath,
         version,
         "main.js",
-        this.plugin.settings.debuggingMode
+        this.plugin.settings.debuggingMode,
+        this.plugin.settings.personalAccessToken
       ),
       manifest: reallyGetManifestOrNot ? await grabReleaseFileFromRepository(
         repositoryPath,
         version,
         "manifest.json",
-        this.plugin.settings.debuggingMode
+        this.plugin.settings.debuggingMode,
+        this.plugin.settings.personalAccessToken
       ) : "",
       styles: await grabReleaseFileFromRepository(
         repositoryPath,
         version,
         "styles.css",
-        this.plugin.settings.debuggingMode
+        this.plugin.settings.debuggingMode,
+        this.plugin.settings.personalAccessToken
       )
     };
   }
@@ -1506,7 +1615,7 @@ The version attribute for the release is missing from the manifest file`,
    *
    * @returns true if succeeds
    */
-  async addPlugin(repositoryPath, updatePluginFiles = false, seeIfUpdatedOnly = false, reportIfNotUpdted = false, specifyVersion = "", forceReinstall = false) {
+  async addPlugin(repositoryPath, updatePluginFiles = false, seeIfUpdatedOnly = false, reportIfNotUpdted = false, specifyVersion = "", forceReinstall = false, enableAfterInstall = this.plugin.settings.enableAfterInstall) {
     if (this.plugin.settings.debuggingMode)
       console.log(
         "BRAT: addPlugin",
@@ -1515,7 +1624,8 @@ The version attribute for the release is missing from the manifest file`,
         seeIfUpdatedOnly,
         reportIfNotUpdted,
         specifyVersion,
-        forceReinstall
+        forceReinstall,
+        enableAfterInstall
       );
     const noticeTimeout = 10;
     let primaryManifest = await this.validateRepository(repositoryPath, true, false);
@@ -1526,14 +1636,14 @@ The version attribute for the release is missing from the manifest file`,
       const msg = `${repositoryPath}
 A manifest.json or manifest-beta.json file does not exist in the root directory of the repository. This plugin cannot be installed.`;
       await this.plugin.log(msg, true);
-      toastMessage(this.plugin, `${msg}`, noticeTimeout);
+      toastMessage(this.plugin, msg, noticeTimeout);
       return false;
     }
     if (!Object.hasOwn(primaryManifest, "version")) {
       const msg = `${repositoryPath}
 The manifest${usingBetaManifest ? "-beta" : ""}.json file in the root directory of the repository does not have a version number in the file. This plugin cannot be installed.`;
       await this.plugin.log(msg, true);
-      toastMessage(this.plugin, `${msg}`, noticeTimeout);
+      toastMessage(this.plugin, msg, noticeTimeout);
       return false;
     }
     if (!Object.hasOwn(primaryManifest, "minAppVersion")) {
@@ -1544,7 +1654,7 @@ The manifest${usingBetaManifest ? "-beta" : ""}.json for this plugin indicates t
 
 You will need to update your Obsidian to use this plugin or contact the plugin developer for more information.`;
         await this.plugin.log(msg, true);
-        toastMessage(this.plugin, `${msg}`, 30);
+        toastMessage(this.plugin, msg, 30);
         return false;
       }
     }
@@ -1556,6 +1666,7 @@ You will need to update your Obsidian to use this plugin or contact the plugin d
         usingBetaManifest,
         specifyVersion
       );
+      console.log("rFiles", rFiles);
       if (usingBetaManifest || rFiles.manifest === "")
         rFiles.manifest = JSON.stringify(primaryManifest);
       if (this.plugin.settings.debuggingMode)
@@ -1564,7 +1675,7 @@ You will need to update your Obsidian to use this plugin or contact the plugin d
         const msg = `${repositoryPath}
 The release is not complete and cannot be download. main.js is missing from the Release`;
         await this.plugin.log(msg, true);
-        toastMessage(this.plugin, `${msg}`, noticeTimeout);
+        toastMessage(this.plugin, msg, noticeTimeout);
         return null;
       }
       return rFiles;
@@ -1576,6 +1687,14 @@ The release is not complete and cannot be download. main.js is missing from the 
       await this.writeReleaseFilesToPluginFolder(primaryManifest.id, releaseFiles);
       if (!forceReinstall)
         addBetaPluginToList(this.plugin, repositoryPath, specifyVersion);
+      if (enableAfterInstall) {
+        const { plugins } = this.plugin.app;
+        const pluginTargetFolderPath = (0, import_obsidian7.normalizePath)(
+          plugins.getPluginFolder() + "/" + primaryManifest.id
+        );
+        await plugins.loadManifest(pluginTargetFolderPath);
+        await plugins.enablePluginAndSave(primaryManifest.id);
+      }
       await this.plugin.app.plugins.loadManifests();
       if (forceReinstall) {
         await this.reloadPlugin(primaryManifest.id);
@@ -1588,8 +1707,11 @@ Plugin has been reinstalled and reloaded.`,
         );
       } else {
         const versionText = specifyVersion === "" ? "" : ` (version: ${specifyVersion})`;
-        const msg = `${repositoryPath}${versionText}
-The plugin has been registered with BRAT. You may still need to enable it the Community Plugin List.`;
+        let msg = `${repositoryPath}${versionText}
+The plugin has been registered with BRAT.`;
+        if (!enableAfterInstall) {
+          msg += " You may still need to enable it the Community Plugin List.";
+        }
         await this.plugin.log(msg, true);
         toastMessage(this.plugin, msg, noticeTimeout);
       }

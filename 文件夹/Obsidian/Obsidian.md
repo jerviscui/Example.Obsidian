@@ -1,14 +1,14 @@
 ---
-tags: [moc]
+tags: [moc, todo]
 date created: 2022-10-24T22:18:14+08:00
-date modified: 2023-10-29T21:45:25+08:00
+date modified: 2024-06-01T13:36:12+08:00
 ---
 
 # Obsidian
 
 [Obsidian Plugin Stats](https://obsidian-plugin-stats.vercel.app/)
 
-todo:
+#todo
 
 - [ ] 导致 `![Pasted image 20230331152207](../../..` 被添加 alt，连接中的 alt 丢失 `[](../RabbitMQ/RabbitMQ%20订阅者.md#预取数量——限流)`，页内引用 `[](.md#返回%20nil)` 文件丢失
 ![](../_assets/Obsidian_files/Pasted%20image%2020231029210545.png)
@@ -20,6 +20,8 @@ todo:
 Ctrl+Shift+I 打开 DevTool
 Ctrl+ 左键 当前窗口打开新 tab
 Ctrl+Alt+ 左键 当前窗口和右侧打开新 tab，但是不会自动链接两个 tab
+
+## 脚本
 
 Example of this above image resized to 200 pixels wide:
 
@@ -56,7 +58,6 @@ Sanctum
 
 ### 编辑器增强
 
-[Outliner](Outliner.md)
 [Templater](Templater.md)
 [Code Editor Shortcuts](Code%20Editor%20Shortcuts.md)
 [Editing Toolbar](Editing%20Toolbar.md)
@@ -71,22 +72,19 @@ Sanctum
 
 [Chronology](Chronology.md)
 [Style Settings](Style%20Settings.md)
-[Workspaces Plus](Workspaces%20Plus.md)
 [Buttons](Buttons.md)
 [Another Quick Switcher Plugin](Another%20Quick%20Switcher%20Plugin.md)
 [Commander](Commander.md)
 [Quiet Outline](Quiet%20Outline.md)
 [Pane Relief](Pane%20Relief.md)
-[Bartender](Bartender.md)
 [Janitor](Janitor.md)
 [Attachment Management](Attachment%20Management.md)
+[Custom Frames](Custom%20Frames.md)
 
 ### 数据展示
 
 [Dataview](Dataview.md)
 [Heatmap Calendar](Heatmap%20Calendar.md)
-
-### 脚本
 
 ### 研究
 
@@ -136,6 +134,7 @@ obsidian-language-learner
 学习英语，查词功能、添加笔记
 <https://github.com/guopenghui/obsidian-language-learner>
 
+#todo
 Search Obsidian In Google
 <https://pkmer.cn/Pkmer-Docs/10-obsidian/obsidian%E7%A4%BE%E5%8C%BA%E6%8F%92%E4%BB%B6/search-obsidian-in-google/>
 
