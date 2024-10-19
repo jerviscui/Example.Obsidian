@@ -33,6 +33,23 @@
       "type": "search",
       "ctime": 1697104709787,
       "query": "line:(\"[000\")"
+    },
+    {
+      "type": "group",
+      "ctime": 1727596406140,
+      "items": [
+        {
+          "type": "search",
+          "ctime": 1727596441426,
+          "query": "path: \"JervisPC\""
+        },
+        {
+          "type": "search",
+          "ctime": 1727596605889,
+          "query": "path: \"DESKTOP-6IBBCA1\""
+        }
+      ],
+      "title": "conflict"
     }
   ]
 }

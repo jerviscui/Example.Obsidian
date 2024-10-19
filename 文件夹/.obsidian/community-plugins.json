@@ -1,6 +1,5 @@
 [
   "obsidian-linter",
-  "tag-wrangler",
   "obsidian-style-settings",
   "markdown-table-editor",
   "update-relative-links",
@@ -36,5 +35,7 @@
   "editing-toolbar",
   "obsidian-quiet-outline",
   "typewriter-mode",
-  "obsidian-custom-frames"
+  "obsidian-custom-frames",
+  "omnisearch",
+  "tag-wrangler"
 ]

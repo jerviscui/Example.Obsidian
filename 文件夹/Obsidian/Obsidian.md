@@ -1,14 +1,16 @@
 ---
-tags: [moc, todo]
+tags:
+  - moc
+  - future
 date created: 2022-10-24T22:18:14+08:00
-date modified: 2024-06-01T13:36:12+08:00
+date modified: 2024-07-17T18:44:37+08:00
 ---
 
 # Obsidian
 
 [Obsidian Plugin Stats](https://obsidian-plugin-stats.vercel.app/)
 
-#todo
+#future
 
 - [ ] 导致 `![Pasted image 20230331152207](../../..` 被添加 alt，连接中的 alt 丢失 `[](../RabbitMQ/RabbitMQ%20订阅者.md#预取数量——限流)`，页内引用 `[](.md#返回%20nil)` 文件丢失
 ![](../_assets/Obsidian_files/Pasted%20image%2020231029210545.png)
@@ -80,6 +82,7 @@ Sanctum
 [Janitor](Janitor.md)
 [Attachment Management](Attachment%20Management.md)
 [Custom Frames](Custom%20Frames.md)
+Search Obsidian In Google：[Omnisearch](Omnisearch.md)
 
 ### 数据展示
 
@@ -134,9 +137,7 @@ obsidian-language-learner
 学习英语，查词功能、添加笔记
 <https://github.com/guopenghui/obsidian-language-learner>
 
-#todo
-Search Obsidian In Google
-<https://pkmer.cn/Pkmer-Docs/10-obsidian/obsidian%E7%A4%BE%E5%8C%BA%E6%8F%92%E4%BB%B6/search-obsidian-in-google/>
+高亮、或隐藏匹配内容：<https://pkmer.cn/Pkmer-Docs/10-obsidian/obsidian%E7%A4%BE%E5%8C%BA%E6%8F%92%E4%BB%B6/obsidian-dynamic-highlights/>
 
 ## 不选用的插件及原因
 

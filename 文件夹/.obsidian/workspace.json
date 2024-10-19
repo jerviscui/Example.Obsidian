@@ -32,44 +32,16 @@
             }
           },
           {
-            "id": "66b72fa380a0025f",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/架构设计/EventDriven/事件驱动架构.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
             "id": "bfada95a4fc178be",
             "type": "leaf",
             "pane-relief:history-v1": {
-              "pos": 2,
+              "pos": 1,
               "stack": [
                 {
-                  "title": "OrleansDashboard",
+                  "title": "2024-07-16",
                   "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/OrleansDashboard.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":41,\"ch\":0},\"to\":{\"line\":41,\"ch\":0}},\"scroll\":25.663020451863606}"
-                },
-                {
-                  "title": "2024-06-13",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Projects/Orleans case/成果/2024-06-13.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":12,\"ch\":10},\"to\":{\"line\":12,\"ch\":10}},\"scroll\":0}"
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Projects/Orleans case/成果/2024-07-16.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":10,\"ch\":9},\"to\":{\"line\":10,\"ch\":9}},\"scroll\":0.6333333253860474}"
                 },
                 {
                   "state": "{}",
@@ -79,7 +51,7 @@
                   "title": "2024-06-13",
                   "icon": "lucide-file",
                   "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Projects/Orleans case/成果/2024-06-13.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":13,\"ch\":0},\"to\":{\"line\":13,\"ch\":0}},\"scroll\":0}"
+                  "eState": "{\"cursor\":{\"from\":{\"line\":13,\"ch\":0},\"to\":{\"line\":13,\"ch\":0}},\"scroll\":2.633333365122477}"
                 }
               ]
             },
@@ -94,93 +66,62 @@
             }
           },
           {
-            "id": "88152d8126ae0768",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/Orleans case/成果/2024-06-14.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "6a198e9cac6f8e89",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/GrainCancellationToken.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "f420d7e317da328d",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "swar8080/AVAILABLE_PLUGIN_UPDATES",
-              "state": {}
-            }
-          },
-          {
-            "id": "bc319f9a7a4c0c5a",
+            "id": "5fa3de6b556da9a3",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 1,
               "stack": [
                 {
-                  "title": "Grain",
+                  "title": "Orleans Client",
                   "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/Grain.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":12,\"ch\":2},\"to\":{\"line\":12,\"ch\":2}},\"scroll\":0}"
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/Orleans Client.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":64.78095354352679}"
                 },
                 {
                   "state": "{}",
                   "eState": "{}"
                 },
                 {
-                  "title": "Orleans Meter",
+                  "title": "Grain",
                   "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/Orleans Meter.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/Grain.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":13.48125}"
+                },
+                {
+                  "title": "Lifecycle",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/Lifecycle.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":129,\"ch\":0},\"to\":{\"line\":129,\"ch\":0}},\"scroll\":115.94556152427033}"
+                },
+                {
+                  "title": "Silo",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/Silo.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
                   "eState": "{}"
+                },
+                {
+                  "title": "Grain",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/Grain.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":27,\"ch\":155},\"to\":{\"line\":27,\"ch\":155}},\"scroll\":15.191667079925537}"
                 },
                 {
                   "title": "Orleans",
                   "icon": "lucide-file",
                   "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/Orleans.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
-                  "eState": "{\"scroll\":0}"
+                  "eState": "{\"scroll\":321.9812316894531}"
+                },
+                {
+                  "title": "Orleans 序列化",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/Orleans 序列化.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":0.20000000794728598}"
+                },
+                {
+                  "title": "Orleans",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/Orleans.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{}"
                 }
               ]
             },
@@ -188,6 +129,150 @@
               "type": "markdown",
               "state": {
                 "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/Orleans.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "4fdeda71737a7928",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 2,
+              "stack": [
+                {
+                  "title": "学习",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/学习.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":20,\"ch\":0},\"to\":{\"line\":20,\"ch\":0}},\"scroll\":0}"
+                },
+                {
+                  "title": "Orleans 源码分析",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/Orleans 源码分析.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":12.058333237965902}"
+                },
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "最佳实践",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/最佳实践.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":27.74503949346877}"
+                },
+                {
+                  "title": "Orleans 分布式事务",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/Orleans 分布式事务.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":128,\"ch\":5},\"to\":{\"line\":128,\"ch\":5}},\"scroll\":72.10944027423902}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/Orleans 分布式事务.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "c4e1214a95154f4f",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "Podman",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/虚拟化/Podman.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "CRI-O",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/虚拟化/CRI-O.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "containerd",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/虚拟化/containerd.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "容器生态发展时间线",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/虚拟化/容器生态发展时间线.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "容器镜像阿里源版本",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/虚拟化/容器镜像阿里源版本.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "容器技术攻略",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/虚拟化/容器技术攻略.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":0}"
+                },
+                {
+                  "title": "关闭阿里云盾",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/虚拟化/阿里云/关闭阿里云盾.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/虚拟化/阿里云/管理工具.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "e4f35f86544e1759",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 1,
+              "stack": [
+                {
+                  "title": "最佳实践",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/最佳实践.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":10,\"ch\":17},\"to\":{\"line\":10,\"ch\":17}},\"scroll\":0}"
+                },
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "Lifecycle",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/Lifecycle.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":158.93593668165153}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/Grain.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -195,7 +280,7 @@
             }
           },
           {
-            "id": "b24a22b6382e24c2",
+            "id": "58eb7cfa2e1e4598",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -209,7 +294,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Visual Studio/CodeRush.md",
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/Orleans 源码分析.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -217,25 +302,71 @@
             }
           },
           {
-            "id": "a23945c4ebb9fda2",
+            "id": "d3492dc0c8d337a4",
             "type": "leaf",
             "pane-relief:history-v1": {
-              "pos": 0,
+              "pos": 5,
               "stack": [
                 {
-                  "state": "{}",
+                  "title": "Gossip 协议",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/架构设计/Gossip 协议.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
                   "eState": "{}"
                 },
                 {
-                  "title": "常用列表",
+                  "title": "1.2 数据一致性 - 分布式事务",
                   "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"常用列表.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
-                  "eState": "{\"scroll\":0}"
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/架构设计/分布式系统关注点/1.2 数据一致性 - 分布式事务.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":79.32394366197182}"
                 },
                 {
-                  "title": "CodeRush 快捷键",
+                  "title": "CAP 理论",
                   "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Visual Studio/CodeRush 快捷键.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/架构设计/CAP 理论.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "基本理论",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/架构设计/基本理论.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "分布式一致性算法",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/架构设计/分布式一致性算法.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":0}"
+                },
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/架构设计/2PC.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "d18b38add9576847",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 1,
+              "stack": [
+                {
+                  "title": "Flow.Launcher",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/操作系统/Windows/Flow.Launcher.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{\"scroll\":32.98581387134308}"
+                },
+                {
+                  "state": "{}",
                   "eState": "{}"
                 }
               ]
@@ -251,7 +382,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -298,7 +429,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "快捷键",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -382,7 +513,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -429,7 +561,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/GrainCancellationToken.md",
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/Orleans 源码分析.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -455,7 +587,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/GrainCancellationToken.md",
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/Orleans 源码分析.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -500,9 +632,9 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/GrainCancellationToken.md",
+                "file": "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/Orleans 源码分析.md",
                 "options": {
-                  "collapse-filter": true,
+                  "collapse-filter": false,
                   "search": "-path:_assets -path:_scripts -path:_templates",
                   "localJumps": 2,
                   "localBacklinks": true,
@@ -526,12 +658,12 @@
                   "textFadeMultiplier": 0,
                   "nodeSizeMultiplier": 0.797817047817048,
                   "lineSizeMultiplier": 1,
-                  "collapse-forces": false,
+                  "collapse-forces": true,
                   "centerStrength": 0.6995841995842,
                   "repelStrength": 10.997920997921,
                   "linkStrength": 0.5,
                   "linkDistance": 150,
-                  "scale": 0.6554983534946918,
+                  "scale": 0.655498353494692,
                   "close": true
                 }
               }
@@ -559,64 +691,65 @@
       "cmdr:Attachment Management: Rearrange linked attachments": false,
       "cmdr:Obsidian Link Converter: Active File: Links Format": false,
       "janitor:Janitor: scan vault": false,
-      "templater-obsidian:Templater": false,
-      "obsidian42-brat:BRAT": false,
       "obsidian-custom-frames:Open dida365": false,
       "obsidian-custom-frames:Open Hacker News": false,
-      "obsidian-custom-frames:Open inoreader": false
+      "obsidian-custom-frames:Open inoreader": false,
+      "omnisearch:Omnisearch": false,
+      "obsidian42-brat:BRAT": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "f420d7e317da328d",
+  "active": "58eb7cfa2e1e4598",
   "ophidian:layout-settings": {
     "pane-relief:focus-lock": true
   },
   "lastOpenFiles": [
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Git/gitui.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/GrainCancellationToken.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/操作系统/Windows/chocolatey.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/操作系统/Windows/Everything.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Explorer++.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/OpenArk.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/生产力工具.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/操作系统/Windows/PicGo.md",
-    "_assets/Everything_files/Pasted image 20240615143252.png",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/操作系统/Windows/PowerShell/PowerShell 中 Docker 命令补全.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/操作系统/Windows/Flow.Launcher.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Wox.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/PowerToys.md",
-    "_assets/Everything_files",
-    "_assets/Everything_files/Pasted image 20240615135341.png",
-    "_assets/Flow.Launcher_files/Pasted image 20240615133632.png",
-    "_assets/Flow.Launcher_files/Pasted image 20240615133558.png",
-    "_assets/Flow.Launcher_files/Pasted image 20240615125909.png",
-    "_assets/Flow.Launcher_files/Pasted image 20240615125834.png",
-    "_assets/Flow.Launcher_files",
-    "_assets/Flow.Launcher_files/Pasted image 20240615121931.png",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/操作系统/Windows/WSL/Windows 子系统 WSL.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/操作系统/Windows/Windows Terminal.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Total Commander.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Git/lazygit.md",
-    "_assets/Total Commander_files/Pasted image 20240615102903.png",
-    "_assets/Total Commander_files/Pasted image 20240615102833.png",
-    "我的笔记/同步/Total Commander.md",
-    "_assets/Total Commander_files/Pasted image 20240615102108.png",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Visual Studio/Command Explorer.md",
-    "我的笔记/同步/lazygit.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/操作系统/Windows/WSL/LxRunOffline.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Visual Studio/CodeRush.md",
-    "_assets/CodeRush_files/Exported-2024-06-14-1.vssettings",
-    "_assets/CodeRush_files/Exported-2024-06-14T221521.zip",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/Parallel Computing/任务并行.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/TaskCanceledException 和 OperationCanceledException.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/Parallel Computing/多线程同步.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/Parallel Computing/线程池.md",
-    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/Parallel Computing/异步编程模型.md",
-    "_assets/checked、unchecked 关键字_files",
-    "_assets/GrainCancellationToken_files",
-    "_assets/2024-06-14_files",
-    "_assets/CodeRush_files/Exported-2024-06-14.vssettings",
-    "_assets/CodeRush_files/Exported-2024-06-14T070538.zip",
-    "_assets/CodeRush_files/Exported-2024-06-13T195525.zip",
+    "Overview.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/Grain.md",
+    "我的笔记/同步/CodeRush.md",
+    "我的笔记/同步/Visual Studio.md",
+    "_assets/Visual Studio_files/Exported-2024-10-19.vssettings",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/1 编程语言/CSharp/VS 注释语法.md",
+    "_assets/CodeRush_files/Exported-2024-10-19T163631.zip",
+    "_assets/CodeRush_files/Exported-2024-10-19T122552.zip",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/Orleans 源码分析.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/Visual Studio/CodeRush 快捷键.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.1 程序设计/架构设计/2PC.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/虚拟化/阿里云/管理工具.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/Hotstrings.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/虚拟化/Podman.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/虚拟化/CRI-O.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/虚拟化/containerd.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/虚拟化/容器生态发展时间线.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/虚拟化/容器镜像阿里源版本.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/虚拟化/容器技术攻略.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/虚拟化/阿里云/关闭阿里云盾.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/虚拟化/Azure/Azure Data Studio.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/虚拟化/Rancher/Rancher.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/虚拟化/Azure",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.4 系统编程和程序/虚拟化/阿里云",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/Orleans 分布式事务.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.5 通用应用程序/AHK/AHK 指令.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/Grain Extensions.md",
+    "我的笔记/弈仙牌.md",
+    "_assets/弈仙牌_files/20241012185459_1.jpg",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/学习.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/最佳实践.md",
+    "知识树/0 - 计算机科学、资讯与总类/000 计算机科学、资讯与总类/005 程序设计、程序、数据/005.3 服务端/2 接口服务/dotNet/1.1 框架/Orleans/Azure Table.md",
+    "_assets/弈仙牌_files/20241009190957_1.jpg",
+    "_assets/弈仙牌_files/20241009113717_1.jpg",
+    "_assets/弈仙牌_files/20241009105945_1.jpg",
+    "_assets/弈仙牌_files/20241009102046_1.jpg",
+    "_assets/弈仙牌_files/Pasted image 20241009101530.png",
+    "_assets/弈仙牌_files/Pasted image 20241009101436.png",
+    "_assets/弈仙牌_files/Pasted image 20241009101301.png",
+    "_assets/弈仙牌_files/20241009100806_1.jpg",
+    "_assets/弈仙牌_files/20241009095935_1.jpg",
+    "_assets/Orleans 分布式事务_files/PhilBernsteinHPTS2019.pdf",
+    "_assets/Orleans 分布式事务_files/EldeebBernstein-TransactionalActors-MSR-TR-1.pdf",
+    "_assets/Visual Studio_files/Exported-2024-09-23.vssettings",
+    "_assets/Orleans 源码分析_files/orleans-2.eapx",
+    "_assets/Grain 生命周期_files",
     "测试白板.canvas",
     "未命名.canvas"
   ]

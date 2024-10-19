@@ -90,7 +90,6 @@
       "key": "Enter"
     }
   ],
-  "obsidian-editor-shortcuts:copyLineUp": [],
   "obsidian-editor-shortcuts:copyLineDown": [],
   "obsidian-editor-shortcuts:addCursorsToSelectionEnds": [],
   "obsidian-editor-shortcuts:insertLineAbove": [
@@ -395,5 +394,6 @@
       "key": "F"
     }
   ],
-  "editor:open-search": []
+  "editor:open-search": [],
+  "obsidian-editor-shortcuts:copyLineUp": []
 }

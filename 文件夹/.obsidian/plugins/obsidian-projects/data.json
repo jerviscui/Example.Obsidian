@@ -2,7 +2,11 @@
   "version": 2,
   "projects": [
     {
-      "fieldConfig": {},
+      "fieldConfig": {
+        "date-modified": {
+          "time": false
+        }
+      },
       "defaultName": "",
       "templates": [],
       "excludedNotes": [],
@@ -61,10 +65,14 @@
       "id": "98d77136-841a-4be7-b002-08880d183ffa"
     }
   ],
+  "archives": [],
   "preferences": {
     "projectSizeLimit": 1000,
     "frontmatter": {
       "quoteStrings": "PLAIN"
+    },
+    "locale": {
+      "firstDayOfWeek": "default"
     },
     "commands": [],
     "linkBehavior": "open-editor"

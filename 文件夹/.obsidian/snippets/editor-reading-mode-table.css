@@ -13,7 +13,6 @@ body {
 
 /* table */
 .markdown-rendered table {
-    margin-bottom: 24px;
     border-collapse: collapse;
     table-layout: auto;
     width: 100%;

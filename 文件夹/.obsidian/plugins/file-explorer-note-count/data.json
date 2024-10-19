@@ -6,5 +6,6 @@
     "jpeg"
   ],
   "blacklist": true,
+  "addRootFolder": false,
   "filterFolderNote": false
 }

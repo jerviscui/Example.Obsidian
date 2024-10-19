@@ -35,6 +35,7 @@
     "editor-reading-mode-banner",
     "editor-title-bar",
     "quiet-outline",
-    "editor-source-mode"
+    "editor-source-mode",
+    "heatmap_styleAlternatingMonths"
   ]
 }

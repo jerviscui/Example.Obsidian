@@ -2,7 +2,7 @@
   "searchDelayMilliSeconds": 100,
   "maxNumberOfSuggestions": 50,
   "normalizeAccentsAndDiacritics": false,
-  "useSelectionWordsAsDefaultInputQuery": false,
+  "useSelectionWordsAsDefaultInputQuery": true,
   "preventDuplicateTabs": true,
   "showDirectory": true,
   "showDirectoryAtNewLine": false,
@@ -730,7 +730,7 @@
       ],
       "includePrefixPathPatterns": [],
       "excludePrefixPathPatterns": [],
-      "expand": false
+      "expand": true
     },
     {
       "name": "Landmark search",

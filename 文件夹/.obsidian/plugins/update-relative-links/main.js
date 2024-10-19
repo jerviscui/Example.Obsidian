@@ -58,23 +58,48 @@ function stackToPath(stack) {
 }
 
 // main.ts
+var ConfirmModal = class extends import_obsidian.Modal {
+  constructor(app, content, onConfirm) {
+    super(app);
+    this.content = content;
+    this.onConfirm = onConfirm;
+  }
+  onOpen() {
+    const { contentEl } = this;
+    contentEl.createEl("h1", { text: "Update Releate Links Plugin" });
+    contentEl.createEl("p", { text: this.content });
+    new import_obsidian.Setting(contentEl).addButton((btn) => btn.setButtonText("Yes").setCta().onClick(() => {
+      this.close();
+      this.onConfirm();
+    })).addButton((btn) => btn.setButtonText("No").onClick(() => {
+      this.close();
+    }));
+  }
+  onClose() {
+    this.contentEl.empty();
+  }
+};
 var UpdateRelativeLinksPlugin = class extends import_obsidian.Plugin {
   async onload() {
-    const { metadataCache, vault } = this.app;
+    const { app } = this;
+    const { metadataCache, vault } = app;
+    const message = "This command will modify all links in the entire vault (not just the current file) to relative paths, and this action cannot be undone. It is recommended that you back up the vault in advance. Please confirm whether you want to execute the command.";
     this.addCommand({
       id: "update-all-relative-links",
       name: "Update all relative links",
       callback() {
-        const promises = vault.getMarkdownFiles().map((file) => replace(file, false));
-        Promise.all(promises).then((linkCounts) => {
-          const updatedLinkCounts = linkCounts.filter((count) => count > 0);
-          const linkCount = updatedLinkCounts.reduce((sum, count) => sum + count, 0);
-          const fileCount = updatedLinkCounts.length;
-          new import_obsidian.Notice(`Update ${linkCount} links in ${fileCount} file${fileCount > 1 ? "s" : ""}.`);
-        }).catch((err) => {
-          new import_obsidian.Notice("Update links error, see console.");
-          console.error(err);
-        });
+        new ConfirmModal(app, message, () => {
+          const promises = vault.getMarkdownFiles().map((file) => replace(file, false));
+          Promise.all(promises).then((linkCounts) => {
+            const updatedLinkCounts = linkCounts.filter((count) => count > 0);
+            const linkCount = updatedLinkCounts.reduce((sum, count) => sum + count, 0);
+            const fileCount = updatedLinkCounts.length;
+            new import_obsidian.Notice(`Update ${linkCount} links in ${fileCount} file${fileCount > 1 ? "s" : ""}.`);
+          }).catch((err) => {
+            new import_obsidian.Notice("Update links error, see console.");
+            console.error(err);
+          });
+        }).open();
       }
     });
     this.registerEvent(vault.on("rename", (file, oldPath) => {
