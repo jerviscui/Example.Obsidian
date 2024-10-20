@@ -18,7 +18,6 @@
   "obsidian-copy-block-link",
   "copy-url-in-preview",
   "janitor",
-  "file-explorer-note-count",
   "dataview",
   "obsidian-footnotes",
   "heatmap-calendar",
@@ -33,9 +32,10 @@
   "obsidian-enhancing-mindmap",
   "pane-relief",
   "editing-toolbar",
-  "obsidian-quiet-outline",
   "typewriter-mode",
   "obsidian-custom-frames",
   "omnisearch",
-  "tag-wrangler"
+  "tag-wrangler",
+  "obsidian-quiet-outline",
+  "file-explorer-note-count"
 ]

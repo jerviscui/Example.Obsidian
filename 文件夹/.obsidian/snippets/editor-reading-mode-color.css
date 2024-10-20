@@ -113,3 +113,10 @@ body {
 .cm-s-obsidian span.obsidian-search-match-highlight {
     background-color: var(--text-highlight-bg) !important;
 }
+
+/* collapse icon */
+.markdown-rendered
+    h2
+    .heading-collapse-indicator.collapse-indicator.collapse-icon {
+    margin-top: -0.6em;
+}

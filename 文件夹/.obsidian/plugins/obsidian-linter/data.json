@@ -46,20 +46,25 @@
       "enabled": true,
       "date-created": true,
       "date-created-key": "date created",
-      "force-retention-of-create-value": false,
       "date-modified": true,
       "date-modified-key": "date modified",
-      "format": "yyyy-MM-DDTHH:mm:ssZ"
+      "format": "yyyy-MM-DDTHH:mm:ssZ",
+      "date-created-source-of-truth": "file system",
+      "date-modified-source-of-truth": "file system",
+      "convert-to-utc": false,
+      "update-on-file-contents-updated": "never"
     },
     "yaml-title": {
       "enabled": false,
-      "title-key": "title"
+      "title-key": "title",
+      "mode": "first-h1-or-filename-if-h1-missing"
     },
     "yaml-title-alias": {
       "enabled": true,
       "preserve-existing-alias-section-style": true,
       "keep-alias-that-matches-the-filename": false,
-      "use-yaml-key-to-keep-track-of-old-filename-or-heading": true
+      "use-yaml-key-to-keep-track-of-old-filename-or-heading": true,
+      "alias-helper-key": "linter-yaml-title-alias"
     },
     "capitalize-headings": {
       "enabled": false,
@@ -93,7 +98,9 @@
     },
     "auto-correct-common-misspellings": {
       "enabled": false,
-      "ignore-words": ""
+      "ignore-words": "",
+      "skip-words-with-multiple-capitals": false,
+      "extra-auto-correct-files": []
     },
     "convert-bullet-list-markers": {
       "enabled": false
@@ -103,7 +110,8 @@
       "style": "underscore"
     },
     "no-bare-urls": {
-      "enabled": true
+      "enabled": true,
+      "no-bare-uris": false
     },
     "ordered-list-style": {
       "enabled": true,
@@ -130,7 +138,8 @@
       "style": "asterisk"
     },
     "two-spaces-between-lines-with-content": {
-      "enabled": true
+      "enabled": false,
+      "line-break-indicator": "  "
     },
     "unordered-list-style": {
       "enabled": true,
@@ -171,7 +180,7 @@
       "enabled": true
     },
     "paragraph-blank-lines": {
-      "enabled": true
+      "enabled": false
     },
     "remove-empty-lines-between-list-markers-and-checklists": {
       "enabled": true
@@ -220,7 +229,7 @@
       "enabled": false
     },
     "remove-multiple-blank-lines-on-paste": {
-      "enabled": false
+      "enabled": true
     },
     "blockquote-style": {
       "enabled": false,
@@ -259,6 +268,9 @@
     "default-language-for-code-fences": {
       "enabled": false,
       "default-language": ""
+    },
+    "empty-line-around-horizontal-rules": {
+      "enabled": false
     }
   },
   "lintOnSave": true,

@@ -1,108 +1,396 @@
 /* override rainbow_file_explorer */
-/* https://github.com/Evelf/obsidian-recipes/blob/main/rainbow-file_explorer/evelf-rainbow_file_explorer-colors.css */
+/* https://github.com/Evelf/obsidian-recipes/blob/main/pre-theme/theme.css */
 
-.collapse-icon svg.svg-icon {
-  color: inherit;
-}
+/************
+ * colors   *
+ ************/
 
 .nav-folder-children .nav-folder-children {
-  border-width: 0 0 0 1px; /* top | right | bottom | left */
-  border-style: solid;
+    border-width: 0 0 0 1px; /* top | right | bottom | left */
+    border-style: solid;
 }
 
-:root {
-  --rainbow-color-1: #7f6df2;
-  --rainbow-color-2: #3AB1C4;
-  --rainbow-color-3: #6DC43A;
-  --rainbow-color-4: #C4913A;
-  --rainbow-color-5: #C43A6D;
-  --rainbow-color-6: #913AC4;
-  --rainbow-color-7: #7f6df2;
-  --rainbow-color-8: #3AB1C4;
-  --rainbow-color-9: #6DC43A;
+body {
+    --eden-rainbow-color-1: #7f6df2;
+    --eden-rainbow-color-2: #3ab1c4;
+    --eden-rainbow-color-3: #6dc43a;
+    --eden-rainbow-color-4: #c4913a;
+    --eden-rainbow-color-5: #c43a6d;
+    --eden-rainbow-color-6: #913ac4;
+    --eden-rainbow-color-7: #7f6df2;
+    --eden-rainbow-color-8: #3ab1c4;
+    --eden-rainbow-color-9: #6dc43a;
+
+    /* --text-accent: var(--eden-rainbow-color-1); */
 }
 
-.nav-folder.mod-root > .nav-folder-children .nav-folder-title,
-.nav-folder.mod-root > .nav-folder-children .nav-folder-collapse-indicator {
-  color: var(--rainbow-color-1);
-}
-.nav-folder.mod-root > .nav-folder-children .nav-folder-children {
-  border-color: var(--rainbow-color-1);
+/** nav colors **/
+
+[data-type="tag"] .tree-item,
+[data-type="file-explorer"] .tree-item {
+    --nav-item-color: var(--eden-rainbow-color-1);
+    --nav-collapse-icon-color: var(--eden-rainbow-color-1);
+    --nav-indentation-guide-color: var(--eden-rainbow-color-1);
 }
 
-.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-title,
-.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-collapse-indicator {
-  color: var(--rainbow-color-2);
-}
-.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children {
-  border-color: var(--rainbow-color-2);
-}
-
-.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-title,
-.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-collapse-indicator {
-  color: var(--rainbow-color-3);
-}
-.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children {
-  border-color: var(--rainbow-color-3);
+[data-type="tag"] .tree-item-children .tree-item,
+[data-type="file-explorer"] .tree-item-children .tree-item {
+    --nav-item-color: var(--eden-rainbow-color-2);
+    --nav-collapse-icon-color: var(--eden-rainbow-color-2);
+    --nav-indentation-guide-color: var(--eden-rainbow-color-2);
 }
 
-.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-title,
-.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-collapse-indicator {
-  color: var(--rainbow-color-4);
-}
-.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children {
-  border-color: var(--rainbow-color-4);
-}
-
-.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-title,
-.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-collapse-indicator {
-  color: var(--rainbow-color-5);
-}
-.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children {
-  border-color: var(--rainbow-color-5);
+[data-type="tag"] .tree-item-children .tree-item-children .tree-item,
+[data-type="file-explorer"] .tree-item-children .tree-item-children .tree-item {
+    --nav-item-color: var(--eden-rainbow-color-3);
+    --nav-collapse-icon-color: var(--eden-rainbow-color-3);
+    --nav-indentation-guide-color: var(--eden-rainbow-color-3);
 }
 
-.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-title,
-.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-collapse-indicator {
-  color: var(--rainbow-color-6);
-}
-.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children {
-  border-color: var(--rainbow-color-6);
-}
-
-.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-title .nav-folder-children,
-.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-collapse-indicator {
-  color: var(--rainbow-color-7);
-}
-.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children {
-  border-color: var(--rainbow-color-7);
-}
-
-.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-title,
-.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-collapse-indicator {
-  color: var(--rainbow-color-8);
-}
-.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children {
-  border-color: var(--rainbow-color-8);
+[data-type="tag"]
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item,
+[data-type="file-explorer"]
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item {
+    --nav-item-color: var(--eden-rainbow-color-4);
+    --nav-collapse-icon-color: var(--eden-rainbow-color-4);
+    --nav-indentation-guide-color: var(--eden-rainbow-color-4);
 }
 
-.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-title,
-.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-collapse-indicator {
-  color: var(--rainbow-color-9);
-}
-.nav-folder.mod-root > .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children {
-  border-color: var(--rainbow-color-9);
+[data-type="tag"]
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item,
+[data-type="file-explorer"]
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item {
+    --nav-item-color: var(--eden-rainbow-color-5);
+    --nav-collapse-icon-color: var(--eden-rainbow-color-5);
+    --nav-indentation-guide-color: var(--eden-rainbow-color-5);
 }
 
-/**
- * Any folder deeper than that will use the first color
- * It's possible to define deeper levels:
- * copy-past the following definitions and add ".nav-folder-children" in front of them
- */
-.nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-title,
-.nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-collapse-indicator {
-  color: var(--rainbow-color-1);
+[data-type="tag"]
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item,
+[data-type="file-explorer"]
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item {
+    --nav-item-color: var(--eden-rainbow-color-6);
+    --nav-collapse-icon-color: var(--eden-rainbow-color-6);
+    --nav-indentation-guide-color: var(--eden-rainbow-color-6);
 }
-.nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children {
-  border-color: var(--rainbow-color-1);
+
+[data-type="tag"]
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item,
+[data-type="file-explorer"]
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item {
+    --nav-item-color: var(--eden-rainbow-color-7);
+    --nav-collapse-icon-color: var(--eden-rainbow-color-7);
+    --nav-indentation-guide-color: var(--eden-rainbow-color-7);
 }
+
+[data-type="tag"]
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item,
+[data-type="file-explorer"]
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item {
+    --nav-item-color: var(--eden-rainbow-color-8);
+    --nav-collapse-icon-color: var(--eden-rainbow-color-8);
+    --nav-indentation-guide-color: var(--eden-rainbow-color-8);
+}
+
+[data-type="tag"]
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item,
+[data-type="file-explorer"]
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item-children
+    .tree-item {
+    --nav-item-color: var(--eden-rainbow-color-9);
+    --nav-collapse-icon-color: var(--eden-rainbow-color-9);
+    --nav-indentation-guide-color: var(--eden-rainbow-color-9);
+}
+
+.tree-item.nav-file .tree-item-self {
+    --nav-item-color: var(--var-text-muted);
+}
+
+/** Ribbon colors */
+
+.side-dock-ribbon.mod-left
+    > .side-dock-actions
+    > div.side-dock-ribbon-action:nth-child(5n + 1) {
+    color: var(--eden-rainbow-color-1);
+}
+.side-dock-ribbon.mod-left
+    > .side-dock-actions
+    > div.side-dock-ribbon-action:nth-child(5n + 2) {
+    color: var(--eden-rainbow-color-2);
+}
+.side-dock-ribbon.mod-left
+    > .side-dock-actions
+    > div.side-dock-ribbon-action:nth-child(5n + 3) {
+    color: var(--eden-rainbow-color-3);
+}
+.side-dock-ribbon.mod-left
+    > .side-dock-actions
+    > div.side-dock-ribbon-action:nth-child(5n + 4) {
+    color: var(--eden-rainbow-color-4);
+}
+.side-dock-ribbon.mod-left
+    > .side-dock-actions
+    > div.side-dock-ribbon-action:nth-child(5n + 5) {
+    color: var(--eden-rainbow-color-5);
+}
+
+/** Right workspace tab icons colors */
+
+/* .mod-right-split
+    .workspace-tab-header:nth-child(6n + 1)
+    .workspace-tab-header-inner-icon,
+.mod-right-split
+    .workspace-tab-header.is-active:nth-child(6n + 1)
+    .workspace-tab-header-inner-icon {
+    color: var(--eden-rainbow-color-1);
+}
+.mod-right-split
+    .workspace-tab-header:nth-child(6n + 2)
+    .workspace-tab-header-inner-icon,
+.mod-right-split
+    .workspace-tab-header.is-active:nth-child(6n + 2)
+    .workspace-tab-header-inner-icon {
+    color: var(--eden-rainbow-color-2);
+}
+.mod-right-split
+    .workspace-tab-header:nth-child(6n + 3)
+    .workspace-tab-header-inner-icon,
+.mod-right-split
+    .workspace-tab-header.is-active:nth-child(6n + 3)
+    .workspace-tab-header-inner-icon {
+    color: var(--eden-rainbow-color-3);
+}
+.mod-right-split
+    .workspace-tab-header:nth-child(6n + 4)
+    .workspace-tab-header-inner-icon,
+.mod-right-split
+    .workspace-tab-header.is-active:nth-child(6n + 4)
+    .workspace-tab-header-inner-icon {
+    color: var(--eden-rainbow-color-4);
+}
+.mod-right-split
+    .workspace-tab-header:nth-child(6n + 5)
+    .workspace-tab-header-inner-icon,
+.mod-right-split
+    .workspace-tab-header.is-active:nth-child(6n + 5)
+    .workspace-tab-header-inner-icon {
+    color: var(--eden-rainbow-color-5);
+}
+.mod-right-split
+    .workspace-tab-header:nth-child(6n + 6)
+    .workspace-tab-header-inner-icon,
+.mod-right-split
+    .workspace-tab-header.is-active:nth-child(6n + 6)
+    .workspace-tab-header-inner-icon {
+    color: var(--eden-rainbow-color-6);
+} */
+
+/** Left workspace tab icons colors */
+
+.mod-left-split
+    .workspace-tab-header:nth-child(5n + 1)
+    .workspace-tab-header-inner-icon,
+.mod-left-split
+    .workspace-tab-header.is-active:nth-child(5n + 1)
+    .workspace-tab-header-inner-icon {
+    color: var(--eden-rainbow-color-1);
+}
+.mod-left-split
+    .workspace-tab-header:nth-child(5n + 2)
+    .workspace-tab-header-inner-icon,
+.mod-left-split
+    .workspace-tab-header.is-active:nth-child(5n + 2)
+    .workspace-tab-header-inner-icon {
+    color: var(--eden-rainbow-color-2);
+}
+.mod-left-split
+    .workspace-tab-header:nth-child(5n + 3)
+    .workspace-tab-header-inner-icon,
+.mod-left-split
+    .workspace-tab-header.is-active:nth-child(5n + 3)
+    .workspace-tab-header-inner-icon {
+    color: var(--eden-rainbow-color-3);
+}
+.mod-left-split
+    .workspace-tab-header:nth-child(5n + 4)
+    .workspace-tab-header-inner-icon,
+.mod-left-split
+    .workspace-tab-header.is-active:nth-child(5n + 4)
+    .workspace-tab-header-inner-icon {
+    color: var(--eden-rainbow-color-4);
+}
+.mod-left-split
+    .workspace-tab-header:nth-child(5n + 5)
+    .workspace-tab-header-inner-icon,
+.mod-left-split
+    .workspace-tab-header.is-active:nth-child(5n + 5)
+    .workspace-tab-header-inner-icon {
+    color: var(--eden-rainbow-color-5);
+}
+
+/************
+ * layout   *
+ ************/
+
+/* Remove empty space on top of the notes
+ * (Live preview, preview and edit modes) */
+/* .markdown-preview-view,
+.markdown-source-view.mod-cm6 .cm-scroller {
+    padding-top: 0;
+} */
+
+/** Remove the left side-bar toggle icon
+ * and the empty space before left ribbon icons */
+/* .workspace-ribbon.mod-left {
+    margin-top: 0;
+}
+.sidebar-toggle-button {
+    display: none;
+}
+.workspace-ribbon.side-dock-ribbon::before {
+    display: none;
+} */
+
+/* Reduce the size of the icons
+ * and the height of the left upper bar */
+/* .workspace-tab-header-container {
+    --header-height: 30px;
+} */
+/* remove the top bar when tab are stacked */
+/* .mod-stacked .workspace-tab-header-container {
+    display: none;
+}
+.workspace-tab-header-container .workspace-tab-header svg.svg-icon {
+    --icon-size: var(--icon-s);
+}
+.mod-left-split .workspace-tab-header-inner,
+.mod-right-split .workspace-tab-header-inner {
+    padding: 0 6px;
+}
+.mod-left-split .workspace-tab-header-container-inner,
+.mod-right-split .workspace-tab-header-container-inner {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 0;
+} */
+
+/* Reduce the size of the icons and the height of
+ * the bar under the top upper bars */
+/* .mod-left-split
+    > .mod-top-left-space
+    > .workspace-tab-container
+    .nav-header
+    svg.svg-icon,
+.mod-right-split
+    > .mod-top-right-space
+    > .workspace-tab-container
+    .nav-header
+    svg.svg-icon {
+    --icon-size: var(--icon-xs);
+} */
+.mod-left-split > .mod-top-left-space > .workspace-tab-container .nav-header {
+    padding-top: 4px;
+    padding-bottom: 2px;
+}
+
+/* git plugin tool icons */
+main[data-type="git-view"] div.nav-buttons-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    --icon-size: var(--icon-m);
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/** layout **/
+body {
+    --nav-item-padding: 2px 0 2px 0;
+    --nav-item-padding: 2px var(--size-4-2) 2px var(--size-4-3);
+}
+/** nav layout **/
+.nav-files-container,
+.tree-item {
+    padding-left: 8px;
+}
+.tree-item {
+    --nav-item-children-margin-start: -1px;
+}
+/** table of content layout **/
+/* .workspace-leaf-content[data-type="outline"]
+    .view-content
+    .tree-item
+    .tree-item-children {
+    margin-left: -1px;
+}
+.workspace-leaf-content[data-type="outline"]
+    .view-content
+    .tree-item
+    .tree-item-children
+    .tree-item {
+    margin-left: 2px;
+} */

@@ -51,3 +51,12 @@ https://github.com/chrisgrieser/shimmering-focus/blob/a16cf8a64383b22a22c08da643
 .mod-root .metadata-add-button.metadata-add-button {
     display: flex;
 }
+
+/* properties font */
+.metadata-property-key,
+.metadata-property-value {
+    font-family: var(--font-text);
+}
+/* .metadata-property-value * {
+    font-size: var(--font-text-size) !important;
+} */

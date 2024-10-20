@@ -13,12 +13,14 @@
   "markdown": true,
   "expand_level": "5",
   "hide_unsearched": false,
-  "auto_expand": false,
+  "auto_expand_ext": "only-expand",
   "regex_search": false,
   "ellipsis": false,
   "label_direction": "left",
   "drag_modify": false,
   "locate_by_cursor": false,
   "show_popover_key": "ctrlKey",
-  "remember_state": true
+  "remember_state": false,
+  "export_format": "{title}",
+  "auto_expand": false
 }
